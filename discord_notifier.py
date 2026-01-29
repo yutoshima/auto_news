@@ -36,13 +36,20 @@ class DiscordNotifier:
         Returns:
             送信成功したかどうか
         """
+        import time
+
         # 2000文字制限対策
         if len(summary_text) > 2000:
-            chunks = self._split_text(summary_text, 2000)
+            chunks = self._split_text(summary_text, 1900)  # 余裕を持たせる
             for i, chunk in enumerate(chunks):
+                if i > 0:
+                    time.sleep(1)  # レート制限対策で1秒待機
                 success = self._send_message(chunk)
                 if not success:
+                    print(f"⚠️ チャンク {i+1}/{len(chunks)} の送信に失敗しました")
                     return False
+                else:
+                    print(f"✅ チャンク {i+1}/{len(chunks)} を送信しました")
             return True
         else:
             return self._send_message(summary_text)
@@ -165,19 +172,27 @@ class DiscordNotifier:
             return False
 
     def _split_text(self, text: str, max_length: int) -> List[str]:
-        """長いテキストを分割"""
+        """長いテキストを適切な位置で分割"""
         chunks = []
         current_chunk = ""
 
-        for line in text.split('\n'):
+        # 記事の区切り（## や --- など）を優先的に分割ポイントにする
+        lines = text.split('\n')
+
+        for i, line in enumerate(lines):
+            # 次の行を追加すると制限を超える場合
             if len(current_chunk) + len(line) + 1 > max_length:
-                chunks.append(current_chunk)
+                # 現在のチャンクを保存
+                if current_chunk:
+                    chunks.append(current_chunk.rstrip())
+                # 新しいチャンクを開始
                 current_chunk = line + '\n'
             else:
                 current_chunk += line + '\n'
 
+        # 最後のチャンクを追加
         if current_chunk:
-            chunks.append(current_chunk)
+            chunks.append(current_chunk.rstrip())
 
         return chunks
 

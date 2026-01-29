@@ -26,33 +26,46 @@ class DiscordNotifier:
             'Unknown': 0x00FF00,           # 緑 - その他
         }
 
-    def send_daily_summary(self, summary_text: str) -> bool:
+    def send_daily_summary(self, summary_text: str, articles: list = None) -> bool:
         """
-        日次ニュースサマリーを送信
+        日次ニュースサマリーをEmbed形式で送信
 
         Args:
             summary_text: 要約されたニューステキスト
+            articles: 記事のリスト（URLリンク用）
 
         Returns:
             送信成功したかどうか
         """
         import time
+        import re
 
-        # 2000文字制限対策
-        if len(summary_text) > 2000:
-            chunks = self._split_text(summary_text, 1900)  # 余裕を持たせる
-            for i, chunk in enumerate(chunks):
-                if i > 0:
-                    time.sleep(1)  # レート制限対策で1秒待機
-                success = self._send_message(chunk)
-                if not success:
-                    print(f"⚠️ チャンク {i+1}/{len(chunks)} の送信に失敗しました")
-                    return False
-                else:
-                    print(f"✅ チャンク {i+1}/{len(chunks)} を送信しました")
-            return True
-        else:
-            return self._send_message(summary_text)
+        # ヘッダーメッセージを送信
+        header = f"## 🚗💻 今日の注目ニュース ({datetime.now().strftime('%Y年%m月%d日')})"
+        self._send_message(header)
+        time.sleep(0.5)
+
+        # ニュースを個別に抽出してEmbed送信
+        news_items = self._parse_news_items(summary_text)
+
+        for i, item in enumerate(news_items, 1):
+            if i > 1:
+                time.sleep(1)  # レート制限対策
+
+            success = self._send_news_embed(item, i)
+            if not success:
+                print(f"⚠️ ニュース {i}/{len(news_items)} の送信に失敗しました")
+                return False
+            else:
+                print(f"✅ ニュース {i}/{len(news_items)} を送信しました")
+
+        # 記事リンクセクションを送信
+        if articles:
+            time.sleep(1)
+            links_section = self._create_links_section(articles)
+            self._send_message(links_section)
+
+        return True
 
     def send_new_car_alert(self, car_info: Dict) -> bool:
         """
@@ -199,3 +212,101 @@ class DiscordNotifier:
     def test_connection(self) -> bool:
         """接続テスト"""
         return self._send_message("✅ Discord接続テストに成功しました！")
+
+    def _parse_news_items(self, summary_text: str) -> List[Dict]:
+        """
+        要約テキストから個別のニュース項目を抽出
+
+        Args:
+            summary_text: LLMが生成した要約テキスト
+
+        Returns:
+            ニュース項目のリスト
+        """
+        import re
+
+        items = []
+        lines = summary_text.split('\n')
+
+        current_item = None
+        for line in lines:
+            # ニュースの開始を検出（**で始まる行）
+            if line.strip().startswith('**') and '[' in line:
+                # 前のアイテムを保存
+                if current_item:
+                    items.append(current_item)
+
+                # 新しいアイテムを開始
+                # **1. [カテゴリ] タイトル** のようなパターン
+                match = re.match(r'\*\*\d+\.\s*\[([^\]]+)\]\s*([^*]+)\*\*', line)
+                if match:
+                    category = match.group(1)
+                    title = match.group(2).strip()
+                    current_item = {
+                        'category': category,
+                        'title': title,
+                        'description': ''
+                    }
+            # 説明文を追加（• で始まる行）
+            elif current_item and line.strip().startswith('•'):
+                current_item['description'] += line.strip()[1:].strip() + '\n'
+
+        # 最後のアイテムを追加
+        if current_item:
+            items.append(current_item)
+
+        return items
+
+    def _send_news_embed(self, item: Dict, index: int) -> bool:
+        """
+        個別のニュースをEmbed形式で送信
+
+        Args:
+            item: ニュース項目
+            index: ニュース番号
+
+        Returns:
+            送信成功したかどうか
+        """
+        # カテゴリ別の色分け
+        category_colors = {
+            '新型車': 0xFF0000,
+            '新製品': 0xFF6600,
+            'IT': 0x0066FF,
+            'EV': 0x00FF00,
+            '半導体': 0x9900FF,
+            '技術革新': 0xFFD700,
+            '製造技術': 0xFF1493,
+            'AI': 0x00CED1,
+            'ロボティクス': 0xFF4500,
+            'スマートシティ': 0x32CD32,
+        }
+
+        color = category_colors.get(item['category'], 0x5865F2)  # デフォルトはDiscordの青
+
+        embed = {
+            "title": f"{index}. [{item['category']}] {item['title'][:200]}",
+            "description": item['description'][:2000],
+            "color": color,
+            "footer": {
+                "text": f"カテゴリ: {item['category']}"
+            }
+        }
+
+        payload = {"embeds": [embed]}
+        return self._send_webhook(payload)
+
+    def _create_links_section(self, articles: List[Dict]) -> str:
+        """
+        記事リンクセクションを生成
+
+        Args:
+            articles: 記事のリスト
+
+        Returns:
+            記事リンクのテキスト
+        """
+        links = "## 📎 記事リンク\n\n"
+        for i, article in enumerate(articles[:10], 1):
+            links += f"{i}. [{article['title'][:80]}...]({article['url']})\n"
+        return links

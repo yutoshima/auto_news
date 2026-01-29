@@ -94,7 +94,7 @@ def main():
 
             # Discord に送信
             print("📤 Discordに送信中...\n")
-            success = notifier.send_daily_summary(summary)
+            success = notifier.send_daily_summary(summary, articles[:10])
 
             if success:
                 print("✅ ニュース配信完了\n")

@@ -101,13 +101,9 @@ def main():
             else:
                 print("❌ ニュース配信失敗\n")
 
-            # 新型車情報も同時チェック
-            print("🔍 新型車情報も同時チェック中...\n")
-            new_cars = analyzer.analyze_all_for_new_cars(articles)
-
-            if new_cars:
-                print(f"🚨 {len(new_cars)} 件の新型車を追加で発見しました！\n")
-                notifier.send_new_car_summary(new_cars)
+            # 新型車情報のチェックは new-cars モード専用
+            # （時間がかかるため、全ニュースモードではスキップ）
+            print("💡 新型車の詳細チェックは 'new-cars' モードで実行されます\n")
 
         print("=" * 60)
         print("🎉 処理が完了しました")

@@ -34,15 +34,17 @@ class NewsAnalyzer:
         if not articles:
             return "本日は新しいニュースがありませんでした。"
 
-        # 記事を整形
+        # 記事リストを保持
+        article_list = articles[:20]
+
+        # 記事を整形（URLは含めない）
         articles_text = ""
-        for i, article in enumerate(articles[:20], 1):
+        for i, article in enumerate(article_list, 1):
             articles_text += f"""
 記事{i}:
 タイトル: {article['title']}
 概要: {article['summary'][:200]}
 ソース: {article['source']}
-URL: {article['url']}
 ---
 """
 
@@ -55,15 +57,12 @@ URL: {article['url']}
 - 車とITの分野に関連性が高いもの
 - 新型車・新製品の発表は特に重視
 
-出力フォーマット（各記事のURLは必ず記載すること）:
+出力フォーマット:
 ## 🚗💻 今日の注目ニュース
 
 **[カテゴリ] タイトル**
 • 要点を簡潔に要約
 • なぜ重要かの説明
-🔗 記事URL: [元記事のURLをここに記載]
-
----
 
 {articles_text}"""
 
@@ -78,10 +77,34 @@ URL: {article['url']}
                 temperature=0.3
             )
 
-            return response.choices[0].message.content
+            summary = response.choices[0].message.content
+
+            # システム側で記事URLリストを追加
+            summary = self._append_article_urls(summary, article_list, max_articles)
+
+            return summary
 
         except Exception as e:
             return f"⚠️ 要約処理でエラーが発生しました: {str(e)}"
+
+    def _append_article_urls(self, summary: str, articles: List[Dict], max_count: int) -> str:
+        """
+        要約の最後に記事URLのリストを追加
+
+        Args:
+            summary: LLMが生成した要約テキスト
+            articles: 記事のリスト
+            max_count: 表示する最大記事数
+
+        Returns:
+            URLリストが追加された要約テキスト
+        """
+        url_section = "\n\n---\n\n## 📎 記事リンク\n\n"
+
+        for i, article in enumerate(articles[:max_count], 1):
+            url_section += f"{i}. [{article['title'][:80]}...]({article['url']}) - *{article['source']}*\n"
+
+        return summary + url_section
 
     def detect_new_car_announcement(self, article: Dict) -> Optional[Dict]:
         """

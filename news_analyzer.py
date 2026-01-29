@@ -42,6 +42,7 @@ class NewsAnalyzer:
 タイトル: {article['title']}
 概要: {article['summary'][:200]}
 ソース: {article['source']}
+URL: {article['url']}
 ---
 """
 
@@ -54,13 +55,15 @@ class NewsAnalyzer:
 - 車とITの分野に関連性が高いもの
 - 新型車・新製品の発表は特に重視
 
-出力フォーマット:
+出力フォーマット（各記事のURLは必ず記載すること）:
 ## 🚗💻 今日の注目ニュース
 
 **[カテゴリ] タイトル**
 • 要点を簡潔に要約
 • なぜ重要かの説明
-[記事URL]
+🔗 記事URL: [元記事のURLをここに記載]
+
+---
 
 {articles_text}"""
 

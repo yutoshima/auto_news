@@ -73,7 +73,7 @@ class NewsAnalyzer:
                     {"role": "system", "content": "あなたは車とIT業界に詳しい専門ニュースキュレーターです。"},
                     {"role": "user", "content": prompt}
                 ],
-                max_tokens=2000,
+                max_tokens=3000,  # 記事リンクセクションも含めるため増量
                 temperature=0.3
             )
 

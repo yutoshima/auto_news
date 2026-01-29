@@ -1,0 +1,42 @@
+name: 新型車情報トラッカー
+
+on:
+  schedule:
+    # 3時間ごとに新型車情報をチェック
+    - cron: '0 */3 * * *'
+
+  # 手動実行も可能
+  workflow_dispatch:
+
+jobs:
+  track-new-cars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python環境のセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: uvのインストール
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: 依存パッケージのインストール
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -r requirements.txt
+
+      - name: 新型車情報を検索
+        env:
+          POE_API_KEY: ${{ secrets.POE_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          POE_MODEL: gemini-3-flash
+        run: |
+          source .venv/bin/activate
+          python main.py --mode new-cars --hours 6

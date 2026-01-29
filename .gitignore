@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.sqlite
+logs/
+reported_cars.json
+*.log
+.DS_Store

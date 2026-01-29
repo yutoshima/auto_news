@@ -1,0 +1,55 @@
+name: 毎日のニュース配信
+
+on:
+  schedule:
+    # 毎朝8:00 JST (23:00 UTC前日) に実行
+    - cron: '0 23 * * *'
+
+  # 手動実行も可能にする
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '実行モード'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - new-cars
+      hours:
+        description: '何時間前までのニュースを取得するか'
+        required: false
+        default: '24'
+
+jobs:
+  send-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python環境のセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: uvのインストール
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: 依存パッケージのインストール
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -r requirements.txt
+
+      - name: ニュース配信を実行
+        env:
+          POE_API_KEY: ${{ secrets.POE_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          POE_MODEL: gemini-3-flash
+        run: |
+          source .venv/bin/activate
+          python main.py --mode ${{ github.event.inputs.mode || 'all' }} --hours ${{ github.event.inputs.hours || '24' }}

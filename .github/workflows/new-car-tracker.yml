@@ -36,7 +36,7 @@ jobs:
         env:
           POE_API_KEY: ${{ secrets.POE_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          POE_MODEL: gemini-3-flash
+          POE_MODEL: gpt-5-nano
         run: |
           source .venv/bin/activate
           python main.py --mode new-cars --hours 168

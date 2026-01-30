@@ -19,6 +19,8 @@ def main():
                         help='実行モード: all=全ニュース配信, new-cars=新型車のみ, test=接続テスト')
     parser.add_argument('--hours', type=int, default=24,
                         help='何時間前までのニュースを取得するか（デフォルト: 24時間）')
+    parser.add_argument('--importance', type=int, default=3,
+                        help='重要度の閾値（1-5、デフォルト: 3）この値以上の記事を配信')
 
     args = parser.parse_args()
 
@@ -97,40 +99,48 @@ def main():
             # IT記事の要約と送信
             if it_articles:
                 print(f"💻 IT記事 {len(it_articles)} 件を処理中...\n")
-                it_summary = analyzer.summarize_daily_news(it_articles[:20], max_articles=10)
+                it_summary = analyzer.summarize_daily_news(it_articles, importance_threshold=args.importance)
 
-                print("IT要約結果:")
-                print("-" * 60)
-                print(it_summary)
-                print("-" * 60)
-                print()
+                # 重要記事が見つかった場合のみ送信
+                if "重要度" not in it_summary or "ありませんでした" not in it_summary:
+                    print("IT要約結果:")
+                    print("-" * 60)
+                    print(it_summary)
+                    print("-" * 60)
+                    print()
 
-                print("📤 ITチャンネルに送信中...\n")
-                it_success = notifier.send_daily_summary(it_summary, it_articles[:10], category='it')
+                    print("📤 ITチャンネルに送信中...\n")
+                    it_success = notifier.send_daily_summary(it_summary, it_articles, category='it')
 
-                if it_success:
-                    print("✅ IT記事配信完了\n")
+                    if it_success:
+                        print("✅ IT記事配信完了\n")
+                    else:
+                        print("❌ IT記事配信失敗\n")
                 else:
-                    print("❌ IT記事配信失敗\n")
+                    print(f"⚠️  重要度 ★{args.importance}/5 以上のIT記事はありませんでした\n")
 
             # 車記事の要約と送信
             if car_articles:
                 print(f"🚗 車記事 {len(car_articles)} 件を処理中...\n")
-                car_summary = analyzer.summarize_daily_news(car_articles[:20], max_articles=10)
+                car_summary = analyzer.summarize_daily_news(car_articles, importance_threshold=args.importance)
 
-                print("車要約結果:")
-                print("-" * 60)
-                print(car_summary)
-                print("-" * 60)
-                print()
+                # 重要記事が見つかった場合のみ送信
+                if "重要度" not in car_summary or "ありませんでした" not in car_summary:
+                    print("車要約結果:")
+                    print("-" * 60)
+                    print(car_summary)
+                    print("-" * 60)
+                    print()
 
-                print("📤 車チャンネルに送信中...\n")
-                car_success = notifier.send_daily_summary(car_summary, car_articles[:10], category='car')
+                    print("📤 車チャンネルに送信中...\n")
+                    car_success = notifier.send_daily_summary(car_summary, car_articles, category='car')
 
-                if car_success:
-                    print("✅ 車記事配信完了\n")
+                    if car_success:
+                        print("✅ 車記事配信完了\n")
+                    else:
+                        print("❌ 車記事配信失敗\n")
                 else:
-                    print("❌ 車記事配信失敗\n")
+                    print(f"⚠️  重要度 ★{args.importance}/5 以上の車記事はありませんでした\n")
 
             # 新型車情報のチェックは new-cars モード専用
             # （時間がかかるため、全ニュースモードではスキップ）

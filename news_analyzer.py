@@ -20,13 +20,76 @@ class NewsAnalyzer:
 
         print(f"🤖 LLMモデル: {self.model}")
 
-    def summarize_daily_news(self, articles: List[Dict], max_articles: int = 10) -> str:
+    def evaluate_article_importance(self, article: Dict) -> int:
         """
-        ニュース記事をまとめて要約
+        記事の重要度を評価（1-5の星評価）
+
+        Args:
+            article: 記事の辞書
+
+        Returns:
+            重要度スコア（1-5）、エラー時は0
+        """
+        prompt = f"""あなたは車とIT業界の専門アナリストです。以下の記事の重要度を星5段階で評価してください。
+
+記事タイトル: {article['title']}
+記事概要: {article['summary'][:300]}
+情報源: {article['source']}
+
+評価基準:
+★★★★★ (5): 業界を変える革新的発表（新型車の正式発表、画期的技術、業界再編など）
+★★★★☆ (4): 非常に重要なニュース（大手企業の戦略発表、重要な技術革新など）
+★★★☆☆ (3): 注目すべきニュース（新製品、業界動向、トレンドなど）
+★★☆☆☆ (2): 一般的なニュース（通常のアップデート、小規模発表など）
+★☆☆☆☆ (1): あまり重要でないニュース（マイナーな更新、個人の意見など）
+
+JSON形式で回答してください:
+{{
+    "score": 1-5の数値,
+    "reason": "評価理由を簡潔に（30文字以内）"
+}}"""
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": "あなたは業界ニュースの重要度を評価する専門家です。必ずJSON形式で回答してください。"},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.2,
+                max_tokens=150
+            )
+
+            content = response.choices[0].message.content
+
+            # JSONブロックを抽出
+            if "```json" in content:
+                json_str = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                json_str = content.split("```")[1].split("```")[0].strip()
+            else:
+                json_str = content.strip()
+
+            result = json.loads(json_str)
+            score = result.get("score", 0)
+
+            # 星マークで表示
+            stars = "★" * score + "☆" * (5 - score)
+            print(f"  {stars} ({score}/5) - {article['title'][:50]}...")
+
+            return score
+
+        except Exception as e:
+            print(f"  ⚠️  重要度評価エラー: {str(e)}")
+            return 0
+
+    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3) -> str:
+        """
+        ニュース記事をまとめて要約（重要度基準で選択）
 
         Args:
             articles: 記事のリスト
-            max_articles: 要約する最大記事数
+            importance_threshold: 重要度の閾値（1-5、この値以上の記事のみ配信）
 
         Returns:
             要約されたニュース文字列
@@ -34,58 +97,94 @@ class NewsAnalyzer:
         if not articles:
             return "本日は新しいニュースがありませんでした。"
 
-        # 記事リストを保持
-        article_list = articles[:20]
+        threshold_stars = "★" * importance_threshold + "☆" * (5 - importance_threshold)
+        print(f"🔍 記事の重要度を評価中（閾値: {threshold_stars} {importance_threshold}/5）...\n")
 
-        # 記事を整形（URLは含めない）
-        articles_text = ""
-        for i, article in enumerate(article_list, 1):
-            articles_text += f"""
+        # 各記事の重要度を評価
+        all_scored_articles = []
+        for article in articles[:30]:  # 最大30件を評価
+            score = self.evaluate_article_importance(article)
+            article['importance_score'] = score
+            all_scored_articles.append(article)
+
+        # 重要度順にソート
+        all_scored_articles.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
+
+        # 重要記事（★3以上）と一般記事（★1-2）に分類
+        important_articles = [a for a in all_scored_articles if a.get('importance_score', 0) >= importance_threshold]
+        minor_articles = [a for a in all_scored_articles if a.get('importance_score', 0) < importance_threshold and a.get('importance_score', 0) > 0]
+
+        if not important_articles and not minor_articles:
+            return f"本日は評価可能なニュースがありませんでした。"
+
+        print(f"\n✅ 重要記事: {len(important_articles)} 件")
+        print(f"   その他記事: {len(minor_articles)} 件\n")
+
+        # 重要記事の詳細情報を整形
+        important_articles_text = ""
+        if important_articles:
+            for i, article in enumerate(important_articles, 1):
+                score = article.get('importance_score', 0)
+                stars = "★" * score + "☆" * (5 - score)
+                important_articles_text += f"""
 記事{i}:
 タイトル: {article['title']}
 概要: {article['summary'][:200]}
 ソース: {article['source']}
+重要度: {stars} ({score}/5)
 ---
 """
 
-        prompt = f"""あなたは車とITに特化したニュースキュレーターです。
-以下の記事から、読者にとって最も価値のあるニュース{max_articles}件を選び、要約してください。
+        # 一般記事のリスト
+        minor_articles_text = ""
+        if minor_articles:
+            minor_articles_text = "\n\n### その他の記事（★1-2）:\n"
+            for article in minor_articles[:10]:
+                score = article.get('importance_score', 0)
+                stars = "★" * score + "☆" * (5 - score)
+                minor_articles_text += f"- {stars} {article['title'][:60]}... ({article['source']})\n"
 
-選考基準:
-- 技術的革新性や業界への影響度
-- 一般読者の関心度
-- 車とITの分野に関連性が高いもの
-- 新型車・新製品の発表は特に重視
+        # 重要記事がある場合のみLLMで要約
+        if important_articles:
+            prompt = f"""あなたは車とITに特化したニュースキュレーターです。
+以下の重要度の高い記事を要約してください。各記事は既に重要度 {threshold_stars} ({importance_threshold}/5) 以上と評価されています。
 
 出力フォーマット:
 ## 🚗💻 今日の注目ニュース
 
-**[カテゴリ] タイトル**
+**1. [カテゴリ] タイトル**
 • 要点を簡潔に要約
 • なぜ重要かの説明
 
-{articles_text}"""
+{important_articles_text}"""
 
-        try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=[
-                    {"role": "system", "content": "あなたは車とIT業界に詳しい専門ニュースキュレーターです。"},
-                    {"role": "user", "content": prompt}
-                ],
-                max_tokens=3000,  # 記事リンクセクションも含めるため増量
-                temperature=0.3
-            )
+            try:
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    messages=[
+                        {"role": "system", "content": "あなたは車とIT業界に詳しい専門ニュースキュレーターです。"},
+                        {"role": "user", "content": prompt}
+                    ],
+                    max_tokens=3000,
+                    temperature=0.3
+                )
 
-            summary = response.choices[0].message.content
+                summary = response.choices[0].message.content
 
-            # システム側で記事URLリストを追加
-            summary = self._append_article_urls(summary, article_list, max_articles)
+                # 一般記事のリストを追加
+                if minor_articles_text:
+                    summary += minor_articles_text
 
-            return summary
+                # システム側で記事URLリストを追加
+                summary = self._append_article_urls(summary, important_articles, len(important_articles))
 
-        except Exception as e:
-            return f"⚠️ 要約処理でエラーが発生しました: {str(e)}"
+                return summary
+
+            except Exception as e:
+                return f"⚠️ 要約処理でエラーが発生しました: {str(e)}"
+        else:
+            # 重要記事がない場合は一般記事のリストのみ
+            return f"本日は重要度 {threshold_stars} ({importance_threshold}/5) 以上のニュースがありませんでした。{minor_articles_text}"
 
     def _append_article_urls(self, summary: str, articles: List[Dict], max_count: int) -> str:
         """

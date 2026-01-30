@@ -17,11 +17,13 @@ class NewsCollector:
         # IT関連ニュースサイト
         self.it_feeds = {
             'ITmedia News': 'https://www.itmedia.co.jp/news/rss/rss2.xml',
+            'ITmedia AI+': 'https://rss.itmedia.co.jp/rss/2.0/aiplus.xml',
+            '@IT': 'https://rss.itmedia.co.jp/rss/2.0/ait.xml',
+            'Publickey': 'https://www.publickey1.jp/atom.xml',
+            'GIZMODO Japan': 'https://www.gizmodo.jp/index.xml',
             'TechCrunch Japan': 'https://techcrunch.com/feed/',
             'Engadget日本版': 'https://japanese.engadget.com/rss.xml',
             'CNET Japan': 'https://japan.cnet.com/rss/index.rdf',
-            'Publickey': 'https://www.publickey1.jp/atom.xml',
-            '@IT': 'https://atmarkit.itmedia.co.jp/rss/rss2.xml',
             'Zenn': 'https://zenn.dev/feed',
             'Qiita (JavaScript)': 'https://qiita.com/tags/JavaScript/feed.atom',
             'Qiita (Python)': 'https://qiita.com/tags/Python/feed.atom',

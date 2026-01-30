@@ -11,10 +11,28 @@ class DiscordNotifier:
     """Discord Webhookを使ってニュースを配信するクラス"""
 
     def __init__(self):
-        self.webhook_url = os.getenv("DISCORD_WEBHOOK_URL")
+        # 3つの異なるWebhook URL
+        self.it_webhook_url = os.getenv("IT_WEBHOOK_URL")
+        self.car_webhook_url = os.getenv("CAR_WEBHOOK_URL")
+        self.new_car_webhook_url = os.getenv("NEW_CAR_WEBHOOK_URL")
 
-        if not self.webhook_url:
-            raise ValueError("DISCORD_WEBHOOK_URL が設定されていません")
+        # 後方互換性のため、古い設定もサポート
+        default_webhook = os.getenv("DISCORD_WEBHOOK_URL")
+
+        if not self.it_webhook_url:
+            self.it_webhook_url = default_webhook
+        if not self.car_webhook_url:
+            self.car_webhook_url = default_webhook
+        if not self.new_car_webhook_url:
+            self.new_car_webhook_url = default_webhook
+
+        if not any([self.it_webhook_url, self.car_webhook_url, self.new_car_webhook_url]):
+            raise ValueError("少なくとも1つのWebhook URLを設定してください")
+
+        print(f"🔔 Discord設定:")
+        print(f"   - ITチャンネル: {'✅' if self.it_webhook_url else '❌'}")
+        print(f"   - 車チャンネル: {'✅' if self.car_webhook_url else '❌'}")
+        print(f"   - 新車チャンネル: {'✅' if self.new_car_webhook_url else '❌'}")
 
         # 発表タイプ別の色分け
         self.color_scheme = {
@@ -26,13 +44,14 @@ class DiscordNotifier:
             'Unknown': 0x00FF00,           # 緑 - その他
         }
 
-    def send_daily_summary(self, summary_text: str, articles: list = None) -> bool:
+    def send_daily_summary(self, summary_text: str, articles: list = None, category: str = None) -> bool:
         """
         日次ニュースサマリーをEmbed形式で送信
 
         Args:
             summary_text: 要約されたニューステキスト
             articles: 記事のリスト（URLリンク用）
+            category: 'it', 'car', またはNone（すべて）
 
         Returns:
             送信成功したかどうか
@@ -40,9 +59,17 @@ class DiscordNotifier:
         import time
         import re
 
+        # カテゴリに応じたWebhook URLを選択
+        webhook_url = self._get_webhook_for_category(category)
+        if not webhook_url:
+            print(f"⚠️ カテゴリ '{category}' のWebhook URLが設定されていません")
+            return False
+
         # ヘッダーメッセージを送信
-        header = f"## 🚗💻 今日の注目ニュース ({datetime.now().strftime('%Y年%m月%d日')})"
-        self._send_message(header)
+        category_emoji = "💻" if category == "it" else "🚗" if category == "car" else "🚗💻"
+        category_name = "IT" if category == "it" else "車" if category == "car" else "総合"
+        header = f"## {category_emoji} 今日の{category_name}ニュース ({datetime.now().strftime('%Y年%m月%d日')})"
+        self._send_message(header, webhook_url)
         time.sleep(0.5)
 
         # ニュースを個別に抽出してEmbed送信
@@ -52,7 +79,7 @@ class DiscordNotifier:
             if i > 1:
                 time.sleep(1)  # レート制限対策
 
-            success = self._send_news_embed(item, i)
+            success = self._send_news_embed(item, i, webhook_url)
             if not success:
                 print(f"⚠️ ニュース {i}/{len(news_items)} の送信に失敗しました")
                 return False
@@ -63,13 +90,45 @@ class DiscordNotifier:
         if articles:
             time.sleep(1)
             links_section = self._create_links_section(articles)
-            self._send_message(links_section)
+            self._send_message(links_section, webhook_url)
 
         return True
 
+    def send_articles_by_category(self, articles: List[Dict]) -> bool:
+        """
+        記事をカテゴリ別に分類して適切なチャンネルに送信
+
+        Args:
+            articles: 記事のリスト
+
+        Returns:
+            送信成功したかどうか
+        """
+        import time
+
+        # カテゴリ別に記事を分類
+        it_articles = [a for a in articles if a.get('category') == 'it']
+        car_articles = [a for a in articles if a.get('category') == 'car']
+
+        success = True
+
+        # IT記事を送信
+        if it_articles:
+            print(f"\n📤 IT記事 {len(it_articles)} 件を送信中...")
+            # LLMで要約を生成する必要があるため、main.pyから呼び出す
+            # ここでは記事リストのみを返す
+            pass
+
+        # 車記事を送信
+        if car_articles:
+            print(f"\n📤 車記事 {len(car_articles)} 件を送信中...")
+            pass
+
+        return success
+
     def send_new_car_alert(self, car_info: Dict) -> bool:
         """
-        新型車情報をリッチな形式で送信
+        新型車情報をリッチな形式で送信（専用チャンネルへ）
 
         Args:
             car_info: 新型車の情報辞書
@@ -132,7 +191,8 @@ class DiscordNotifier:
             "embeds": [embed]
         }
 
-        return self._send_webhook(payload)
+        # 新型車専用チャンネルに送信
+        return self._send_webhook(payload, self.new_car_webhook_url)
 
     def send_new_car_summary(self, new_cars: List[Dict]) -> bool:
         """
@@ -164,15 +224,23 @@ class DiscordNotifier:
 
         return self.send_daily_summary(content)
 
-    def _send_message(self, content: str) -> bool:
+    def _send_message(self, content: str, webhook_url: str = None) -> bool:
         """シンプルなテキストメッセージを送信"""
         payload = {"content": content}
-        return self._send_webhook(payload)
+        return self._send_webhook(payload, webhook_url)
 
-    def _send_webhook(self, payload: Dict) -> bool:
+    def _send_webhook(self, payload: Dict, webhook_url: str = None) -> bool:
         """Webhookにペイロードを送信"""
+        # デフォルトはITチャンネル（後方互換性のため）
+        if not webhook_url:
+            webhook_url = self.it_webhook_url or self.car_webhook_url
+
+        if not webhook_url:
+            print(f"❌ Webhook URLが設定されていません")
+            return False
+
         try:
-            response = requests.post(self.webhook_url, json=payload)
+            response = requests.post(webhook_url, json=payload)
 
             if response.status_code in [200, 204]:
                 return True
@@ -183,6 +251,24 @@ class DiscordNotifier:
         except Exception as e:
             print(f"❌ Discord送信エラー: {str(e)}")
             return False
+
+    def _get_webhook_for_category(self, category: Optional[str]) -> Optional[str]:
+        """
+        カテゴリに応じた適切なWebhook URLを返す
+
+        Args:
+            category: 'it', 'car', またはNone
+
+        Returns:
+            Webhook URL
+        """
+        if category == 'it':
+            return self.it_webhook_url
+        elif category == 'car':
+            return self.car_webhook_url
+        else:
+            # デフォルトは車チャンネル
+            return self.car_webhook_url or self.it_webhook_url
 
     def _split_text(self, text: str, max_length: int) -> List[str]:
         """長いテキストを適切な位置で分割"""
@@ -210,8 +296,25 @@ class DiscordNotifier:
         return chunks
 
     def test_connection(self) -> bool:
-        """接続テスト"""
-        return self._send_message("✅ Discord接続テストに成功しました！")
+        """接続テスト（すべてのチャンネルをテスト）"""
+        import time
+        success = True
+
+        if self.it_webhook_url:
+            print("💻 ITチャンネルをテスト中...")
+            success &= self._send_message("✅ ITチャンネル接続テストに成功しました！", self.it_webhook_url)
+            time.sleep(1)
+
+        if self.car_webhook_url:
+            print("🚗 車チャンネルをテスト中...")
+            success &= self._send_message("✅ 車チャンネル接続テストに成功しました！", self.car_webhook_url)
+            time.sleep(1)
+
+        if self.new_car_webhook_url:
+            print("🚨 新車チャンネルをテスト中...")
+            success &= self._send_message("✅ 新車チャンネル接続テストに成功しました！", self.new_car_webhook_url)
+
+        return success
 
     def _parse_news_items(self, summary_text: str) -> List[Dict]:
         """
@@ -257,13 +360,14 @@ class DiscordNotifier:
 
         return items
 
-    def _send_news_embed(self, item: Dict, index: int) -> bool:
+    def _send_news_embed(self, item: Dict, index: int, webhook_url: str = None) -> bool:
         """
         個別のニュースをEmbed形式で送信
 
         Args:
             item: ニュース項目
             index: ニュース番号
+            webhook_url: 送信先のWebhook URL
 
         Returns:
             送信成功したかどうか
@@ -294,7 +398,7 @@ class DiscordNotifier:
         }
 
         payload = {"embeds": [embed]}
-        return self._send_webhook(payload)
+        return self._send_webhook(payload, webhook_url)
 
     def _create_links_section(self, articles: List[Dict]) -> str:
         """

@@ -8,6 +8,7 @@ from datetime import datetime
 from news_collector import NewsCollector
 from news_analyzer import NewsAnalyzer
 from discord_notifier import DiscordNotifier
+from article_storage import ArticleStorage
 
 
 def main():
@@ -34,6 +35,7 @@ def main():
         collector = NewsCollector()
         analyzer = NewsAnalyzer()
         notifier = DiscordNotifier()
+        storage = ArticleStorage()
 
         # 接続テストモード
         if args.mode == 'test':
@@ -50,10 +52,15 @@ def main():
 
         if not articles:
             print("⚠️  新しいニュースが見つかりませんでした")
-            notifier.send_daily_summary("本日は新しいニュースがありませんでした。")
+            notifier.send_daily_summary("本日は新しいニュースがありませんでした。", category='car')
             return
 
         print(f"✅ {len(articles)} 件の記事を取得しました\n")
+
+        # 記事をMarkdownとして保存
+        print("💾 記事をMarkdownとして保存中...\n")
+        storage.save_articles(articles)
+        print()
 
         # 新型車専用モード
         if args.mode == 'new-cars':
@@ -83,23 +90,47 @@ def main():
         else:
             print("📝 ニュースの要約を開始...\n")
 
-            # 日次サマリーの生成
-            summary = analyzer.summarize_daily_news(articles, max_articles=10)
+            # カテゴリ別に記事を分類
+            it_articles = [a for a in articles if a.get('category') == 'it']
+            car_articles = [a for a in articles if a.get('category') == 'car']
 
-            print("要約結果:")
-            print("-" * 60)
-            print(summary)
-            print("-" * 60)
-            print()
+            # IT記事の要約と送信
+            if it_articles:
+                print(f"💻 IT記事 {len(it_articles)} 件を処理中...\n")
+                it_summary = analyzer.summarize_daily_news(it_articles[:20], max_articles=10)
 
-            # Discord に送信
-            print("📤 Discordに送信中...\n")
-            success = notifier.send_daily_summary(summary, articles[:10])
+                print("IT要約結果:")
+                print("-" * 60)
+                print(it_summary)
+                print("-" * 60)
+                print()
 
-            if success:
-                print("✅ ニュース配信完了\n")
-            else:
-                print("❌ ニュース配信失敗\n")
+                print("📤 ITチャンネルに送信中...\n")
+                it_success = notifier.send_daily_summary(it_summary, it_articles[:10], category='it')
+
+                if it_success:
+                    print("✅ IT記事配信完了\n")
+                else:
+                    print("❌ IT記事配信失敗\n")
+
+            # 車記事の要約と送信
+            if car_articles:
+                print(f"🚗 車記事 {len(car_articles)} 件を処理中...\n")
+                car_summary = analyzer.summarize_daily_news(car_articles[:20], max_articles=10)
+
+                print("車要約結果:")
+                print("-" * 60)
+                print(car_summary)
+                print("-" * 60)
+                print()
+
+                print("📤 車チャンネルに送信中...\n")
+                car_success = notifier.send_daily_summary(car_summary, car_articles[:10], category='car')
+
+                if car_success:
+                    print("✅ 車記事配信完了\n")
+                else:
+                    print("❌ 車記事配信失敗\n")
 
             # 新型車情報のチェックは new-cars モード専用
             # （時間がかかるため、全ニュースモードではスキップ）

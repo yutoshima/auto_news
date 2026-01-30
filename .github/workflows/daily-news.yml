@@ -48,8 +48,22 @@ jobs:
       - name: ニュース配信を実行
         env:
           POE_API_KEY: ${{ secrets.POE_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          IT_WEBHOOK_URL: ${{ secrets.IT_WEBHOOK_URL }}
+          CAR_WEBHOOK_URL: ${{ secrets.CAR_WEBHOOK_URL }}
+          NEW_CAR_WEBHOOK_URL: ${{ secrets.NEW_CAR_WEBHOOK_URL }}
           POE_MODEL: gpt-5-nano
         run: |
           source .venv/bin/activate
           python main.py --mode ${{ github.event.inputs.mode || 'all' }} --hours ${{ github.event.inputs.hours || '24' }}
+
+      - name: 記事をコミット・プッシュ
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add articles/
+          if git diff --staged --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "自動保存: $(date +'%Y-%m-%d %H:%M') のニュース記事"
+            git push
+          fi

@@ -17,7 +17,7 @@ url: https://techcrunch.com/2026/01/30/a16z-partner-kofi-ampadu-to-leave-firm-af
 
 ## 概要
 
-Kofi Ampadu, the partner at a16z who led the firm's Talent x Opportunity (TxO) fund and program, has left the firm.
+Ampadu's departure perhaps signals the end of the TxO chapter. The fund and program focused on supporting underserved founders by providing access to tech networks and investment capital through a donor-advised fund.
 
 ---
 

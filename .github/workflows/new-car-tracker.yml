@@ -11,6 +11,8 @@ on:
 jobs:
   track-new-cars:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: リポジトリをチェックアウト

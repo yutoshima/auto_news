@@ -42,7 +42,7 @@ class NewsCollector:
                 'description': 'トヨタの高級ブランド、洗練されたデザインと品質'
             },
             'Honda': {
-                'rss_url': 'https://global.honda/en/newsroom/rss/news.xml',
+                'rss_url': 'https://www.honda.co.jp/rss/hotnews.xml',
                 'country': 'japan',
                 'country_emoji': '🇯🇵',
                 'country_name_ja': '日本',

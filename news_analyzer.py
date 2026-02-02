@@ -30,10 +30,16 @@ class NewsAnalyzer:
         Returns:
             重要度スコア（1-5）、エラー時は0
         """
+        # summaryが文字列であることを確認
+        summary = article.get('summary', '')
+        if isinstance(summary, list):
+            summary = ' '.join(summary)
+        summary = str(summary)[:300]
+
         prompt = f"""あなたは車とIT業界の専門アナリストです。以下の記事の重要度を星5段階で評価してください。
 
 記事タイトル: {article['title']}
-記事概要: {article['summary'][:300]}
+記事概要: {summary}
 情報源: {article['source']}
 
 評価基準:
@@ -215,10 +221,16 @@ JSON形式で回答してください:
         Returns:
             新型車情報の辞書、または None
         """
+        # summaryが文字列であることを確認
+        summary = article.get('summary', '')
+        if isinstance(summary, list):
+            summary = ' '.join(summary)
+        summary = str(summary)[:500]
+
         prompt = f"""あなたは自動車業界の専門アナリストです。以下の記事を分析し、新型車・プロトタイプ・コンセプトカーの発表に関するものかどうか判定してください。
 
 記事タイトル: {article['title']}
-記事概要: {article['summary'][:500]}
+記事概要: {summary}
 情報源: {article['source']}
 
 判定基準:

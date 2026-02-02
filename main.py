@@ -68,12 +68,9 @@ def main():
         if args.mode == 'new-cars':
             print("🔍 新型車情報の検索を開始...\n")
 
-            # メーカー公式情報も追加取得
-            manufacturer_articles = collector.get_manufacturer_news_only(hours_back=48)
-            all_articles = articles + manufacturer_articles
-
+            # メーカー公式RSSのみから取得済み（fetch_recent_news()で取得）
             # 新型車判定
-            new_cars = analyzer.analyze_all_for_new_cars(all_articles)
+            new_cars = analyzer.analyze_all_for_new_cars(articles)
 
             if new_cars:
                 print(f"\n🚨 {len(new_cars)} 件の新型車を発見しました！\n")

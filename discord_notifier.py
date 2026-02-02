@@ -137,10 +137,69 @@ class DiscordNotifier:
             送信成功したかどうか
         """
         article = car_info.get('original_article', {})
+        manufacturer_info = article.get('manufacturer_info', {})
 
         # 重要度に応じた絵文字
         importance = car_info.get('importance', 5)
         importance_emoji = "🔥" * min(importance, 5)
+
+        # フィールドリストの構築
+        fields = [
+            {
+                "name": "🏭 メーカー",
+                "value": car_info['manufacturer'],
+                "inline": True
+            }
+        ]
+
+        # 国・地域情報を追加（メーカー情報がある場合）
+        if manufacturer_info.get('country_emoji') and manufacturer_info.get('country_name_ja'):
+            fields.append({
+                "name": "🌍 国・地域",
+                "value": f"{manufacturer_info['country_emoji']} {manufacturer_info['country_name_ja']}",
+                "inline": True
+            })
+
+        # 残りのフィールド
+        fields.extend([
+            {
+                "name": "🚗 カテゴリ",
+                "value": car_info['category'],
+                "inline": True
+            },
+            {
+                "name": "📍 発表タイプ",
+                "value": car_info['announcement_type'].replace('_', ' '),
+                "inline": True
+            },
+            {
+                "name": f"⭐ 重要度 ({importance}/10)",
+                "value": importance_emoji,
+                "inline": True
+            }
+        ])
+
+        # メーカー特徴を追加（メーカー情報がある場合）
+        if manufacturer_info.get('description'):
+            fields.append({
+                "name": "📋 メーカー特徴",
+                "value": manufacturer_info['description'],
+                "inline": False
+            })
+
+        # 情報源とリンク
+        fields.extend([
+            {
+                "name": "📰 情報源",
+                "value": article.get('source', 'Unknown'),
+                "inline": True
+            },
+            {
+                "name": "🔗 記事リンク",
+                "value": f"[記事を読む]({article.get('url', '#')})",
+                "inline": False
+            }
+        ])
 
         # 埋め込みメッセージの作成
         embed = {
@@ -149,38 +208,7 @@ class DiscordNotifier:
             "url": article.get('url', ''),
             "color": self.color_scheme.get(car_info['announcement_type'], 0x00FF00),
             "timestamp": datetime.now().isoformat(),
-            "fields": [
-                {
-                    "name": "🏭 メーカー",
-                    "value": car_info['manufacturer'],
-                    "inline": True
-                },
-                {
-                    "name": "🚗 カテゴリ",
-                    "value": car_info['category'],
-                    "inline": True
-                },
-                {
-                    "name": "📍 発表タイプ",
-                    "value": car_info['announcement_type'].replace('_', ' '),
-                    "inline": True
-                },
-                {
-                    "name": f"⭐ 重要度 ({importance}/10)",
-                    "value": importance_emoji,
-                    "inline": True
-                },
-                {
-                    "name": "📰 情報源",
-                    "value": article.get('source', 'Unknown'),
-                    "inline": True
-                },
-                {
-                    "name": "🔗 記事リンク",
-                    "value": f"[記事を読む]({article.get('url', '#')})",
-                    "inline": False
-                }
-            ],
+            "fields": fields,
             "footer": {
                 "text": f"信頼度: {car_info.get('confidence', 0)}% | Auto News Tracker"
             }

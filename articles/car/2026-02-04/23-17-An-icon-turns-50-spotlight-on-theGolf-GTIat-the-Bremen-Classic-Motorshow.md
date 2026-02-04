@@ -1,0 +1,24 @@
+---
+title: "An icon turns 50: spotlight on theGolf GTIat the Bremen Classic Motorshow"
+source: "Volkswagen"
+category: "car"
+published: 2026-02-04T23:17:37.497112
+url: https://www.volkswagen-newsroom.com/en/press-releases/an-icon-turns-50-spotlight-on-the-golf-gti-at-the-bremen-classic-motorshow-20107
+---
+
+# An icon turns 50: spotlight on theGolf GTIat the Bremen Classic Motorshow
+
+## メタデータ
+
+- **情報源**: Volkswagen
+- **カテゴリ**: car
+- **公開日時**: 2026年02月04日 23:17
+- **URL**: [https://www.volkswagen-newsroom.com/en/press-releases/an-icon-turns-50-spotlight-on-the-golf-gti-at-the-bremen-classic-motorshow-20107](https://www.volkswagen-newsroom.com/en/press-releases/an-icon-turns-50-spotlight-on-the-golf-gti-at-the-bremen-classic-motorshow-20107)
+
+## 概要
+
+
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -2,6 +2,7 @@ import requests
 from typing import List, Dict, Optional
 from datetime import datetime
 import os
+import re
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -72,25 +73,23 @@ class DiscordNotifier:
         self._send_message(header, webhook_url)
         time.sleep(0.5)
 
-        # ニュースを個別に抽出してEmbed送信
-        news_items = self._parse_news_items(summary_text)
-
-        for i, item in enumerate(news_items, 1):
-            if i > 1:
-                time.sleep(1)  # レート制限対策
-
-            success = self._send_news_embed(item, i, webhook_url)
-            if not success:
-                print(f"⚠️ ニュース {i}/{len(news_items)} の送信に失敗しました")
-                return False
-            else:
-                print(f"✅ ニュース {i}/{len(news_items)} を送信しました")
-
-        # 記事リンクセクションを送信
+        # 記事を重要度順にソートして、重要度付きで送信
         if articles:
-            time.sleep(1)
-            links_section = self._create_links_section(articles)
-            self._send_message(links_section, webhook_url)
+            # 重要度スコアを持つ記事のみをフィルタリング
+            scored_articles = [a for a in articles if a.get('importance_score', 0) > 0]
+            # 重要度順にソート
+            scored_articles.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
+
+            for i, article in enumerate(scored_articles, 1):
+                if i > 1:
+                    time.sleep(1)  # レート制限対策
+
+                success = self._send_article_embed(article, i, webhook_url)
+                if not success:
+                    print(f"⚠️ ニュース {i}/{len(scored_articles)} の送信に失敗しました")
+                    return False
+                else:
+                    print(f"✅ ニュース {i}/{len(scored_articles)} を送信しました")
 
         return True
 
@@ -202,9 +201,15 @@ class DiscordNotifier:
         ])
 
         # 埋め込みメッセージの作成
+        # タイトルと説明文をクリーニング
+        model_name = self._clean_html(car_info.get('model_name', 'Unknown'))
+        manufacturer = self._clean_html(car_info.get('manufacturer', 'Unknown'))
+        summary_ja = self._clean_html(car_info.get('summary_ja', '新型車が発表されました'))
+        summary_ja = self._truncate_text(summary_ja, 400)
+
         embed = {
-            "title": f"🚨 {car_info['manufacturer']} {car_info['model_name']} 登場！",
-            "description": car_info.get('summary_ja', '新型車が発表されました'),
+            "title": f"🚨 {manufacturer} {model_name} 登場！",
+            "description": summary_ja,
             "url": article.get('url', ''),
             "color": self.color_scheme.get(car_info['announcement_type'], 0x00FF00),
             "timestamp": datetime.now().isoformat(),
@@ -388,9 +393,87 @@ class DiscordNotifier:
 
         return items
 
+    def _send_article_embed(self, article: Dict, index: int, webhook_url: str = None) -> bool:
+        """
+        個別の記事をEmbed形式で送信（URLと重要度付き）
+
+        Args:
+            article: 記事データ
+            index: ニュース番号
+            webhook_url: 送信先のWebhook URL
+
+        Returns:
+            送信成功したかどうか
+        """
+        # 重要度とカテゴリに応じた色分け
+        importance = article.get('importance_score', 3)
+        category = article.get('category', 'other')
+
+        # カテゴリ別の重要度カラーマップ
+        color_maps = {
+            'car': {
+                5: 0xFF0000,  # 赤（最重要）
+                4: 0xFF4500,  # オレンジレッド
+                3: 0xFF8C00,  # ダークオレンジ
+                2: 0xFFA500,  # オレンジ
+                1: 0xFFB366,  # 薄いオレンジ
+            },
+            'it': {
+                5: 0x0066FF,  # 鮮やかな青（最重要）
+                4: 0x3399FF,  # 明るい青
+                3: 0x66B2FF,  # 薄い青
+                2: 0x99CCFF,  # さらに薄い青
+                1: 0xCCE5FF,  # とても薄い青
+            }
+        }
+
+        # 色を取得（デフォルトはDiscordのブランドカラー）
+        color = color_maps.get(category, {}).get(importance, 0x5865F2)
+
+        # 重要度を星で表示
+        stars = "⭐" * importance + "☆" * (5 - importance)
+
+        # タイトルのクリーニングと長さ調整
+        title = article.get('title', 'タイトルなし')
+        title = self._clean_html(title)
+        title = self._truncate_text(title, 150)
+
+        # 概要のクリーニングと長さ調整
+        summary = article.get('summary', '概要なし')
+        if isinstance(summary, list):
+            summary = ' '.join(summary)
+        summary = self._clean_html(summary)
+        summary = self._truncate_text(summary, 400)  # 少し長めに設定
+
+        embed = {
+            "title": f"{index}. {title}",
+            "description": summary,
+            "url": article.get('url', ''),
+            "color": color,
+            "fields": [
+                {
+                    "name": "重要度",
+                    "value": f"{stars} ({importance}/5)",
+                    "inline": True
+                },
+                {
+                    "name": "情報源",
+                    "value": article.get('source', 'Unknown')[:50],
+                    "inline": True
+                }
+            ],
+            "footer": {
+                "text": f"カテゴリ: {category} | 公開: {article.get('published', '不明')[:16]}"
+            },
+            "timestamp": datetime.now().isoformat()
+        }
+
+        payload = {"embeds": [embed]}
+        return self._send_webhook(payload, webhook_url)
+
     def _send_news_embed(self, item: Dict, index: int, webhook_url: str = None) -> bool:
         """
-        個別のニュースをEmbed形式で送信
+        個別のニュースをEmbed形式で送信（旧バージョン、互換性のため残す）
 
         Args:
             item: ニュース項目
@@ -442,3 +525,67 @@ class DiscordNotifier:
         for i, article in enumerate(articles[:10], 1):
             links += f"{i}. [{article['title'][:80]}...]({article['url']})\n"
         return links
+
+    def _clean_html(self, text: str) -> str:
+        """
+        HTMLタグを除去してプレーンテキストに変換
+
+        Args:
+            text: HTMLを含む可能性のあるテキスト
+
+        Returns:
+            クリーンなテキスト
+        """
+        if not text:
+            return ""
+
+        # HTMLタグを除去
+        text = re.sub(r'<[^>]+>', '', text)
+
+        # HTMLエンティティをデコード
+        text = text.replace('&nbsp;', ' ')
+        text = text.replace('&lt;', '<')
+        text = text.replace('&gt;', '>')
+        text = text.replace('&amp;', '&')
+        text = text.replace('&quot;', '"')
+        text = text.replace('&#39;', "'")
+
+        # 連続する空白を1つに
+        text = re.sub(r'\s+', ' ', text)
+
+        # 前後の空白を削除
+        text = text.strip()
+
+        return text
+
+    def _truncate_text(self, text: str, max_length: int) -> str:
+        """
+        テキストを自然な位置で切断
+
+        Args:
+            text: 切断するテキスト
+            max_length: 最大文字数
+
+        Returns:
+            切断されたテキスト
+        """
+        if len(text) <= max_length:
+            return text
+
+        # max_lengthまでで切る
+        truncated = text[:max_length]
+
+        # 句読点や改行で切れる位置を探す
+        for delimiter in ['。', '、', '！', '？', '\n', '. ', ', ', '! ', '? ']:
+            # 後ろから探して最も近い区切りを見つける
+            last_pos = truncated.rfind(delimiter)
+            if last_pos > max_length * 0.7:  # 最大長の70%以上の位置なら採用
+                return truncated[:last_pos + len(delimiter)].strip()
+
+        # 区切りが見つからない場合は単語の区切りで切る
+        last_space = truncated.rfind(' ')
+        if last_space > max_length * 0.8:
+            return truncated[:last_space].strip() + "..."
+
+        # それでも見つからない場合は単純に切る
+        return truncated.strip() + "..."

@@ -2,7 +2,7 @@
 title: "BMW celebrates the inaugural edition of Art Basel Qatar. A rolling masterpiece: David Hockney’s BMW Art Car presented in Doha as part of the BMW Art Car World Tour."
 source: "Rolls-Royce"
 category: "car"
-published: 2026-02-03T08:26:42
+published: 2026-02-03T08:26:00
 url: https://www.press.bmwgroup.com/global/article/detail/T0455357EN?language=en
 ---
 

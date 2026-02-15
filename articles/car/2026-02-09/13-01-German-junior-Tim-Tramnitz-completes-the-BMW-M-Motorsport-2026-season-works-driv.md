@@ -2,7 +2,7 @@
 title: "German junior Tim Tramnitz completes the BMW M Motorsport 2026 season works driver line-up."
 source: "Rolls-Royce"
 category: "car"
-published: 2026-02-09T13:01:13
+published: 2026-02-09T13:01:00
 url: https://www.press.bmwgroup.com/global/article/detail/T0455541EN?language=en
 ---
 

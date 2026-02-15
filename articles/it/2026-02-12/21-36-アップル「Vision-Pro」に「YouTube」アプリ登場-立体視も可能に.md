@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35243831/
 
 ## 概要
 
-YouTubeは、アップルのMR端末「Vision Pro」向けに公式アプリの提供を開始した。発売から約2年を経ての対応となる。<br clear="left" /><a href="https://japan.cnet.com/article/35243831/"><img src="https://japan.cnet.com/storage/2026/02/13/b503345ce51e82a25cf12954a00829a1/t/184/138/d/apple-vision-pro-ar-vr-headset-spatial-30.jpeg" /></a>
+YouTubeは、AppleのMR端末「Vision Pro」向けに公式アプリの提供を開始した。発売から約2年を経ての対応となる。<br clear="left" /><a href="https://japan.cnet.com/article/35243831/"><img src="https://japan.cnet.com/storage/2026/02/13/b503345ce51e82a25cf12954a00829a1/t/184/138/d/apple-vision-pro-ar-vr-headset-spatial-30.jpeg" /></a>
 
 ---
 

@@ -2,7 +2,7 @@
 title: "Spotlight on BMW Welt in 2026."
 source: "Rolls-Royce"
 category: "car"
-published: 2026-02-23T11:10:25
+published: 2026-02-23T11:10:00
 url: https://www.press.bmwgroup.com/global/article/detail/T0455753EN?language=en
 ---
 
@@ -17,7 +17,7 @@ url: https://www.press.bmwgroup.com/global/article/detail/T0455753EN?language=en
 
 ## 概要
 
-+++ 25 years since planning began. +++ 2.2 million visitors every year. +++ 280,000 vehicles handed over to customers since opening. +++ Latest BMW Welt information available for download. +++
++++ 25 years since planning began. +++ Over 2 million visitors every year. +++ 280,000 vehicles handed over to customers since opening. +++ Latest BMW Welt information available for download. +++
 
 ---
 

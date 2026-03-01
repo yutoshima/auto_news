@@ -59,6 +59,26 @@ def main():
 
         print(f"✅ {len(articles)} 件の記事を取得しました\n")
 
+        # 英語の記事を日本語に翻訳
+        print("🌐 英語記事を日本語に翻訳中...\n")
+        for i, article in enumerate(articles, 1):
+            # タイトルの翻訳
+            translated_title = analyzer.translate_to_japanese(article['title'])
+            if translated_title != article['title']:
+                print(f"  [{i}/{len(articles)}] 翻訳: {article['title'][:50]}... → {translated_title[:50]}...")
+                article['title'] = translated_title
+
+            # 概要の翻訳
+            summary = article.get('summary', '')
+            if isinstance(summary, list):
+                summary = ' '.join(summary)
+            if summary:
+                translated_summary = analyzer.translate_to_japanese(str(summary))
+                if translated_summary != summary:
+                    article['summary'] = translated_summary
+
+        print(f"✅ 翻訳完了\n")
+
         # 記事をMarkdownとして保存
         print("💾 記事をMarkdownとして保存中...\n")
         storage.save_articles(articles)
@@ -107,7 +127,7 @@ def main():
                     print()
 
                     print("📤 ITチャンネルに送信中...\n")
-                    it_success = notifier.send_daily_summary(it_summary, it_articles, category='it')
+                    it_success = notifier.send_daily_summary(it_summary, it_articles, category='it', importance_threshold=args.importance)
 
                     if it_success:
                         print("✅ IT記事配信完了\n")
@@ -130,7 +150,7 @@ def main():
                     print()
 
                     print("📤 車チャンネルに送信中...\n")
-                    car_success = notifier.send_daily_summary(car_summary, car_articles, category='car')
+                    car_success = notifier.send_daily_summary(car_summary, car_articles, category='car', importance_threshold=args.importance)
 
                     if car_success:
                         print("✅ 車記事配信完了\n")

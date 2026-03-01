@@ -20,6 +20,50 @@ class NewsAnalyzer:
 
         print(f"🤖 LLMモデル: {self.model}")
 
+    def translate_to_japanese(self, text: str) -> str:
+        """
+        英語のテキストを日本語に翻訳
+
+        Args:
+            text: 翻訳するテキスト
+
+        Returns:
+            翻訳されたテキスト（失敗時は元のテキスト）
+        """
+        if not text or len(text.strip()) == 0:
+            return text
+
+        # 既に日本語が含まれている場合はスキップ（簡易チェック）
+        japanese_chars = len([c for c in text if '\u3040' <= c <= '\u30ff' or '\u4e00' <= c <= '\u9faf'])
+        if japanese_chars > len(text) * 0.3:  # 30%以上が日本語文字
+            return text
+
+        prompt = f"""以下の英語テキストを自然な日本語に翻訳してください。
+翻訳結果のみを出力し、説明や追加のテキストは不要です。
+
+英語テキスト:
+{text}
+
+日本語訳:"""
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": "あなたは英語から日本語への翻訳の専門家です。自然で読みやすい日本語に翻訳してください。"},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.3,
+                max_tokens=1000
+            )
+
+            translated = response.choices[0].message.content.strip()
+            return translated
+
+        except Exception as e:
+            print(f"  ⚠️  翻訳エラー: {str(e)}")
+            return text
+
     def evaluate_article_importance(self, article: Dict) -> int:
         """
         記事の重要度を評価（1-5の星評価）
@@ -49,17 +93,17 @@ class NewsAnalyzer:
 ★★☆☆☆ (2): 一般的なニュース（通常のアップデート、小規模発表など）
 ★☆☆☆☆ (1): あまり重要でないニュース（マイナーな更新、個人の意見など）
 
-JSON形式で回答してください:
+**重要**: 必ず日本語でJSON形式で回答してください:
 {{
     "score": 1-5の数値,
-    "reason": "評価理由を簡潔に（30文字以内）"
+    "reason": "評価理由を日本語で簡潔に（30文字以内）"
 }}"""
 
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "あなたは業界ニュースの重要度を評価する専門家です。必ずJSON形式で回答してください。"},
+                    {"role": "system", "content": "あなたは業界ニュースの重要度を評価する専門家です。必ず日本語でJSON形式で回答してください。英語は一切使用しないでください。"},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.2,
@@ -153,7 +197,9 @@ JSON形式で回答してください:
         # 重要記事がある場合のみLLMで要約
         if important_articles:
             prompt = f"""あなたは車とITに特化したニュースキュレーターです。
-以下の重要度の高い記事を要約してください。各記事は既に重要度 {threshold_stars} ({importance_threshold}/5) 以上と評価されています。
+以下の重要度の高い記事を日本語で要約してください。各記事は既に重要度 {threshold_stars} ({importance_threshold}/5) 以上と評価されています。
+
+**重要**: 必ず日本語のみで回答してください。英語は一切使用しないでください。
 
 出力フォーマット:
 ## 🚗💻 今日の注目ニュース
@@ -168,7 +214,7 @@ JSON形式で回答してください:
                 response = self.client.chat.completions.create(
                     model=self.model,
                     messages=[
-                        {"role": "system", "content": "あなたは車とIT業界に詳しい専門ニュースキュレーターです。"},
+                        {"role": "system", "content": "あなたは車とIT業界に詳しい専門ニュースキュレーターです。必ず日本語のみで回答してください。英語は一切使用しないでください。"},
                         {"role": "user", "content": prompt}
                     ],
                     max_tokens=3000,
@@ -249,23 +295,23 @@ JSON形式で回答してください:
 - リコール情報
 - レース結果
 
-以下のJSON形式で回答してください:
+**重要**: 必ず日本語でJSON形式で回答してください。英語は一切使用しないでください:
 {{
     "is_new_car": true か false,
     "confidence": 0-100の数値,
-    "manufacturer": "メーカー名（不明ならUnknown）",
-    "model_name": "モデル名（不明ならUnknown）",
-    "category": "SUV/Sedan/Hatchback/Sports/Truck/EV/Concept/Unknown",
+    "manufacturer": "メーカー名を日本語で（不明なら「不明」）",
+    "model_name": "モデル名（不明なら「不明」）",
+    "category": "SUV/セダン/ハッチバック/スポーツ/トラック/EV/コンセプト/不明",
     "announcement_type": "Official_Debut/Facelift/Concept/Prototype/Limited_Edition/Unknown",
     "importance": 1-10の数値,
-    "summary_ja": "新型車の場合のみ、この車を一言で説明（50文字以内）"
+    "summary_ja": "新型車の場合のみ、この車を日本語で一言で説明（50文字以内）"
 }}"""
 
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "あなたは自動車業界に精通した専門アナリストです。必ずJSON形式で回答してください。"},
+                    {"role": "system", "content": "あなたは自動車業界に精通した専門アナリストです。必ず日本語でJSON形式で回答してください。英語は一切使用しないでください。"},
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.1

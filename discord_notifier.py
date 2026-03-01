@@ -45,7 +45,7 @@ class DiscordNotifier:
             'Unknown': 0x00FF00,           # 緑 - その他
         }
 
-    def send_daily_summary(self, summary_text: str, articles: list = None, category: str = None) -> bool:
+    def send_daily_summary(self, summary_text: str, articles: list = None, category: str = None, importance_threshold: int = 3) -> bool:
         """
         日次ニュースサマリーをEmbed形式で送信
 
@@ -53,6 +53,7 @@ class DiscordNotifier:
             summary_text: 要約されたニューステキスト
             articles: 記事のリスト（URLリンク用）
             category: 'it', 'car', またはNone（すべて）
+            importance_threshold: 重要度の閾値（この値以上の記事のみ送信）
 
         Returns:
             送信成功したかどうか
@@ -75,8 +76,8 @@ class DiscordNotifier:
 
         # 記事を重要度順にソートして、重要度付きで送信
         if articles:
-            # 重要度スコアを持つ記事のみをフィルタリング
-            scored_articles = [a for a in articles if a.get('importance_score', 0) > 0]
+            # 重要度スコアが閾値以上の記事のみをフィルタリング
+            scored_articles = [a for a in articles if a.get('importance_score', 0) >= importance_threshold]
             # 重要度順にソート
             scored_articles.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
 
@@ -142,6 +143,16 @@ class DiscordNotifier:
         importance = car_info.get('importance', 5)
         importance_emoji = "🔥" * min(importance, 5)
 
+        # 発表タイプの日本語化
+        announcement_type_ja = {
+            'Official_Debut': '正式発表',
+            'Facelift': 'マイナーチェンジ',
+            'Concept': 'コンセプトカー',
+            'Prototype': 'プロトタイプ',
+            'Limited_Edition': '限定モデル',
+            'Unknown': '未分類'
+        }.get(car_info.get('announcement_type', 'Unknown'), car_info.get('announcement_type', '未分類'))
+
         # フィールドリストの構築
         fields = [
             {
@@ -168,7 +179,7 @@ class DiscordNotifier:
             },
             {
                 "name": "📍 発表タイプ",
-                "value": car_info['announcement_type'].replace('_', ' '),
+                "value": announcement_type_ja,
                 "inline": True
             },
             {
@@ -243,15 +254,26 @@ class DiscordNotifier:
         # 重要度順にソート
         sorted_cars = sorted(new_cars, key=lambda x: x.get('importance', 0), reverse=True)
 
+        # 発表タイプの日本語化マップ
+        announcement_type_ja = {
+            'Official_Debut': '正式発表',
+            'Facelift': 'マイナーチェンジ',
+            'Concept': 'コンセプトカー',
+            'Prototype': 'プロトタイプ',
+            'Limited_Edition': '限定モデル',
+            'Unknown': '未分類'
+        }
+
         content = f"## 🚨 本日の新型車情報 ({len(new_cars)}件)\n\n"
 
         for i, car in enumerate(sorted_cars, 1):
             article = car.get('original_article', {})
             importance_emoji = "⭐" * min(car.get('importance', 5), 5)
+            type_ja = announcement_type_ja.get(car.get('announcement_type', 'Unknown'), car.get('announcement_type', '未分類'))
 
             content += f"**{i}. {car['manufacturer']} {car['model_name']}**\n"
             content += f"• {car.get('summary_ja', '詳細情報なし')}\n"
-            content += f"• カテゴリ: {car['category']} | タイプ: {car['announcement_type']}\n"
+            content += f"• カテゴリ: {car['category']} | タイプ: {type_ja}\n"
             content += f"• 重要度: {importance_emoji}\n"
             content += f"• [記事を読む]({article.get('url', '#')})\n\n"
 

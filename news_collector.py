@@ -8,8 +8,9 @@ class NewsCollector:
     """RSSフィードからニュースを収集するクラス"""
 
     def __init__(self):
-        # IT関連ニュースサイト（継続使用）
+        # IT関連ニュースサイト（日本語 + 英語）
         self.it_feeds = {
+            # 🇯🇵 日本語メディア
             'ITmedia News': 'https://www.itmedia.co.jp/news/rss/rss2.xml',
             'ITmedia AI+': 'https://rss.itmedia.co.jp/rss/2.0/aiplus.xml',
             '@IT': 'https://rss.itmedia.co.jp/rss/2.0/ait.xml',
@@ -22,9 +23,30 @@ class NewsCollector:
             'Qiita (JavaScript)': 'https://qiita.com/tags/JavaScript/feed.atom',
             'Qiita (Python)': 'https://qiita.com/tags/Python/feed.atom',
             'Qiita (React)': 'https://qiita.com/tags/React/feed.atom',
+
+            # 🌍 グローバルメディア（英語 → 自動翻訳）
+            'The Verge': 'https://www.theverge.com/rss/index.xml',
+            'Hacker News': 'https://news.ycombinator.com/rss',
+
+            # ☁️ クラウド・インフラ公式（英語 → 自動翻訳）
+            'AWS What\'s New': 'https://aws.amazon.com/about-aws/whats-new/recent/feed/',
+            'Microsoft DevBlogs': 'https://devblogs.microsoft.com/feed/',
+            'GitHub Blog': 'https://github.blog/feed/',
+
+            # 🤖 AI企業公式（英語 → 自動翻訳）
+            'OpenAI Blog': 'https://openai.com/blog/rss.xml',
+
+            # 🔬 半導体・AIプラットフォーム（英語 → 自動翻訳）
+            'NVIDIA Newsroom': 'https://nvidianews.nvidia.com/releases.xml',
         }
 
-        # グローバル自動車メーカーの公式RSS（25社）
+        # EV・自動車テックメディア（英語 → 自動翻訳）
+        self.ev_tech_feeds = {
+            'Electrek': 'https://electrek.co/feed/',
+            'InsideEVs': 'https://insideevs.com/rss/articles/all/',
+        }
+
+        # グローバル自動車メーカーの公式RSS
         self.manufacturer_feeds = {
             # 🇯🇵 日本（5社）
             'Toyota': {
@@ -72,11 +94,12 @@ class NewsCollector:
                 'description': 'スポーツカーの名門、911シリーズと電動化戦略'
             },
             # 'Mercedes-Benz': {
-            #     'rss_url': 'https://media.mercedes-benz.com/rss',  # 要確認
+            #     'rss_url': 'https://group-media.mercedes-benz.com/marsMediaSite/en/instance/ko/RSS-Feeds.xhtml?oid=9266299',
             #     'country': 'germany',
             #     'country_emoji': '🇩🇪',
             #     'country_name_ja': 'ドイツ',
-            #     'description': '高級車の代名詞、革新的な安全技術と快適性'
+            #     'description': '高級車の代名詞、革新的な安全技術と快適性、自動運転技術のリーダー'
+            #     # 注: 2026-03-01時点でアクセス拒否エラー - 代替URL調査中
             # },
             'BMW': {
                 'rss_url': 'https://www.press.bmwgroup.com/global/rss',
@@ -187,11 +210,12 @@ class NewsCollector:
 
             # 🇸🇪 スウェーデン（1社）
             # 'Volvo': {
-            #     'rss_url': 'https://www.media.volvocars.com/rss',  # 要確認
+            #     'rss_url': 'https://www.media.volvocars.com/global/en-gb/rss',
             #     'country': 'sweden',
             #     'country_emoji': '🇸🇪',
             #     'country_name_ja': 'スウェーデン',
-            #     'description': '安全性の代名詞、吉利汽車傘下で電動化推進'
+            #     'description': '安全性の代名詞、吉利汽車傘下で電動化推進、ソフトウェア定義車両（SDV）のリーダー'
+            #     # 注: 2026-03-01時点でDNS障害 - 代替URL調査中
             # },
         }
 
@@ -216,7 +240,7 @@ class NewsCollector:
 
     def fetch_recent_news(self, hours_back: int = 24) -> List[Dict]:
         """
-        過去N時間以内のニュース記事を取得（メーカー公式RSSのみ + IT記事）
+        過去N時間以内のニュース記事を取得（IT + EV専門メディア + メーカー公式RSS）
 
         Args:
             hours_back: 何時間前までの記事を取得するか
@@ -230,6 +254,10 @@ class NewsCollector:
         # IT関連記事を取得
         for source_name, feed_url in self.it_feeds.items():
             articles.extend(self._fetch_from_feed(source_name, feed_url, cutoff_time, 'it'))
+
+        # EV・自動車テックメディアを取得（車カテゴリ）
+        for source_name, feed_url in self.ev_tech_feeds.items():
+            articles.extend(self._fetch_from_feed(source_name, feed_url, cutoff_time, 'car'))
 
         # メーカー公式記事を取得（車カテゴリ）
         for manufacturer_name, manufacturer_info in self.manufacturer_feeds.items():
@@ -260,10 +288,41 @@ class NewsCollector:
         # 公開日時順にソート
         articles.sort(key=lambda x: x['published'], reverse=True)
 
+        # カテゴリ別の統計
+        car_articles = [a for a in articles if a['category'] == 'car']
+        it_articles = [a for a in articles if a['category'] == 'it']
+
+        # IT記事の内訳
+        japanese_media = ['ITmedia News', 'ITmedia AI+', '@IT', 'Publickey', 'GIZMODO Japan',
+                          'TechCrunch Japan', 'Engadget日本版', 'CNET Japan', 'Zenn',
+                          'Qiita (JavaScript)', 'Qiita (Python)', 'Qiita (React)']
+        global_media = ['The Verge', 'Hacker News']
+        cloud_infra = ['AWS What\'s New', 'Microsoft DevBlogs', 'GitHub Blog']
+        ai_companies = ['OpenAI Blog']
+        semiconductor_ai = ['NVIDIA Newsroom']
+
+        jp_articles = [a for a in it_articles if a['source'] in japanese_media]
+        global_articles = [a for a in it_articles if a['source'] in global_media]
+        cloud_articles = [a for a in it_articles if a['source'] in cloud_infra]
+        ai_company_articles = [a for a in it_articles if a['source'] in ai_companies]
+        semi_articles = [a for a in it_articles if a['source'] in semiconductor_ai]
+
+        # 車記事の内訳
+        ev_media_articles = [a for a in car_articles if a['source'] in self.ev_tech_feeds.keys()]
+        manufacturer_articles = [a for a in car_articles if a['source'] in self.manufacturer_feeds.keys()]
+        scraped_articles = [a for a in car_articles if a.get('scraping')]
+
         print(f"\n✅ 合計 {len(articles)} 件の記事を取得しました")
-        print(f"   - 車（メーカー公式）: {len([a for a in articles if a['category'] == 'car' and not a.get('scraping')])} 件（RSS）")
-        print(f"   - 車（スクレイピング）: {len([a for a in articles if a['category'] == 'car' and a.get('scraping')])} 件")
-        print(f"   - IT: {len([a for a in articles if a['category'] == 'it'])} 件\n")
+        print(f"   📱 IT: {len(it_articles)} 件")
+        print(f"      ├─ 🇯🇵 日本語メディア: {len(jp_articles)} 件")
+        print(f"      ├─ 🌍 グローバルメディア: {len(global_articles)} 件")
+        print(f"      ├─ ☁️  クラウド・インフラ: {len(cloud_articles)} 件")
+        print(f"      ├─ 🤖 AI企業公式: {len(ai_company_articles)} 件")
+        print(f"      └─ 🔬 半導体・AIプラットフォーム: {len(semi_articles)} 件")
+        print(f"   🚗 車: {len(car_articles)} 件")
+        print(f"      ├─ ⚡ EVテックメディア: {len(ev_media_articles)} 件")
+        print(f"      ├─ 🏭 メーカー公式RSS: {len(manufacturer_articles)} 件")
+        print(f"      └─ 🔍 スクレイピング: {len(scraped_articles)} 件\n")
 
         return articles
 

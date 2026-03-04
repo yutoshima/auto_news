@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35244509/
 
 ## 概要
 
-字節跳動（バイトダンス）傘下のPICOが、次世代XRヘッドセットに向けたプロジェクト「Project Swan」を発表した。<br clear="left" /><a href="https://japan.cnet.com/article/35244509/"><img src="https://japan.cnet.com/storage/2026/03/03/54a2aa8148f4414a3d6bdc105ec4ed8a/t/184/138/d/screenshot-2026-03-02-at-1-02-24pm_1280x960.jpg" /></a>
+字節跳動（バイトダンス）傘下のPICOが、次世代XRヘッドセットに向けたプロジェクト「Project Swan」を発表した。
 
 ---
 

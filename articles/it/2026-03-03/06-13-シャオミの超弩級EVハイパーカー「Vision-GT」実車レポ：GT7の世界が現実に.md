@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35244500/
 
 ## 概要
 
-小米科技（シャオミ）はMobile World Congress（MWC）で、レーシングゲームの世界から飛び出してきたような1台を送り出した。その名は「Vision GT」だ。<br clear="left" /><a href="https://japan.cnet.com/article/35244500/"><img src="https://japan.cnet.com/storage/2026/03/03/a7edf0a968d1479f64dd1797f34f964f/t/184/138/d/xiaomi-vision-gt-concept-hypercar-13_1280x960.jpg" /></a>
+小米科技（シャオミ）はモバイル・ワールド・コングレス（MWC）で、レーシングゲームの世界から飛び出してきたかのような一台を披露した。その名は「Vision GT」だ。
 
 ---
 

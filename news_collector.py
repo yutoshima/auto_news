@@ -2,7 +2,6 @@ import feedparser
 from datetime import datetime, timedelta
 from typing import List, Dict
 import time
-from news_scraper import NewsScraper
 
 class NewsCollector:
     """RSSフィードからニュースを収集するクラス"""
@@ -219,24 +218,6 @@ class NewsCollector:
             # },
         }
 
-        # スクレイピング対象メーカーの情報（現在は無効化）
-        self.scraping_manufacturers = {
-            # 'Audi': {
-            #     'country': 'germany',
-            #     'country_emoji': '🇩🇪',
-            #     'country_name_ja': 'ドイツ',
-            #     'description': 'VWグループの高級ブランド、先進技術とクアトロ'
-            # },
-            # 'Volkswagen': {
-            #     'country': 'germany',
-            #     'country_emoji': '🇩🇪',
-            #     'country_name_ja': 'ドイツ',
-            #     'description': '世界最大級の自動車グループ、大衆車から高級車'
-            # },
-        }
-
-        # スクレイパーのインスタンス
-        self.scraper = NewsScraper()
 
     def fetch_recent_news(self, hours_back: int = 24) -> List[Dict]:
         """
@@ -270,21 +251,6 @@ class NewsCollector:
                 manufacturer_info=manufacturer_info
             ))
 
-        # スクレイピング対象メーカーから記事を取得
-        for manufacturer_name, manufacturer_info in self.scraping_manufacturers.items():
-            scraped_articles = self.scraper.scrape_news(manufacturer_name, hours_back)
-
-            # メーカー情報を各記事に追加
-            for article in scraped_articles:
-                article['manufacturer_info'] = {
-                    'country': manufacturer_info['country'],
-                    'country_emoji': manufacturer_info['country_emoji'],
-                    'country_name_ja': manufacturer_info['country_name_ja'],
-                    'description': manufacturer_info['description']
-                }
-
-            articles.extend(scraped_articles)
-
         # 公開日時順にソート
         articles.sort(key=lambda x: x['published'], reverse=True)
 
@@ -310,7 +276,6 @@ class NewsCollector:
         # 車記事の内訳
         ev_media_articles = [a for a in car_articles if a['source'] in self.ev_tech_feeds.keys()]
         manufacturer_articles = [a for a in car_articles if a['source'] in self.manufacturer_feeds.keys()]
-        scraped_articles = [a for a in car_articles if a.get('scraping')]
 
         print(f"\n✅ 合計 {len(articles)} 件の記事を取得しました")
         print(f"   📱 IT: {len(it_articles)} 件")
@@ -321,8 +286,7 @@ class NewsCollector:
         print(f"      └─ 🔬 半導体・AIプラットフォーム: {len(semi_articles)} 件")
         print(f"   🚗 車: {len(car_articles)} 件")
         print(f"      ├─ ⚡ EVテックメディア: {len(ev_media_articles)} 件")
-        print(f"      ├─ 🏭 メーカー公式RSS: {len(manufacturer_articles)} 件")
-        print(f"      └─ 🔍 スクレイピング: {len(scraped_articles)} 件\n")
+        print(f"      └─ 🏭 メーカー公式RSS: {len(manufacturer_articles)} 件\n")
 
         return articles
 

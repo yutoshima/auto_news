@@ -1,0 +1,24 @@
+---
+title: "ネットの経験は「きれいさっぱり忘れる」──LINEヤフー会長を退き“AIと起業”に挑む、川邊氏の起業論"
+source: "ITmedia AI+"
+category: "it"
+published: 2026-03-27T01:00:00
+url: https://www.itmedia.co.jp/news/articles/2603/27/news064.html
+---
+
+# ネットの経験は「きれいさっぱり忘れる」──LINEヤフー会長を退き“AIと起業”に挑む、川邊氏の起業論
+
+## メタデータ
+
+- **情報源**: ITmedia AI+
+- **カテゴリ**: it
+- **公開日時**: 2026年03月27日 01:00
+- **URL**: [https://www.itmedia.co.jp/news/articles/2603/27/news064.html](https://www.itmedia.co.jp/news/articles/2603/27/news064.html)
+
+## 概要
+
+ヤフーのスマホシフトやPayPayの立ち上げ、LINEとの統合を成し遂げた川邊健太郎氏が会長を退任すると発表した。それと同時に宣言したのが「AIとの起業」。それに必要なのが「ネット産業の経験はきれいさっぱり忘れる」ことだという。なぜ、起業パートナーにAIを選ぶのか、川邊氏に聞く「AI時代の起業論」。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -1,0 +1,24 @@
+---
+title: "iOSもAndroidもOKのシガーソケット型スマートタグ。追跡はもちろんも充電も両方できる"
+source: "GIZMODO Japan"
+category: "it"
+published: 2026-04-10T12:55:00
+url: https://www.gizmodo.jp/2026/04/costorypo-boomtagcarcharger-start-1762916559.html
+---
+
+# iOSもAndroidもOKのシガーソケット型スマートタグ。追跡はもちろんも充電も両方できる
+
+## メタデータ
+
+- **情報源**: GIZMODO Japan
+- **カテゴリ**: it
+- **公開日時**: 2026年04月10日 12:55
+- **URL**: [https://www.gizmodo.jp/2026/04/costorypo-boomtagcarcharger-start-1762916559.html](https://www.gizmodo.jp/2026/04/costorypo-boomtagcarcharger-start-1762916559.html)
+
+## 概要
+
+シガーソケットに挿すだけで愛車の位置をスマホから確認できる、カーチャージャー型スマートタグ「Boomtag Car Charger」。内蔵バッテリーでエンジンオフ後も最長2ヶ月作動し、盗難対策や家族の見守りにも活躍。最大33Wの急速充電にも対応し、日常使いでも便利な一台二役のアイテムです。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

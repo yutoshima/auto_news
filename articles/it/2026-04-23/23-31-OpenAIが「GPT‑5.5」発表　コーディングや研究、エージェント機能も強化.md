@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35246832/
 
 ## 概要
 
-OpenAIは、「GPT-5.4」のリリースからちょうど7週間後、新たなモデル「GPT-5.5」を投入した。
+OpenAIは、「GPT-5.4」のリリースからちょうど7週間後に、新たなモデル「GPT-5.5」を投入した。<br clear="left" /><a href="https://japan.cnet.com/article/35246832/"><img src="https://japan.cnet.com/storage/2026/04/24/dc92c48aed7c518eaa91e46c5221d033/t/184/138/d/gptgpt-2_1280x960.jpg" /></a>
 
 ---
 

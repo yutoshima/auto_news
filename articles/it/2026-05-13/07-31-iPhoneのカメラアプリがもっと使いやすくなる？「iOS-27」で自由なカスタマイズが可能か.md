@@ -1,0 +1,24 @@
+---
+title: "iPhoneのカメラアプリがもっと使いやすくなる？「iOS 27」で自由なカスタマイズが可能か"
+source: "CNET Japan"
+category: "it"
+published: 2026-05-13T07:31:00
+url: https://japan.cnet.com/article/35247468/
+---
+
+# iPhoneのカメラアプリがもっと使いやすくなる？「iOS 27」で自由なカスタマイズが可能か
+
+## メタデータ
+
+- **情報源**: CNET Japan
+- **カテゴリ**: it
+- **公開日時**: 2026年05月13日 07:31
+- **URL**: [https://japan.cnet.com/article/35247468/](https://japan.cnet.com/article/35247468/)
+
+## 概要
+
+アップルの次期大型「iOS」アップデートでは、「iPhone」のカメラアプリが、より自分好みに使えるものになるかもしれない。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

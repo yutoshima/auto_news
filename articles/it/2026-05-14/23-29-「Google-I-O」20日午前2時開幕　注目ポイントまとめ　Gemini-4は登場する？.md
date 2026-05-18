@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247544/
 
 ## 概要
 
-Googleの年次開発者会議「Google I/O 2026」が、5月19日（米国時間）に開幕します。今年は「Gemini」をはじめとするAI、Android XR、スマートグラスなどについてのアップデートが見込まれます。
+Googleの年次開発者会議「Google I/O 2026」が、5月19日（米国時間）に開幕します。今年は「Gemini」をはじめとするAI、Android XR、スマートグラスなどのアップデートが見込まれています。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://insideevs.com/news/795941/bmw-mini-ev-charging-discount-ionna/
 
 ## 概要
 
-米国で最も優れたDC急速充電ネットワークのひとつが、BMWとミニEVの利用者向け料金を9月30日まで値下げします。
+米国で最も優れたDC急速充電ネットワークのひとつが、BMWとミニEVのドライバー向けに9月30日まで料金を引き下げします。
 
 ---
 

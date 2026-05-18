@@ -17,7 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-emr-serverless-aw
 
 ## 概要
 
-Amazon EMR Serverlessが、アジア太平洋（ハイデラバード）、アジア太平洋（マレーシア）、アジア太平洋（ニュージーランド）、アジア太平洋（台北）、アジア太平洋（タイ）、メキシコ（中央）の6つの追加AWSリージョンで一般提供を開始しました。<br /> <br /> Amazon EMR Serverlessは、データエンジニアやアナリストがクラウドでペタバイト規模のデータ分析を実行するための、簡単でコスト効率の高いデプロイオプションです。EMR Serverlessを使用すると、Apache SparkおよびApache Hiveのアプリケーションを実行できます。
+Amazon EMR Serverless が、アジア太平洋 (ハイデラバード)、アジア太平洋 (マレーシア)、アジア太平洋 (ニュージーランド)、アジア太平洋 (台北)、アジア太平洋 (タイ)、メキシコ (中部) の6つの追加リージョンで、一般提供を開始しました。  
+  
+Amazon EMR Serverless は、データエンジニアや分析者がクラウド上でペタバイト規模のデータ分析を迅速かつ費用対効果高く実行できる、Amazon EMR のデプロイオプションです。EMR Serverless を使えば、 Apache Spark や Apache Hive のアプリケーションを実行できます。
 
 ---
 

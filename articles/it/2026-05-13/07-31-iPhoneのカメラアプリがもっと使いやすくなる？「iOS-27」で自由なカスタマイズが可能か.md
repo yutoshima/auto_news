@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247468/
 
 ## 概要
 
-アップルの次期大型「iOS」アップデートでは、「iPhone」のカメラアプリが、より自分好みに使えるものになるかもしれない。
+アップルの次期大型「iOS」アップデートでは、「iPhone」のカメラアプリが、より自分好みに使えるものになるかもしれない。<br clear="left" /><a href="https://japan.cnet.com/article/35247468/"><img src="https://japan.cnet.com/storage/2026/05/13/78259f3097f48d15553ece493820492a/t/184/138/d/iphone-17s_1280x960.jpg" /></a>
 
 ---
 

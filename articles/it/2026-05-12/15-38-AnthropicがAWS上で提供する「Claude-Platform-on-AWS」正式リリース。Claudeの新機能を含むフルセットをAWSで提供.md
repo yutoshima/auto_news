@@ -17,7 +17,7 @@ url: https://www.publickey1.jp/blog/26/anthropicawsclaude_platform_on_awsclaudea
 
 ## 概要
 
-Amazon Web Services（AWS）とAnthropicは、AWS上でAnthropicが運営しClaudeのフル機能を提供する「Claude Platform on AWS」の正式リリースを発表しました（AWSの発表、Anthropicの発表）。
+Amazon Web Services（AWS）とAnthropicは、AWS上でAnthropicが運営し、Claudeの全機能を提供する「Claude Platform on AWS」の正式リリースを発表しました（AWSの発表、Anthropicの発表より）。
 
 ---
 

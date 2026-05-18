@@ -17,7 +17,7 @@ url: https://electrek.co/2026/05/11/duracell-taps-driivz-to-power-its-new-ev-fas
 
 ## 概要
 
-Duracellは英国でEV充電事業に参入し、EV充電ソフトウェア企業Driivzと提携してネットワークの運用を支援します。
+Duracellは英国でEV充電事業に参入し、EV充電ソフトウェア企業のDriivzと提携してネットワーク運用を支援します。
 
 ---
 

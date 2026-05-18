@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247463/
 
 ## 概要
 
-JR東日本は、5月13日と14日の2日間、高輪ゲートウェイ駅に隣接するGateway Studioの施設で「ウォークスルー改札」の体験会を実施している。UWB（Ultra Wide Band）の無線技術を使ったウォークスルー改札であり、2025年3月末にOIMACHI TRACKSで実施されていたものと同じ仕組みだ。
+JR東日本は、5月13日と14日の2日間、高輪ゲートウェイ駅に隣接するGateway Studioの施設で「ウォークスルー改札」の体験会を実施している。UWB（Ultra Wide Band）の無線技術を使ったウォークスルー改札であり、2025年3月末にOIMACHI TRACKSで実施されていたものと同じ仕組みだ
 
 ---
 

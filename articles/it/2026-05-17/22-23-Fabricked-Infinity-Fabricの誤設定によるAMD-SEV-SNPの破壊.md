@@ -1,12 +1,12 @@
 ---
-title: "Fabricked:  Infinity Fabricの誤設定によるAMD SEV-SNPの破壊"
+title: "Fabricked: Infinity Fabricの誤設定によるAMD SEV-SNPの破壊"
 source: "Hacker News"
 category: "it"
 published: 2026-05-17T22:23:30
 url: https://xca-attacks.github.io/fabricked/
 ---
 
-# Fabricked:  Infinity Fabricの誤設定によるAMD SEV-SNPの破壊
+# Fabricked: Infinity Fabricの誤設定によるAMD SEV-SNPの破壊
 
 ## メタデータ
 

@@ -17,7 +17,7 @@ url: https://gencad.github.io/
 
 ## 概要
 
-<a href="https://news.ycombinator.com/item?id=48173429">コメント</a>
+コメント
 
 ---
 

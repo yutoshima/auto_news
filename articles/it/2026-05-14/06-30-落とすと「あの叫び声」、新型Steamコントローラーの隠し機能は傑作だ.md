@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247520/
 
 ## 概要
 
-Valveのゲームコントローラー「Steam Controller」に隠されたとびきり素晴らしい小ネタが、Redditのおかげで見つかった。落とすと「ウィルヘルムの叫び」を発するのだ。<br clear="left" /><a href="https://japan.cnet.com/article/35247520/"><img src="https://japan.cnet.com/storage/2026/05/14/fd911a30760cd2a3bf25a1e4963f0647/t/184/138/d/valve-steam-controller-handheld_1280x960.jpg" /></a>
+Valveのゲームコントローラー「Steam Controller」に隠された、特別に素敵な小ネタがRedditのおかげで発見された。落とすと「ウィルヘルムの叫び」を発するのだ。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/05/karpenter-arc-zonal-shif
 
 ## 概要
 
-<p>Amazon Elastic Kubernetes Service（Amazon EKS）は、<a href="https://aws.amazon.com/application-recovery-controller/">Amazon Application Recovery Controller</a>（ARC）のゾナルシフトとゾナル自動シフトを、計算プロビジョニングのためにオープンソースの<Karpenter project>（Karpenter プロジェクト）を使用する場合にサポートします。ARCは、AWSリージョンとアベイラビリティゾーン（AZ）全体でアプリケーションの復旧を管理・調整するのに役立ちます。今回のリリースにより、Kubernetesアプリケーションの可用性をより良く維持できます。</p>
+Amazon Elastic Kubernetes Service（Amazon EKS）は現在、計算プロビジョニングにおいてオープンソースのKarpenterプロジェクトを使用する場合に、Amazon Application Recovery Controller（ARC）のゾーナルシフトおよびゾーナル自動シフトをサポートしています。ARCは、AWSリージョンとアベイラビリティゾーン（AZ）横断でアプリケーションの回復を管理・調整するのに役立ちます。今回の発表により、Kubernetesアプリケーションの可用性をより良く維持できます。
 
 ---
 

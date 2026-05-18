@@ -17,7 +17,7 @@ url: https://blogs.nvidia.com/blog/sap-specialized-agents/
 
 ## 概要
 
-本日SAP Sapphireで発表された-NVIDIA創業者でCEOの黄仁勲氏がビデオ出演でSAPCEOクリスチャン・クラインの講演に参加した- SAPとNVIDIAの拡大した協力により、企業はセキュリティとガバナンス管理を備えた専門エージェントを実行できるようになります。
+本日、SAP Sapphireで発表された内容 — NVIDIAの創設者でCEOのジャンセン・黄が動画でSAPのCEOクリスチャン・クラインの基調講演に参加した場で — SAPとNVIDIAの拡張された協働により、企業がセキュリティとガバナンス管理を備えた専門エージェントを実行できるようになる。
 
 ---
 

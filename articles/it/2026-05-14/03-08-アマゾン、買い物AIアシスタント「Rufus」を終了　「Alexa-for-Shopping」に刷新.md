@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247505/
 
 ## 概要
 
-「Rufus」はお役御免となった。アマゾンはこのEC向けAIアシスタントを「Alexa for Shopping」に置き換え、1週間以内に米国の全ユーザーが利用できるようにする。<br clear="left" /><a href="https://japan.cnet.com/article/35247505/"><img src="https://japan.cnet.com/storage/2026/05/14/de1e39ef9efc662d0d1dbf5e95f5a4c9/t/184/138/d/alexa-shopping_1280x960.jpg" /></a>
+「Rufus」はお役御免となった。アマゾンはこのEC向けAIアシスタントを「Alexa for Shopping」に置き換え、1週間以内に米国の全ユーザーが利用できるようにする。
 
 ---
 

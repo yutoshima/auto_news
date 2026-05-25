@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247893/
 
 ## 概要
 
-LINEヤフーは5月21日、運営する「Yahoo!ショッピング」がChatGPTの新機能「Apps in ChatGPT」に対応し、アプリ連携を開始したと発表した。同社によると、総合ECモールがApps in ChatGPTに対応するのは初めてだという。
+LINEヤフーは5月21日、Yahoo!ショッピングがChatGPTの新機能「Apps in ChatGPT」に対応し、アプリ連携を開始したと発表した。総合ECモールとしては初めてApps in ChatGPTに対応するという。
 
 ---
 

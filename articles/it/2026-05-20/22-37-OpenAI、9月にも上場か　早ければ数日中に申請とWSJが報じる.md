@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247776/
 
 ## 概要
 
-米OpenAIがChatGPTを開発している同社は、数日から数週間以内にも新規株式公開（IPO）を申請する見通しだ。米WSJが5月20日に報じた。早ければ9月にも上場する可能性がある。
+米OpenAIがChatGPTを開発している同社は、数日から数週間以内にも新規株式公開（IPO）を申請する見通しだ。米Wall Street Journal（WSJ）が5月20日に報じた。早ければ9月にも上場する可能性がある。
 
 ---
 

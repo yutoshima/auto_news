@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247846/
 
 ## 概要
 
-SpaceXが米国証券取引委員会（SEC）に提出したIPO目論見書（S-1）で、AI企業Anthropicとの大型契約が明らかになった。
+SpaceXが米証券取引委員会（SEC）に提出したIPO目論見書（S-1）で、AI企業Anthropicとの大型契約が明らかになった。
 
 ---
 

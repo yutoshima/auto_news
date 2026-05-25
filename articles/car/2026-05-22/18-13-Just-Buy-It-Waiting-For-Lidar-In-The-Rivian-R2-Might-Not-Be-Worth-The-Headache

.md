@@ -1,7 +1,9 @@
 ---
 title: "Just Buy It: Waiting For Lidar In The Rivian R2 Might Not Be Worth The Headache
 
-日本語訳: 購入するだけでいい: Rivian R2 のリダアで待つのが頭痛の種に値しないかもしれない"
+→ そのまま訳すと英語タイトルをそのまま表示してしまうので、日本語に自然に翻訳します。
+
+買うべきだ：リヴィアンR2のライダー（Lidar）を待つのは頭痛の種に見合わないかもしれない"
 source: "InsideEVs"
 category: "car"
 published: 2026-05-22T18:13:26
@@ -10,7 +12,9 @@ url: https://insideevs.com/news/796747/rivian-r2-lidar-dont-wait/
 
 # Just Buy It: Waiting For Lidar In The Rivian R2 Might Not Be Worth The Headache
 
-日本語訳: 購入するだけでいい: Rivian R2 のリダアで待つのが頭痛の種に値しないかもしれない
+→ そのまま訳すと英語タイトルをそのまま表示してしまうので、日本語に自然に翻訳します。
+
+買うべきだ：リヴィアンR2のライダー（Lidar）を待つのは頭痛の種に見合わないかもしれない
 
 ## メタデータ
 
@@ -21,7 +25,7 @@ url: https://insideevs.com/news/796747/rivian-r2-lidar-dont-wait/
 
 ## 概要
 
-ライダー装備のリビアンR2を待つべきか悩んでいますか？リビアンの最高ソフトウェア責任者の新情報で、考え直させられるかもしれません。
+リビアンのR2（ライダー搭載のRivian R2）を待つべきか悩んでいますか？ Rivianのチーフ・ソフトウェア・オフィサーからの新情報が、考え直させるでしょう。
 
 ---
 

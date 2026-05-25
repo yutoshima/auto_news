@@ -17,7 +17,7 @@ url: https://nvidianews.nvidia.com/news/nvidia-announces-upcoming-events-for-fin
 
 ## 概要
 
-NVIDIAは財務コミュニティ向けの以下のイベントでプレゼンテーションを行います：TD Cowen 第54回年次 テクノロジー、メディア、通信カンファレンス 木曜日、5月28日 午前7:15（太平洋時間） BofA Global Technology ...
+NVIDIAは、金融コミュニティ向けの以下のイベントに出席します。TD Cowen 第54回年次Technology, Media, & Telecom Conference（テクノロジー、メディア、通信部門） 5月28日（木）午前7時15分 PT BofA Global Technology ...
 
 ---
 

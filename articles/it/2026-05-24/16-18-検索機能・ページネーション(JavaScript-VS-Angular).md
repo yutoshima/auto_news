@@ -17,7 +17,7 @@ url: https://qiita.com/whitestonex39-debug/items/4f48b110217041393444
 
 ## 概要
 
-検索機能（基本・シンプルバージョン）
+検索機能（基本・シンプル版）
 
 JavaScript
 
@@ -28,7 +28,7 @@ JavaScript
 e.htm
 
 e.js
-const input = document.querySelector(...
+const input = document.querySelector(...)
 
 ---
 

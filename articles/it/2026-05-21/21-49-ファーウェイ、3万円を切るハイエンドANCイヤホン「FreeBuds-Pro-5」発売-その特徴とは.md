@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247847/
 
 ## 概要
 
-ファーウェイ・ジャパンは5月21日、フラッグシップ完全ワイヤレスイヤホン「HUAWEI FreeBuds Pro 5」を発売した
+ファーウェイ・ジャパンは5月21日、フラッグシップ完全ワイヤレスイヤホン「HUAWEI FreeBuds Pro 5」を発売しました。
 
 ---
 

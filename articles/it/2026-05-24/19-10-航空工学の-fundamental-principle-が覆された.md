@@ -1,0 +1,24 @@
+---
+title: "航空工学の fundamental principle が覆された"
+source: "Hacker News"
+category: "it"
+published: 2026-05-24T19:10:26
+url: https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/
+---
+
+# 航空工学の fundamental principle が覆された
+
+## メタデータ
+
+- **情報源**: Hacker News
+- **カテゴリ**: it
+- **公開日時**: 2026年05月24日 19:10
+- **URL**: [https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/](https://www.wired.com/story/a-fundamental-principle-of-aeronautical-engineering-has-been-overturned/)
+
+## 概要
+
+<a href="https://news.ycombinator.com/item?id=48260117"> コメント</a>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -17,8 +17,8 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-mwaa-now-supports
 
 ## 概要
 
-<p>Amazon Managed Workflows for Apache Airflow（MWAA）は、人気のあるオープンソースのワークフロー orchestration フレームワークの最新のメジャーリリースである Apache Airflow 3.2 に対応しました。Amazon MWAA は、基盤となるインフラを管理することなく、スケールして Apache Airflow を実行できるマネージドサービスです。このリリースでは、データを意識したスケジューリング機能と、AWS 上でデータパイラインを構築・運用するチームの生産性向上を実現します。</p> 
-<p>Apache Airflow 3.2 では、あなたは n</p>
+<p>Amazon Managed Workflows for Apache Airflow（MWAA）は、人気のあるオープンソースのワークフローオーケストレーションフレームワークの最新のメジャーリリースであるApache Airflowバージョン3.2をサポートしました。Amazon MWAAは、基盤となるインフラストラクチャを管理することなく、スケールでApache Airflowを実行できるマネージドサービスです。このリリースは、AWS上でデータパイプラインを構築・運用するチームに、データ認識型スケジューリング機能と開発者の生産性向上をもたらします。</p> 
+<p>Apache Airflow 3.2では、あなたはn</p>
 
 ---
 

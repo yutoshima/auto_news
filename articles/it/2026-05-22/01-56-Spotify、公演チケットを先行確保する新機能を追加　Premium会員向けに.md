@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35247876/
 
 ## 概要
 
-音楽配信サービス「Spotify」は、Premiumプラン加入者向けの新たな特典を発表した。その1つが、好きなアーティストの公演チケットを先行確保する機能だ。<br clear="left" /><a href="https://japan.cnet.com/article/35247876/"><img src="https://japan.cnet.com/storage/2026/05/22/96f5139aa64b15f92d0e8859682f8a30/t/184/138/d/blog-header_1280x960.jpg" /></a>
+音楽配信サービス「Spotify」は、Premiumプラン加入者向けの新たな特典を発表した。その1つが、好きなアーティストの公演チケットを先行確保する機能だ。
 
 ---
 

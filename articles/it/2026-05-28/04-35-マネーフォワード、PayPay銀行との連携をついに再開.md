@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35248142/
 
 ## 概要
 
-マネーフォワードは5月28日、PayPay銀行との連携を再開したと発表した。
+マネーフォワードは5月28日、PayPay銀行との連携を再開したと発表した。<br clear="left" /><a href="https://japan.cnet.com/article/35248142/"><img src="https://japan.cnet.com/storage/2026/05/28/e204e6003957eab0ba0b8974d9b60cca/t/184/138/d/IMG_8642_2__1_-1.jpg" /></a>
 
 ---
 

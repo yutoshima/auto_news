@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35248136/
 
 ## 概要
 
-Metaは春の限定的なテストに続き、有料サブスクリプション「Facebook Plus」「Instagram Plus」「WhatsApp Plus」を世界中で展開すると発表した。<br clear="left" /><a href="https://japan.cnet.com/article/35248136/"><img src="https://japan.cnet.com/storage/2026/05/28/f3a1d80c3be88c904afd2df0e1189282/t/184/138/d/shutterstock-instagram-close-up_1280x960.jpg" /></a>
+Metaは春の限定的なテストに続き、有料サブスクリプション「Facebook Plus」「Instagram Plus」「WhatsApp Plus」を世界中で展開すると発表した。
 
 ---
 

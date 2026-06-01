@@ -1,0 +1,24 @@
+---
+title: "『Backrooms』が8100万ドルのデビューで観客を驚かせる"
+source: "Hacker News"
+category: "it"
+published: 2026-05-31T19:27:44
+url: https://variety.com/2026/film/box-office/backrooms-box-office-record-opening-weekend-obsession-jumps-star-wars-crumbles-1236763355/
+---
+
+# 『Backrooms』が8100万ドルのデビューで観客を驚かせる
+
+## メタデータ
+
+- **情報源**: Hacker News
+- **カテゴリ**: it
+- **公開日時**: 2026年05月31日 19:27
+- **URL**: [https://variety.com/2026/film/box-office/backrooms-box-office-record-opening-weekend-obsession-jumps-star-wars-crumbles-1236763355/](https://variety.com/2026/film/box-office/backrooms-box-office-record-opening-weekend-obsession-jumps-star-wars-crumbles-1236763355/)
+
+## 概要
+
+<a href="https://news.ycombinator.com/item?id=48348864">コメント</a>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

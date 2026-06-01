@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35248189/
 
 ## 概要
 
-スマートリング大手のOuraは米国時間5月28日、新型モデル「Oura Ring 5」を発表した。<br clear="left" /><a href="https://japan.cnet.com/article/35248189/"><img src="https://japan.cnet.com/storage/2026/05/29/e2e7355e209dd259a5375d2a7762c825/t/184/138/d/oura-ring-5-lifestyle-1-hands_1280x960.jpg" /></a>
+スマートリング大手の Oura が、米国時間の5月28日に新型モデル「Oura Ring 5」の発表を行った。
 
 ---
 

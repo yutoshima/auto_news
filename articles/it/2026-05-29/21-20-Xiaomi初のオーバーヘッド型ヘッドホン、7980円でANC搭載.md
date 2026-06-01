@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35248233/
 
 ## 概要
 
-aomi Japanは5月26日、ワイヤレスヘッドホン「REDMI Headphones Neo」を発売した。Xiaomi初のオーバーヘッド型となる。価格は7980円で、6月8日までは早割価格の6980円で購入できる。<br clear="left" /><a href="https://japan.cnet.com/article/35248233/"><img src="https://japan.cnet.com/storage/2026/05/29/302fcef3824fc5af360e019109400b9c/t/184/138/d/h01.jpg" /></a>
+aomi Japanは5月26日、ワイヤレスヘッドホン「REDMI Headphones Neo」を発売した。Xiaomi初のオーバーヘッド型となる。価格は7980円で、6月8日までは早割価格の6980円で購入できる。
 
 ---
 

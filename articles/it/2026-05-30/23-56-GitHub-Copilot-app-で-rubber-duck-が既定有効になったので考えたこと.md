@@ -17,8 +17,15 @@ url: https://zenn.dev/tomokusaba/articles/787d8cb138491b
 
 ## 概要
 
-要するに、changelog 上は rubber-duck エージェントがすべてのユーザーにデフォルトで有効になり、/rubber-duck コマンドを介してコードや設計に対する建設的なフィードバックを提供します。
+以下を自然な日本語に翻訳します。
+
+はじめに
+GitHub Copilot app の changelog を眺めていたところ、v0.2.14 で個人的にかなり気になる更新が入っていました。
+
+The rubber-duck agent is now enabled by default for all users, providing constructive feedback on code and designs via the /rubber-duck slash command.
 — github/app changelog v0.2.14
+
+要するに、changelog 上は rubber-duck エージ...
 
 ---
 

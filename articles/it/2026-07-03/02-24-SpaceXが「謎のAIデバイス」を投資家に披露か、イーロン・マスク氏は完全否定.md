@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35249967/
 
 ## 概要
 
-SpaceXは、スマートフォンではないAI搭載デバイスの初期プロトタイプを投資家に公開したと、The Wall Street Journalが報じた。イーロン・マスク氏はこれを真っ向から否定している。
+SpaceXはスマートフォンではないAI搭載デバイスの初期プロトタイプを投資家に披露したと、The Wall Street Journalが報じた。イーロン・マスク氏は真っ向から否定している。
 
 ---
 

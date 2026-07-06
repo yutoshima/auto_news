@@ -17,7 +17,7 @@ url: https://electrek.co/2026/07/02/yadea-shows-off-full-suspension-commuter-e-b
 
 ## 概要
 
-Yadeaは主に電動スクーターとバイクで知られており、生産量で世界最大の電気自動車メーカーとして地位を確立するのに貢献しています。しかし、世界をリードするEV製造量を誇っている一方で—あるいはそれゆえに—同社はまた、…
+< div class="feat-image">< img src="https://electrek.co/wp-content/uploads/sites/3/2026/06/yadea-eurobike-head.jpg?quality=82&#038;strip=all&#038;w=1600" />< /div><p class="wp-block-paragraph"><a href="https://yadea.com">Yadea</a> は、世界最大の電動車メーカーとして生産量を押し上げてきたことでも知られており、電動スクーターとオートバイで最もよく知られています。しかし、世界のEV製造量を率いていること自体が理由なのか、あるいはそのおかげで—その両方かもしれませんが—同社はまたd
 
 ---
 

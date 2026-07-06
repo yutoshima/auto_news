@@ -1,0 +1,24 @@
+---
+title: "コCOM規制とバルーンおよびキューブサット用のGPS受信機"
+source: "Hacker News"
+category: "it"
+published: 2026-07-05T21:39:05
+url: https://space.stackexchange.com/questions/14687/current-situation-with-cocom-regulations-and-gps-receivers-for-balloons-and-cube
+---
+
+# コCOM規制とバルーンおよびキューブサット用のGPS受信機
+
+## メタデータ
+
+- **情報源**: Hacker News
+- **カテゴリ**: it
+- **公開日時**: 2026年07月05日 21:39
+- **URL**: [https://space.stackexchange.com/questions/14687/current-situation-with-cocom-regulations-and-gps-receivers-for-balloons-and-cube](https://space.stackexchange.com/questions/14687/current-situation-with-cocom-regulations-and-gps-receivers-for-balloons-and-cube)
+
+## 概要
+
+<a href="https://news.ycombinator.com/item?id=48798210">コメント</a>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

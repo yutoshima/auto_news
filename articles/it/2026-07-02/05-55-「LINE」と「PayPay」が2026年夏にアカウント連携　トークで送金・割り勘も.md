@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35249913/
 
 ## 概要
 
-LINEヤフーとPayPayは7月2日、「LINE」と「PayPay」のアカウント連携を2026年夏以降に開始すると発表した。連携すると、PayPayアプリを開かなくても、LINEのトーク上でPayPay残高の送金や割り勘ができるようになる。
+LINEとヤフー、PayPayは7月2日に「LINE」と「PayPay」のアカウント連携を2026年夏以降に開始すると発表しました。連携されると、PayPayアプリを開かなくても、LINEのトーク上でPayPay残高の送金や割り勘ができるようになります。
 
 ---
 

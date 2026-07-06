@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-sagemaker-ai-gemm
 
 ## 概要
 
-<p>Amazon SageMaker AIは現在、Gemma 4 E4Bおよび31Bモデル向けに、監督付きファインチューニング（SFT）、直接的嗜好最適化（DPO）、強化ファインチューニング（RFT）を用いたサーバーレスモデル customizationをサポートしています。GemmaはGoogle DeepMindが構築したオープンモデルのファミリーです。これらのモデルをSageMaker AIにデプロイするだけでなく、特定のドメインやワークフローに適応させることが可能になりました。このローンチは、SageMaker AIでのサーバーレスカスタマイズが利用できるモデルの多様性を拡大し、m も含む他のモデルの選択肢も増えています。
+Amazon SageMaker AIは現在、Gemma 4 E4Bおよび31Bモデルに対するサーバーレスなモデルカスタマイズを、監視付きファインチューニング（SFT）、直接嗜好最適化（DPO）、および強化ファインチューニング（RFT）を用いてサポートしています。GemmaはGoogle DeepMindが構築したオープンモデルのファミリーです。これらのモデルをSageMaker AIにデプロイするだけでなく、特定のドメインやワークフローに合わせて適応させることが可能になりました。本発表は、SageMaker AIでサーバーレスカスタマイズの対象となるモデルの多様性を拡大するものでもあり、m などを含みます。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250918/
 
 ## 概要
 
-韓国のSamsungが現地時間7月22日にロンドンで行った「Galaxy Unpacked」。折りたたみスマートフォンやAIなど多岐にわたる発表があったが、全体を通じてのテーマは1つだけだった。発表されたすべてのデバイスに、米Qualcommの「Snapdragon」チップが搭載されていたことだ。
+韓国のSamsungが現地時間7月22日にロンドンで開催した「Galaxy Unpacked」。折りたたみスマートフォンやAIなど発表は多岐にわたったが、全体を貫くテーマは1つだった。発表されたすべてのデバイスに、米Qualcommの「Snapdragon」チップが搭載されていたことだ。
 
 ---
 

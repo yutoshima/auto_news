@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250941/
 
 ## 概要
 
-JR東日本は7月23日、「Google Pixel Watch」や「Samsung Galaxy Watch」のSuicaを、Android端末のモバイルSuicaアプリから操作できるようにすると発表した。これによりスマートウォッチのSuicaでも定期券やSuicaグリーン券、おトクなきっぷの購入が可能になる。8月中旬以降、順次開始する。
+JR東日本は7月23日、「Google Pixel Watch」や「Samsung Galaxy Watch」のSuicaを、Android端末のモバイルSuicaアプリから操作できるようにすると発表した。これによりスマートウォッチのSuicaでも定期券やSuicaグリーン券、おトクなきっぷを購入できるようになる。8月中旬以降、順次開始する。
 
 ---
 

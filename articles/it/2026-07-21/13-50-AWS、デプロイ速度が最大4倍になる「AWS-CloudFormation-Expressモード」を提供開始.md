@@ -17,7 +17,7 @@ url: https://www.publickey1.jp/blog/26/aws4aws_cloudformation_express.html
 
 ## 概要
 
-Amazon Web Services（AWS）は、デプロイ速度を最大4倍速くする新機能「AWS CloudFormation Expressモード」を提供開始しました。 AWS CloudFormation...
+Amazon Web Services（AWS）は、デプロイ速度を最大4倍速化できる新機能「AWS CloudFormation Expressモード」を提供開始しました。 AWS CloudFormation…
 
 ---
 

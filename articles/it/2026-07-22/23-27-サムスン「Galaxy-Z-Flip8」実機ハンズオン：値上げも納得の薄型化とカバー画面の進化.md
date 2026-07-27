@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250875/
 
 ## 概要
 
-サムスンはロンドンで Galaxy Unpacked イベントを開催し、新型の縦折りスマートフォン「Galaxy Z Flip8」を発表した。
+サムスンはロンドンでGalaxy Unpackedイベントを開催し、新型の縦折りスマートフォン「Galaxy Z Flip8」を発表した。
 
 ---
 

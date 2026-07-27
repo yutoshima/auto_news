@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250946/
 
 ## 概要
 
-Anthropicは、AI「Claude」の音声モードを大幅に強化したと発表した。上位モデルが利用可能になり、複数言語に対応した。
+Anthropicは、AI「Claude」の音声モードを大幅に強化したと発表しました。上位モデルが利用可能になり、複数言語に対応しました。
 
 ---
 

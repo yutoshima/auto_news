@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250870/
 
 ## 概要
 
-サムスンはロンドンで開催した Galaxy Unpacked イベントで、ブックスタイルの折りたたみスマートフォン「Galaxy Z Fold8 Ultra」を発表した。<br clear="left" /><a href="https://japan.cnet.com/article/35250870/"><img src="https://japan.cnet.com/storage/2026/07/23/c6e430a55147d565e261d3ea6486ed9a/t/184/138/d/samsung-galaxy-z-fold-8-ultra-unpacked-cnet-lanxon-16_1280x960.jpg" /></a>
+サムスンはロンドンで開催した Galaxy Unpacked イベントで、ブックスタイルの折りたたみスマートフォン「Galaxy Z Fold8 Ultra」を発表した。
 
 ---
 

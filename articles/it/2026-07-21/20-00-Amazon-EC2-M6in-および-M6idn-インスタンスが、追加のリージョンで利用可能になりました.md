@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m6in-m6idn/
 
 ## 概要
 
-本日より、Amazon Elastic Compute Cloud（Amazon EC2）の M6in および M6idn インスタンスが、AWS Asia Pacific（Hyderabad）および South America（Sao Paulo）リージョンで利用可能になります。3代目 Intel Xeon Scalable プロセッサを搭載し、AWS Nitro System 上に構築された、ネットワーク最適化の第六世代インスタンスは、最大200Gbpsのネットワーク帯域幅を提供し、同等の第五世代インスタンスより2倍の帯域幅を実現します。
+本日より、Amazon Elastic Compute Cloud（Amazon EC2）M6inおよびM6idnインスタンスが、AWSアジア太平洋（ハイデラバード）および南米（サンパウロ）リージョンで提供開始されます。第六世代のネットワーク最適化インスタンスで、3世代目Intel Xeon Scalableプロセッサを搭載し、AWS Nitro System上に構築されているこれらは、最大200Gbpsのネットワーク帯域幅を実現し、同等の第五世代インスタンスと比較してネットワーク帯域幅が2倍になります。
 
 ---
 

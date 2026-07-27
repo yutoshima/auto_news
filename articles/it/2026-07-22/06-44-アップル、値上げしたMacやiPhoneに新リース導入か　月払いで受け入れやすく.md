@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250860/
 
 ## 概要
 
-Appleはフィンテック企業Klarnaとの提携によるリースプログラム「Apple Upgrade」を、米国で7月28日に開始する計画だと報じられた。Bloombergによる報道。
+アップルはフィンテック企業のKlarnaとの提携によるリースプログラム「Apple Upgrade」を、米国で7月28日に開始する計画だと報じられた。Bloombergによる報道。
 
 ---
 

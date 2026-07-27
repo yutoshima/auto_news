@@ -17,8 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ses-pricing-plans
 
 ## 概要
 
-<p>本日、Amazon Simple Email Service（SES）は料金プランを導入し、個別に評価することなくSES機能を簡単に購入・利用できるようにしました。Amazon SESの料金プランには、 Essentials、Pro、Enterprise の3つの階層型オプションが含まれます。それぞれのプランは前のプランを基盤としており、アラカルト料金と比べて割引価格で段階的により多くの機能を提供します。</p> 
-<p>企業はメールが受信箱に届き、読まれることに依存していますが、これを確実にするために必要な機能は</p>
+今日、Amazon Simple Email Service（SES）は価格プランを導入し、SESの機能を個別に評価することなく、購入と利用を容易にしました。Amazon SESの価格プランは、 Essentials、Pro、Enterprise の三つの階層的オプションで構成されています。各プランは前のプランを基盤としており、アラカルト価格と比べて割引になる形で、より多くの機能を段階的に提供します。
+
+企業はメールが受信箱に届き、読み取られることに依存していますが、これを保証するために必要な機能には
 
 ---
 

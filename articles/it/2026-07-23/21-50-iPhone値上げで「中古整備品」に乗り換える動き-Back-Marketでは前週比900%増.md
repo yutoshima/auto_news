@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35250916/
 
 ## 概要
 
-Back Market Japan, which operates the refurbished marketplace "Back Market," announced on July 22 that after Apple increased prices on July 18, iPhone sales on the Japanese site surged. In the three days following the price increase (July 18–20), sales in the iPhone 14 and above category rose 41.64% compared to the same period the previous week. <br clear="left" /><a href="https://japan.cnet.com/article/35250916/"><img src="https://japan.cnet.com/storage/2025/09/10/6128417cead9fb78186fcba007526352/t/184/138/d/screenshot-2025-09-09-at-1-31-40pm_1280x960.jpg" /></a>
+Back Market Japan, which operates the marketplace for refurbished goods, Back Market, announced on July 22 that after Apple raised prices on July 18, iPhone sales on its Japanese site surged. In the three days following the price increase (July 18–20), sales across the iPhone 14 and above category rose by 41.64% compared to the same period the previous week.
 
 ---
 

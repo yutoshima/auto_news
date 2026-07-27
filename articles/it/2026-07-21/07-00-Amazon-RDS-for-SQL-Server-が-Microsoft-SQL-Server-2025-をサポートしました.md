@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sqlserver-supports-s
 
 ## 概要
 
-Amazon Relational Database Service (Amazon RDS) for SQL Serverは、Enterprise、Standard、Developerエディション向けにMicrosoft SQL Server 2025をサポートしました。SQL Server 2025はデータベースエンジン自体にAIを統合し、外部RESTエンドポイントを追加のミドルウェアなしでT-SQLから呼び出せるようにします。RDS for SQL Serverを利用している顧客は、この機能を用いて既存のデータベースワークロードをAWSサービス（例えばAmazon Bedrock、Amazon Sageなど）と安全に統合できます。
+<p>Amazon Relational Database Service（Amazon RDS） for SQL Serverは、Enterprise、Standard、Developerエディション向けにMicrosoft SQL Server 2025をサポートします。<br /><br /> SQL Server 2025は、AIをデータベースエンジンに直接統合し、追加のミドルウェアを介さずにT-SQLから外部のRESTエンドポイントを呼び出せる機能を提供します。RDS for SQL Serverを実行している顧客は、この機能を活用して、既存のデータベースワークロードをAWSサービス（例えばAmazon Bedrock、Amazon Sage）と安全に統合することができます。
 
 ---
 

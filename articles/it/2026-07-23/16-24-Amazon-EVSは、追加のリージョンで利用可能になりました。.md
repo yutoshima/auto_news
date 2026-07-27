@@ -17,9 +17,8 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-available-in-
 
 ## 概要
 
-本日、Amazon Elastic VMware Service（Amazon EVS）がAsia Pacific（ソウル）、Europe（チューリッヒ）、Europe（ストックホルム）リージョンで利用可能になったことをお知らせします。この拡張により、クラウド上でVMwareワークロードを実行する際に、AWSのスケールと柔軟性を活用するための選択肢が増えます。
-
-Amazon EVSを使用すると、AWS Nitroにより動作するEC2ベアメタルインスタンス上のAmazon Virtual Private Cloud（VPC）内に、VMware Cloud Foundation（VCF）を直接実行できます。設定は…
+本日、Amazon Elastic VMware Service（Amazon EVS）がアジア太平洋（ソウル）、ヨーロッパ（チューリッヒ）、ヨーロッパ（ストックホルム）リージョンで利用可能になったことをお知らせします。この拡張により、クラウド上で VMware ワークロードを実行する際に、AWS のスケールと柔軟性を活用する選択肢が増えます。  
+Amazon EVS を使えば、AWS Nitro によって動作する EC2 ベアメタルインスタンス上の VPC（仮想プライベートクラウド）内で、VMware Cloud Foundation（VCF）を直接実行できます。コンフィグを設定することができます。
 
 ---
 

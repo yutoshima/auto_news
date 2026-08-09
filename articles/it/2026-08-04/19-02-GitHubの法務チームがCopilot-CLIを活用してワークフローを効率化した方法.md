@@ -19,7 +19,7 @@ url: https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used
 
 作業を簡素化するツールの作り方を学ぶ—コードを一行も書かずに。
 
-この投稿 <a href="https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/">「GitHub の法務チームが Copilot CLI を使ってワークフローを効率化した方法」</a> は、まず <a href="https://github.blog">The GitHub Blog</a> に掲載されました。
+投稿「GitHubの法務チームがCopilot CLIを活用してワークフローを効率化した方法」は、まずThe GitHub Blogに掲載されました。
 
 ---
 

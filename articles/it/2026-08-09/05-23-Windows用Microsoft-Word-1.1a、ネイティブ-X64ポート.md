@@ -17,7 +17,13 @@ url: https://github.com/jmarshall23/msword
 
 ## 概要
 
-<a href="https://news.ycombinator.com/item?id=49228663">コメント</a>
+以下の英語テキストを自然な日本語に翻訳してください。  
+翻訳結果のみを出力し、説明や追加のテキストは不要です。
+
+英語テキスト:
+<a href="https://news.ycombinator.com/item?id=49228663">Comments</a>
+
+日本語訳:
 
 ---
 

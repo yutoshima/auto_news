@@ -17,8 +17,8 @@ url: https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-keyspaces-apache-
 
 ## 概要
 
-<p><a href="https://aws.amazon.com/keyspaces/">Amazon Keyspaces (for Apache Cassandra)</a> がカナダ西部リージョン（カルガリー）ca-west-1 で利用可能になり、カナダ西部リージョンの顧客はデータ居住要件を満たすためにデータをリージョン内に保持しつつ、レイテンシを低く抑えた Cassandra 互換アプリケーションの構築が可能になります。</p>
-<p>Amazon Keyspaces (for Apache Cassandra) は、スケーラブルで高可用性を備えた、マネージドの Apache Cassandra 互換データベースサービスです。Amazon Keyspaces</p>
+<p><a href="https://aws.amazon.com/keyspaces/">Amazon Keyspaces (for Apache Cassandra)</a>がカナダ西部リージョン（カルガリー）<span class="notranslate">(ca-west-1)</span>で利用可能になりました。これによりカナダ西部リージョンの顧客は、データをリージョン内に保持しつつ、レイテンシーを低く抑え、データ居住要件を満たす Cassandra 互換アプリケーションを構築できます。</p>
+<p>Amazon Keyspaces (for Apache Cassandra) は、スケーラブルで高可用性を備え、管理された Apache Cassandra 互換データベースサービスです。Amazon Keyspaces</p>
 
 ---
 

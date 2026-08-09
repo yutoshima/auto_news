@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35251396/
 
 ## 概要
 
-OpenAIは、無料版ChatGPTでテキストチャットを無制限に利用できるようにすることを発表しました。
+OpenAIは、無料版ChatGPTでテキストチャットを無制限に利用できるようにすると発表しました。
 
 ---
 

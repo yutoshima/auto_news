@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35251361/
 
 ## 概要
 
-Linuxのデスクトップ市場シェアが、北米で数週間のうち通常の3～5％から約10％へと倍増したとの報告が相次いでいる。その理由を探ってみた。
+Linuxのデスクトップ市場シェアが、北米で数週間のうち通常の3～5％から約10％へと倍増したとの報告が相次いでいる。その理由を探ってみた。<br clear="left" /><a href="https://japan.cnet.com/article/35251361/"><img src="https://japan.cnet.com/storage/2026/08/06/beead5a396f7ff86f82540b21f990fcc/t/184/138/d/8e9579e7-6e76-4b78-bf0c-87fb2aab7db9_1280x960.jpg" /></a>
 
 ---
 

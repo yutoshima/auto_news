@@ -17,9 +17,8 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/08/aws-pcs-august/
 
 ## 概要
 
-AWS Parallel Computing Service (PCS) は、Slurmを活用してAWS上で高性能計算（HPC）ワークロードの実行とスケーリングを簡素化するマネージドサービスで、セキュリティとコンプライアンスの範囲を拡大しました。連邦機関、公共部門組織、規制産業の企業は、PCSを利用して機密性の高いミッション・クリティカルなHPCワークロードを実行しつつ、ガバナンス、セキュリティ、コンプライアンスの義務を満たすことができます。
-
-PCSは現在、FedRAMP Class C（旧Moderate）の適用範囲となっています。
+<p>AWS Parallel Computing Service（PCS）は、Slurm を活用して AWS 上で高性能計算（HPC）ワークロードの実行とスケーリングを簡素化するマネージドサービスで、セキュリティとコンプライアンスの範囲を拡大しました。連邦機関、公共部門の組織、規制産業の企業は、PCS を利用して機密性が高くミッションクリティカルな HPC ワークロードを実行しつつ、ガバナンス、セキュリティ、コンプライアンス上の義務を満たすことができます。</p> 
+<p>PCS は現在、FedRAMP Class C（旧 Moderate） の対象範囲です。
 
 ---
 

@@ -17,9 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sql-server-supports-
 
 ## 概要
 
-Amazon Relational Database Service (Amazon RDS) for SQL Serverは、BYOM（Bring Your Own Media）を10地域追加でサポートしました。対象地域はアジア太平洋（台北、ハイデラバード、ジャカルタ、マレーシア、メルボルン、ニュージーランド、タイ）およびヨーロッパ（ミラノ、スペイン）、メキシコ（セントラル）です。
-
-BYOMを使用すると、Amazon RDSをマネージドデータベースサービスとして採用し、現在お持ちのMicrosoft SQL ServerライセンスをアクティブなSoftware Assu（後半が切れているため、原文の綴りは保持しますが日本語では「Software Assurance（ソフトウェア・アシュアランス）」の意）とともに再利用できます。
+<p><a href="https://aws.amazon.com/rds/sqlserver/" target="_blank">Amazon Relational Database Service (Amazon RDS) for SQL Server</a> は、BYOM（Bring Your Own Media）を新たに以下の10地域でサポートします：アジア太平洋（台北、ハイデラバード、ジャカルタ、マレーシア、メルボルン、ニュージーランド、タイ）、ヨーロッパ（ミラノ、スペイン）、メキシコ（セントラル）。<br /> <br /> BYOM を使用すると、Amazon RDS をマネージドデータベースサービスとして採用し、既存の Microsoft SQL Server ライセンスを活用して継続利用することができます（有効なソフトウェアアシュアランス付き）。</p>
 
 ---
 

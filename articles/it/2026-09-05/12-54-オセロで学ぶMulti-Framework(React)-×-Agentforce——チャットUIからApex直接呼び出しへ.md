@@ -17,15 +17,9 @@ url: https://qiita.com/4geru/items/0569506fe3fef9090acd
 
 ## 概要
 
-以下の英語テキストを自然な日本語に翻訳してください。
-翻訳結果のみを出力し、説明や追加のテキストは不要です。
-
-英語テキスト:
 はじめに
-きっかけはSalesforce Mult-Framework を使用した React による UI 開発（Salesforce Developers Blog, 2026-04）という記事でした。
+きっかけは「Salesforce Mult-Framework を使用した React による UI 開発（Salesforce Developers Blog, 2026-04）」という記事でした。
 TDX 2026で発表された Salesforce Multi-...
-
-日本語訳:
 
 ---
 

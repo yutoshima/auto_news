@@ -2,7 +2,7 @@
 title: "Show HN: Sol, my macOS music player and jukebox app, is now free and open source
 
 日本語訳: 
-Show HN: Sol、私のmacOS用音楽プレーヤー兼ジュークボックスアプリが、現在無料でオープンソースになりました"
+Show HN: Sol、私の macOS 用音楽プレーヤー兼ジュークボックスアプリが、現在無料でオープンソースになりました"
 source: "Hacker News"
 category: "it"
 published: 2026-09-06T20:24:56
@@ -12,7 +12,7 @@ url: https://github.com/FulltimeFeline/Sol
 # Show HN: Sol, my macOS music player and jukebox app, is now free and open source
 
 日本語訳: 
-Show HN: Sol、私のmacOS用音楽プレーヤー兼ジュークボックスアプリが、現在無料でオープンソースになりました
+Show HN: Sol、私の macOS 用音楽プレーヤー兼ジュークボックスアプリが、現在無料でオープンソースになりました
 
 ## メタデータ
 

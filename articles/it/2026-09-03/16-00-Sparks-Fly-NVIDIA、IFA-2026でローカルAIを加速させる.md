@@ -17,7 +17,7 @@ url: https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spar
 
 ## 概要
 
-フロンティア知能はローカル化が進む。IFA 2026では、NVIDIA、Microsoftとそのパートナーが協力し、推論を高速化し、NVIDIAのハードウェア上でエージェントをローカルに設定・運用しやすくする新しいツールを提供する。新しいコンパクトなNVIDIA RTX Spark Windows PCも10月に登場し、AI愛好家、開発者、クリエイターに新たな選択肢を提供する。
+フロンティア知能がローカル化へ。IFA 2026では、NVIDIA、Microsoftとそのパートナーが協力して、推論をより高速化し、NVIDIAハードウェア上でエージェントをより簡単に設定・実行できる新ツールを提供します。新しいコンパクトなNVIDIA RTX Spark Windows PCも10月に登場し、AI愛好家、開発者、クリエイターへ新たな選択肢を提供します…
 
 ---
 

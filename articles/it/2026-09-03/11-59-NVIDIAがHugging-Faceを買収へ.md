@@ -17,7 +17,7 @@ url: https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/
 
 ## 概要
 
-私は、NVIDIAがHugging Faceを129億3030万ドルで買収することに合意したことを発表できることをとても嬉しく思います。私たちは一緒になってHugging Faceのプラットフォームを拡張し、インフラを強化し、世界中の開発者や機関がAIにアクセスできる機会を広げていきます。過去10年間、Clem、Julien、Thomas、そしてHugging Faceのチームは、驚くべきものを築いてきました――活気に満ちた拠点となる場所を。
+私は、NVIDIAがHugging Faceを129億3030万ドルで買収することで合意したことを発表できることにワクワクしています。私たちは共に、Hugging Faceのプラットフォームを拡張し、インフラを強化し、世界中の開発者と機関へのAIアクセスを広げていきます。過去10年間、Clem、Julien、Thomas、そしてHugging Faceのチームは、卓越したものを築いてきました。活気ある拠点となる場所を…
 
 ---
 

@@ -17,7 +17,7 @@ url: https://github.com/zedeus/nitter/commit/1428b4c2b4246f92a7e5b2673438e5fb39f
 
 ## 概要
 
-<a href="https://news.ycombinator.com/item?id=49588988">コメント</a>
+コメント
 
 ---
 

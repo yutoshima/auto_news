@@ -1,18 +1,18 @@
 ---
-title: "Exclusive Jackery 5,040Wh power station $1,000 off + Labor Day Sale, Segway EVs 50% off, Anker eufy security cameras, more
+title: "Exclusive Jackery 5,040Wh power station $1,000 off + Labor Day Sale, Segway EVs 50% off, Anker eufy security cameras, more" 
 
 日本語訳:
- exclusive Jackery 5,040Wh power station $1,000 off + ロラデーセール、Segway EVs 50%オフ、Anker eufy セキュリティカメラなど""
+独占販売 ジャケリー 5,040Wh パワーステーションが1000ドル割引＋労働者の日セール、Segway EVは50%オフ、Anker eufy セキュリティカメラほか"
 source: "Electrek"
 category: "car"
 published: 2026-09-03T18:00:00
 url: https://electrek.co/2026/09/03/exclusive-jackery-5040wh-power-station-labor-day-sale-segway-anker-security-cameras-more/
 ---
 
-# Exclusive Jackery 5,040Wh power station $1,000 off + Labor Day Sale, Segway EVs 50% off, Anker eufy security cameras, more
+# Exclusive Jackery 5,040Wh power station $1,000 off + Labor Day Sale, Segway EVs 50% off, Anker eufy security cameras, more" 
 
 日本語訳:
- exclusive Jackery 5,040Wh power station $1,000 off + ロラデーセール、Segway EVs 50%オフ、Anker eufy セキュリティカメラなど"
+独占販売 ジャケリー 5,040Wh パワーステーションが1000ドル割引＋労働者の日セール、Segway EVは50%オフ、Anker eufy セキュリティカメラほか
 
 ## メタデータ
 
@@ -23,7 +23,7 @@ url: https://electrek.co/2026/09/03/exclusive-jackery-5040wh-power-station-labor
 
 ## 概要
 
-今週の木曜日のグリーンディールは、主にパワーステーションのセールで構成されています。読者限定の1,000ドル割引から始まり、5,040WhのJackery E...
+今週の木曜日のグリーンディールは、主にパワーソ stations のセールで埋め尽くされています。読者限定の1000ドル割引から始まり、以下のリンク先で詳細を確認できます：
 
 ---
 

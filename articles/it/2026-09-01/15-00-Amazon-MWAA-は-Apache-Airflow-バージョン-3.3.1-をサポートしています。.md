@@ -17,9 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-mwaa-apache-airfl
 
 ## 概要
 
-Amazon Managed Workflows for Apache Airflow（MWAA）は、人気のオープンソースワークフロ орケーションフレームワークの最新リリースである Apache Airflow バージョン3.3.1をサポートします。Amazon MWAAは、クラウド上でエンドツーエンドのデータパイプラインを設定・運用しやすくする、Apache Airflowのマネージドオーケストレーションサービスです。
+Amazon Managed Workflows for Apache Airflow（MWAA）は、人気のオープンソースワークフローオーケストレーションフレームワークの最新版、Apache Airflow 3.3.1をサポートします。Amazon MWAAは、クラウド上でエンドツーエンドのデータパイプラインを設定・運用しやすくする、Apache Airflow向けのマネージドオーケストレーションサービスです。
 
-Apache Airflow 3.3は、ステートフルなタスクとマルチ言語サポートを導入します。新しいTask and Asset State Storeを使うことで、タスクはリトライ間で耐久性のある状態を保持できるようになります。
+Apache Airflow 3.3は、状態を保持するタスクとマルチ言語サポートを導入します。新しいタスク・アセット状態ストアにより、タスクはリトライ間で耐久性のある状態を保持できるようになります。
 
 ---
 

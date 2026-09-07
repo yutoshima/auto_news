@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35252304/
 
 ## 概要
 
-KDDIは9月4日、光回線とauの5G回線を組み合わせたインターネットサービス「auひかりプラス」を発表した。光回線の開通工事前から5G回線で通信でき、開通後は最大10Gbpsの光回線に切り替える。9月17日から提供する。<br clear="left" /><a href="https://japan.cnet.com/article/35252304/"><img src="https://japan.cnet.com/storage/2026/09/04/9d9bcb15a4152d007b154ecc3635fc55/t/184/138/d/012.jpg" /></a>
+KDDIは9月4日、光回線とauの5G回線を組み合わせたインターネットサービス「auひかりプラス」を発表しました。光回線の開通工事前から5G回線で通信でき、開通後は最大10Gbpsの光回線に切り替わります。9月17日から提供を開始します。
 
 ---
 

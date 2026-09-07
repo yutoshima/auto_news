@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35252197/
 
 ## 概要
 
-アップルの「iPhone 18 Pro」と「iPhone 18 Pro Max」は、米国時間9月9日のイベントで発表される見通しだ。両機種のカラー展開は3色になりそうだと、新たなうわさが伝えている。
+アップルの「iPhone 18 Pro」と「iPhone 18 Pro Max」は、米国時間9月9日のイベントで発表される見通しだ。両機種のカラー展開は3色になりそうだと、新たなうわさが伝えている。<br clear="left" /><a href="https://japan.cnet.com/article/35252197/"><img src="https://japan.cnet.com/storage/2026/09/02/0df5f421d146323755241813cf38c06b/t/184/138/d/image-4_0e68fa_1280x960.jpg" /></a>
 
 ---
 

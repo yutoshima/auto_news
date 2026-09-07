@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35252191/
 
 ## 概要
 
-Razerは、折りたたむとポケットサイズになる超小型ゲームコントローラー「Razer Prio」を発表した。iPhoneとAndroidの両方に対応する。
+Razerは、折りたたむとポケットサイズになる超小型ゲームコントローラー「Razer Prio」を発表しました。iPhoneとAndroidの両方に対応しています。<br clear="left" /><a href="https://japan.cnet.com/article/35252191/"><img src="https://japan.cnet.com/storage/2026/09/02/80d92f5976e282df5600153ee563510c/t/184/138/d/Prio-Main-KV_1280x960.jpg" /></a>
 
 ---
 

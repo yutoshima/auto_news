@@ -17,7 +17,7 @@ url: https://japan.cnet.com/article/35252209/
 
 ## 概要
 
-米Googleは9月1日（現地時間）、AIを使って画像を生成・編集するツール「Google Pics」を発表した。Google AI ProとAI Ultraの加入者、およびGoogle Workspaceを契約する法人の大半に向けて、今後数週間かけて順次提供する
+米Googleは9月1日（現地時間）、AIを使って画像を生成・編集するツール「Google Pics」を発表しました。Google AI ProとAI Ultraの加入者、以及びGoogle Workspaceを契約している法人の大半を対象に、今後数週間をかけて順次提供されます。
 
 ---
 

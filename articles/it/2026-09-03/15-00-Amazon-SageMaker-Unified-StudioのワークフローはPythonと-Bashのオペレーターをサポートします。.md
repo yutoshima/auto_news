@@ -17,9 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/09/sagemaker-workflows-pyth
 
 ## 概要
 
-Amazon SageMaker Unified Studio Workflowsは現在、PythonOperatorとBashOperatorをサポートしており、サーバレスワークフロー内でカスタムのPython関数やシェルコマンドを、別途のコンピュートリソースを用意することなく直接実行できます。これにより、データ変換やシェルスクリプトの実行といったタスクのために、カスタムロジックをLambdaやECSへオフロードする必要がなくなります。
+Amazon SageMaker Unified Studio Workflowsは現在、PythonOperatorとBashOperatorをサポートしており、サーバーレスワークフロー内でカスタムPython関数やシェルコマンドを、専用のコンピュートリソースをプロビジョニングせずに直接実行できます。これにより、データ変換やシェルスクリプトの実行といったタスクのために、カスタムロジックをLambdaやECSへオフロードする必要がなくなります。
 
-はじめに、SageMaker Unified Studioプロジェクト内のサーバレスのビジュアルワークフローを開き、PythonOperatorまたはBaを検索してください。
+始めるには、SageMaker Unified Studioのプロジェクト内でサーバーレスのビジュアルワークフローを開き、PythonOperatorまたはBashOperatorを検索します。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://radius.to/
 
 ## 概要
 
-コメント
+<a href="https://news.ycombinator.com/item?id=49777539">コメント</a>
 
 ---
 

@@ -17,7 +17,7 @@ url: https://www.publickey1.jp/blog/26/java_27g1_gctls_13.html
 
 ## 概要
 
-オラクルは Java の最新バージョン「Java 27」正式版をリリースしました。Java 27 が現在利用可能です！ #Java27 #JDK27 #OpenJDK ダウンロードはこちら: https://t.co/0Zw...
+オラクルは Java の最新バージョン「Java 27」正式版をリリースしました。Java 27 は現在利用可能です！ #Java27 #JDK27 #OpenJDK 今すぐダウンロード：https://t.co/0Zw...
 
 ---
 

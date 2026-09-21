@@ -17,7 +17,7 @@ url: https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforc
 
 ## 概要
 
-買収による買い取りがなければ、フロックは「ほぼ確実に」人員削減を迫られることになるだろう。
+買収を行わなければ、フロックは「ほぼ確実に」人員削減を迫られることになるだろう。
 
 ---
 

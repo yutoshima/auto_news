@@ -1,4 +1,6 @@
+import json
 import os
+import unicodedata
 from typing import List, Dict
 from datetime import datetime
 import re
@@ -87,8 +89,8 @@ class ArticleStorage:
 
         # フロントマター（メタデータ）
         frontmatter = f"""---
-title: "{article['title']}"
-source: "{article['source']}"
+title: {json.dumps(article['title'], ensure_ascii=False)}
+source: {json.dumps(article['source'], ensure_ascii=False)}
 category: "{article.get('category', 'other')}"
 published: {article['published']}
 url: {article['url']}
@@ -125,11 +127,14 @@ url: {article['url']}
         Returns:
             サニタイズされた文字列
         """
-        # 使用できない文字を置換
-        safe_title = re.sub(r'[\\/:*?"<>|]', '-', title)
+        # macOS(NFD)とLinux(NFC)でパスが衝突しないようNFCに統一
+        safe_title = unicodedata.normalize('NFC', title)
 
-        # スペースをハイフンに
-        safe_title = safe_title.replace(' ', '-')
+        # 使用できない文字・改行などの制御文字を置換
+        safe_title = re.sub(r'[\\/:*?"<>|\x00-\x1f\x7f]', '-', safe_title)
+
+        # 空白文字をハイフンに
+        safe_title = re.sub(r'\s', '-', safe_title)
 
         # 連続するハイフンを1つに
         safe_title = re.sub(r'-+', '-', safe_title)

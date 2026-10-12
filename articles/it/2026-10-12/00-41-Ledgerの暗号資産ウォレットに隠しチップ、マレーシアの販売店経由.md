@@ -1,0 +1,24 @@
+---
+title: "Ledgerの暗号資産ウォレットに隠しチップ、マレーシアの販売店経由"
+source: "はてブ テクノロジー"
+category: "it"
+published: 2026-10-12T00:41:58
+url: https://ja.martincid.com/technology-ja/ledger%E3%81%AE%E6%9A%97%E5%8F%B7%E8%B3%87%E7%94%A3%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AB%E9%9A%A0%E3%81%97%E3%83%81/
+---
+
+# Ledgerの暗号資産ウォレットに隠しチップ、マレーシアの販売店経由
+
+## メタデータ
+
+- **情報源**: はてブ テクノロジー
+- **カテゴリ**: it
+- **公開日時**: 2026年10月12日 00:41
+- **URL**: [https://ja.martincid.com/technology-ja/ledger%E3%81%AE%E6%9A%97%E5%8F%B7%E8%B3%87%E7%94%A3%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AB%E9%9A%A0%E3%81%97%E3%83%81/](https://ja.martincid.com/technology-ja/ledger%E3%81%AE%E6%9A%97%E5%8F%B7%E8%B3%87%E7%94%A3%E3%82%A6%E3%82%A9%E3%83%AC%E3%83%83%E3%83%88%E3%81%AB%E9%9A%A0%E3%81%97%E3%83%81/)
+
+## 概要
+
+A Ledger Nano S hardware wallet. Photo: Motokoka / Wikimedia Commons (CC BY-SA 4.0) 暗号資産の秘密鍵を誰にも見られないようにするために購入するLedgerのハードウェアウォレットから、内部に隠された追加の基板が見つかった。Ledgerは、東南アジアで相次ぐ盗難の被害に遭った利用者の端末に「無許可のハードウェ...
+
+---
+
+*この記事は自動収集システムによって保存されました。*

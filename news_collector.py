@@ -10,15 +10,24 @@ class NewsCollector:
         # IT関連ニュースサイト（日本語 + 英語）
         self.it_feeds = {
             # 🇯🇵 日本語メディア
-            'ITmedia News': 'https://www.itmedia.co.jp/news/rss/rss2.xml',
+            'ITmedia News': 'https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml',
             'ITmedia AI+': 'https://rss.itmedia.co.jp/rss/2.0/aiplus.xml',
             '@IT': 'https://rss.itmedia.co.jp/rss/2.0/ait.xml',
             'Publickey': 'https://www.publickey1.jp/atom.xml',
             'GIZMODO Japan': 'https://www.gizmodo.jp/index.xml',
             'TechCrunch Japan': 'https://techcrunch.com/feed/',
-            'Engadget日本版': 'https://japanese.engadget.com/rss.xml',
-            'CNET Japan': 'https://japan.cnet.com/rss/index.rdf',
+            # 'Engadget日本版': 'https://japanese.engadget.com/rss.xml',  # 注: サイト閉鎖済み
+            # 'CNET Japan': 'https://japan.cnet.com/rss/index.rdf',  # 注: 2026-10-12時点で404
+            'Impress Watch': 'https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf',
+            'PC Watch': 'https://pc.watch.impress.co.jp/data/rss/1.0/pcw/feed.rdf',
+            'INTERNET Watch': 'https://internet.watch.impress.co.jp/data/rss/1.0/iw/feed.rdf',
+            'ASCII.jp': 'https://ascii.jp/rss.xml',
+            '日経クロステック': 'https://xtech.nikkei.com/rss/index.rdf',
+            'gihyo.jp': 'https://gihyo.jp/feed/rss2',
+            'DevelopersIO': 'https://dev.classmethod.jp/feed/',
+            'はてブ テクノロジー': 'https://b.hatena.ne.jp/hotentry/it.rss',
             'Zenn': 'https://zenn.dev/feed',
+            'Qiita トレンド': 'https://qiita.com/popular-items/feed',
             'Qiita (JavaScript)': 'https://qiita.com/tags/JavaScript/feed.atom',
             'Qiita (Python)': 'https://qiita.com/tags/Python/feed.atom',
             'Qiita (React)': 'https://qiita.com/tags/React/feed.atom',
@@ -26,14 +35,23 @@ class NewsCollector:
             # 🌍 グローバルメディア（英語 → 自動翻訳）
             'The Verge': 'https://www.theverge.com/rss/index.xml',
             'Hacker News': 'https://news.ycombinator.com/rss',
+            'Ars Technica': 'https://feeds.arstechnica.com/arstechnica/index',
+            'WIRED': 'https://www.wired.com/feed/rss',
+            'MIT Technology Review': 'https://www.technologyreview.com/feed/',
+            'Apple Newsroom': 'https://www.apple.com/newsroom/rss-feed.rss',
 
             # ☁️ クラウド・インフラ公式（英語 → 自動翻訳）
             'AWS What\'s New': 'https://aws.amazon.com/about-aws/whats-new/recent/feed/',
             'Microsoft DevBlogs': 'https://devblogs.microsoft.com/feed/',
             'GitHub Blog': 'https://github.blog/feed/',
+            'Google Cloud Blog': 'https://cloudblog.withgoogle.com/rss/',
+            'Cloudflare Blog': 'https://blog.cloudflare.com/rss/',
 
             # 🤖 AI企業公式（英語 → 自動翻訳）
             'OpenAI Blog': 'https://openai.com/blog/rss.xml',
+            'Google AI Blog': 'https://blog.google/technology/ai/rss/',
+            'Google DeepMind': 'https://deepmind.google/blog/rss.xml',
+            'Hugging Face Blog': 'https://huggingface.co/blog/feed.xml',
 
             # 🔬 半導体・AIプラットフォーム（英語 → 自動翻訳）
             'NVIDIA Newsroom': 'https://nvidianews.nvidia.com/releases.xml',
@@ -43,25 +61,46 @@ class NewsCollector:
         self.ev_tech_feeds = {
             'Electrek': 'https://electrek.co/feed/',
             'InsideEVs': 'https://insideevs.com/rss/articles/all/',
+            'CleanTechnica': 'https://cleantechnica.com/feed/',
+        }
+
+        # 自動車メディア（日本語 + 英語）
+        self.car_media_feeds = {
+            # 🇯🇵 日本語メディア
+            'Response': 'https://response.jp/rss/index.rdf',
+            'くるまのニュース': 'https://kuruma-news.jp/feed',
+            'ベストカーWeb': 'https://bestcarweb.jp/feed',
+            'WEB CARTOP': 'https://www.webcartop.jp/feed/',
+            'AUTOCAR JAPAN': 'https://www.autocar.jp/feed',
+            'clicccar': 'https://clicccar.com/feed/',
+            'Motor-Fan': 'https://motor-fan.jp/feed',
+
+            # 🌍 グローバルメディア（英語 → 自動翻訳）
+            'Motor1': 'https://www.motor1.com/rss/news/all/',
+            'Carscoops': 'https://www.carscoops.com/feed/',
+            'Car and Driver': 'https://www.caranddriver.com/rss/all.xml/',
+            'The Drive': 'https://www.thedrive.com/feed',
         }
 
         # グローバル自動車メーカーの公式RSS
         self.manufacturer_feeds = {
             # 🇯🇵 日本（5社）
-            'Toyota': {
-                'rss_url': 'https://global.toyota/en/newsroom/rss/',
-                'country': 'japan',
-                'country_emoji': '🇯🇵',
-                'country_name_ja': '日本',
-                'description': '世界最大の自動車メーカー、HV・EV技術のパイオニア'
-            },
-            'Lexus': {
-                'rss_url': 'https://pressroom.lexus.com/rss',
-                'country': 'japan',
-                'country_emoji': '🇯🇵',
-                'country_name_ja': '日本',
-                'description': 'トヨタの高級ブランド、洗練されたデザインと品質'
-            },
+            # 'Toyota': {
+            #     'rss_url': 'https://global.toyota/en/newsroom/rss/',
+            #     'country': 'japan',
+            #     'country_emoji': '🇯🇵',
+            #     'country_name_ja': '日本',
+            #     'description': '世界最大の自動車メーカー、HV・EV技術のパイオニア'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
+            # 'Lexus': {
+            #     'rss_url': 'https://pressroom.lexus.com/rss',
+            #     'country': 'japan',
+            #     'country_emoji': '🇯🇵',
+            #     'country_name_ja': '日本',
+            #     'description': 'トヨタの高級ブランド、洗練されたデザインと品質'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
             'Honda': {
                 'rss_url': 'https://www.honda.co.jp/rss/hotnews.xml',
                 'country': 'japan',
@@ -76,22 +115,24 @@ class NewsCollector:
                 'country_name_ja': '日本',
                 'description': '日産・ルノー・三菱アライアンス、電動化に注力'
             },
-            'Mazda': {
-                'rss_url': 'https://www.mazda.com/en/rss/',
-                'country': 'japan',
-                'country_emoji': '🇯🇵',
-                'country_name_ja': '日本',
-                'description': '人馬一体の走り、独自のSKYACTIV技術とデザイン'
-            },
+            # 'Mazda': {
+            #     'rss_url': 'https://www.mazda.com/en/rss/',
+            #     'country': 'japan',
+            #     'country_emoji': '🇯🇵',
+            #     'country_name_ja': '日本',
+            #     'description': '人馬一体の走り、独自のSKYACTIV技術とデザイン'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
 
             # 🇩🇪 ドイツ（2社）
-            'Porsche': {
-                'rss_url': 'https://newsroom.porsche.com/rss.xml',
-                'country': 'germany',
-                'country_emoji': '🇩🇪',
-                'country_name_ja': 'ドイツ',
-                'description': 'スポーツカーの名門、911シリーズと電動化戦略'
-            },
+            # 'Porsche': {
+            #     'rss_url': 'https://newsroom.porsche.com/rss.xml',
+            #     'country': 'germany',
+            #     'country_emoji': '🇩🇪',
+            #     'country_name_ja': 'ドイツ',
+            #     'description': 'スポーツカーの名門、911シリーズと電動化戦略'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
             # 'Mercedes-Benz': {
             #     'rss_url': 'https://group-media.mercedes-benz.com/marsMediaSite/en/instance/ko/RSS-Feeds.xhtml?oid=9266299',
             #     'country': 'germany',
@@ -123,27 +164,30 @@ class NewsCollector:
             # },
 
             # 🇺🇸 アメリカ（3社）
-            'General Motors': {
-                'rss_url': 'https://news.gm.com/rss',
-                'country': 'usa',
-                'country_emoji': '🇺🇸',
-                'country_name_ja': 'アメリカ',
-                'description': '米国最大の自動車メーカー、シボレー・キャデラック等'
-            },
-            'Ford': {
-                'rss_url': 'https://media.ford.com/content/fordmedia/fna/us/en/rss.html',
-                'country': 'usa',
-                'country_emoji': '🇺🇸',
-                'country_name_ja': 'アメリカ',
-                'description': '米国自動車産業の創始者、ピックアップトラックで圧倒的シェア'
-            },
-            'Tesla': {
-                'rss_url': 'https://ir.tesla.com/rss/news-releases',
-                'country': 'usa',
-                'country_emoji': '🇺🇸',
-                'country_name_ja': 'アメリカ',
-                'description': '高級電気自動車メーカー、自動運転技術のリーダー'
-            },
+            # 'General Motors': {
+            #     'rss_url': 'https://news.gm.com/rss',
+            #     'country': 'usa',
+            #     'country_emoji': '🇺🇸',
+            #     'country_name_ja': 'アメリカ',
+            #     'description': '米国最大の自動車メーカー、シボレー・キャデラック等'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
+            # 'Ford': {
+            #     'rss_url': 'https://media.ford.com/content/fordmedia/fna/us/en/rss.html',
+            #     'country': 'usa',
+            #     'country_emoji': '🇺🇸',
+            #     'country_name_ja': 'アメリカ',
+            #     'description': '米国自動車産業の創始者、ピックアップトラックで圧倒的シェア'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
+            # 'Tesla': {
+            #     'rss_url': 'https://ir.tesla.com/rss/news-releases',
+            #     'country': 'usa',
+            #     'country_emoji': '🇺🇸',
+            #     'country_name_ja': 'アメリカ',
+            #     'description': '高級電気自動車メーカー、自動運転技術のリーダー'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
             # 'Chevrolet': {
             #     'rss_url': 'https://media.chevrolet.com/rss',  # 要確認
             #     'country': 'usa',
@@ -160,29 +204,32 @@ class NewsCollector:
             # },
 
             # 🇰🇷 韓国（2社）
-            'Hyundai': {
-                'rss_url': 'https://www.hyundainews.com/rss',
-                'country': 'south_korea',
-                'country_emoji': '🇰🇷',
-                'country_name_ja': '韓国',
-                'description': '韓国最大の自動車メーカー、デザインと品質で急成長'
-            },
-            'Kia': {
-                'rss_url': 'https://www.kiamedia.com/us/en/rss/PressReleases/feed.rss',
-                'country': 'south_korea',
-                'country_emoji': '🇰🇷',
-                'country_name_ja': '韓国',
-                'description': 'ヒュンダイグループ、スタイリッシュなデザインとコスパ'
-            },
+            # 'Hyundai': {
+            #     'rss_url': 'https://www.hyundainews.com/rss',
+            #     'country': 'south_korea',
+            #     'country_emoji': '🇰🇷',
+            #     'country_name_ja': '韓国',
+            #     'description': '韓国最大の自動車メーカー、デザインと品質で急成長'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
+            # 'Kia': {
+            #     'rss_url': 'https://www.kiamedia.com/us/en/rss/PressReleases/feed.rss',
+            #     'country': 'south_korea',
+            #     'country_emoji': '🇰🇷',
+            #     'country_name_ja': '韓国',
+            #     'description': 'ヒュンダイグループ、スタイリッシュなデザインとコスパ'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
 
             # 🇮🇹 イタリア（1社）
-            'Lamborghini': {
-                'rss_url': 'https://media.lamborghini.com/english/latest/rss',
-                'country': 'italy',
-                'country_emoji': '🇮🇹',
-                'country_name_ja': 'イタリア',
-                'description': 'スーパーカーの象徴、VWグループ傘下の超高級ブランド'
-            },
+            # 'Lamborghini': {
+            #     'rss_url': 'https://media.lamborghini.com/english/latest/rss',
+            #     'country': 'italy',
+            #     'country_emoji': '🇮🇹',
+            #     'country_name_ja': 'イタリア',
+            #     'description': 'スーパーカーの象徴、VWグループ傘下の超高級ブランド'
+            #     # 注: 2026-10-12時点でRSS取得不可（404/403/空フィード）
+            # },
 
             # 🇬🇧 イギリス（1社）
             'Rolls-Royce': {
@@ -221,7 +268,7 @@ class NewsCollector:
 
     def fetch_recent_news(self, hours_back: int = 24) -> List[Dict]:
         """
-        過去N時間以内のニュース記事を取得（IT + EV専門メディア + メーカー公式RSS）
+        過去N時間以内のニュース記事を取得（IT + EV専門メディア + 自動車メディア + メーカー公式RSS）
 
         Args:
             hours_back: 何時間前までの記事を取得するか
@@ -240,6 +287,10 @@ class NewsCollector:
         for source_name, feed_url in self.ev_tech_feeds.items():
             articles.extend(self._fetch_from_feed(source_name, feed_url, cutoff_time, 'car'))
 
+        # 自動車メディアを取得（車カテゴリ）
+        for source_name, feed_url in self.car_media_feeds.items():
+            articles.extend(self._fetch_from_feed(source_name, feed_url, cutoff_time, 'car'))
+
         # メーカー公式記事を取得（車カテゴリ）
         for manufacturer_name, manufacturer_info in self.manufacturer_feeds.items():
             feed_url = manufacturer_info['rss_url']
@@ -251,6 +302,15 @@ class NewsCollector:
                 manufacturer_info=manufacturer_info
             ))
 
+        # 同じURLの記事を除外（はてブ等の集約フィードと元メディアの重複対策）
+        seen_urls = set()
+        unique_articles = []
+        for article in articles:
+            if article['url'] not in seen_urls:
+                seen_urls.add(article['url'])
+                unique_articles.append(article)
+        articles = unique_articles
+
         # 公開日時順にソート
         articles.sort(key=lambda x: x['published'], reverse=True)
 
@@ -260,11 +320,14 @@ class NewsCollector:
 
         # IT記事の内訳
         japanese_media = ['ITmedia News', 'ITmedia AI+', '@IT', 'Publickey', 'GIZMODO Japan',
-                          'TechCrunch Japan', 'Engadget日本版', 'CNET Japan', 'Zenn',
-                          'Qiita (JavaScript)', 'Qiita (Python)', 'Qiita (React)']
-        global_media = ['The Verge', 'Hacker News']
-        cloud_infra = ['AWS What\'s New', 'Microsoft DevBlogs', 'GitHub Blog']
-        ai_companies = ['OpenAI Blog']
+                          'TechCrunch Japan', 'Impress Watch', 'PC Watch', 'INTERNET Watch',
+                          'ASCII.jp', '日経クロステック', 'gihyo.jp', 'DevelopersIO', 'はてブ テクノロジー',
+                          'Zenn', 'Qiita トレンド', 'Qiita (JavaScript)', 'Qiita (Python)', 'Qiita (React)']
+        global_media = ['The Verge', 'Hacker News', 'Ars Technica', 'WIRED', 'MIT Technology Review',
+                        'Apple Newsroom']
+        cloud_infra = ['AWS What\'s New', 'Microsoft DevBlogs', 'GitHub Blog', 'Google Cloud Blog',
+                       'Cloudflare Blog']
+        ai_companies = ['OpenAI Blog', 'Google AI Blog', 'Google DeepMind', 'Hugging Face Blog']
         semiconductor_ai = ['NVIDIA Newsroom']
 
         jp_articles = [a for a in it_articles if a['source'] in japanese_media]
@@ -275,6 +338,7 @@ class NewsCollector:
 
         # 車記事の内訳
         ev_media_articles = [a for a in car_articles if a['source'] in self.ev_tech_feeds.keys()]
+        car_media_articles = [a for a in car_articles if a['source'] in self.car_media_feeds.keys()]
         manufacturer_articles = [a for a in car_articles if a['source'] in self.manufacturer_feeds.keys()]
 
         print(f"\n✅ 合計 {len(articles)} 件の記事を取得しました")
@@ -286,6 +350,7 @@ class NewsCollector:
         print(f"      └─ 🔬 半導体・AIプラットフォーム: {len(semi_articles)} 件")
         print(f"   🚗 車: {len(car_articles)} 件")
         print(f"      ├─ ⚡ EVテックメディア: {len(ev_media_articles)} 件")
+        print(f"      ├─ 📰 自動車メディア: {len(car_media_articles)} 件")
         print(f"      └─ 🏭 メーカー公式RSS: {len(manufacturer_articles)} 件\n")
 
         return articles

@@ -133,13 +133,40 @@ class NewsAnalyzer:
             print(f"  ⚠️  重要度評価エラー: {str(e)}")
             return 0
 
-    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3) -> str:
+    def _select_articles_for_evaluation(self, articles: List[Dict], max_count: int) -> List[Dict]:
+        """
+        評価対象の記事を情報源ごとに順番に選ぶ（1つの情報源に偏らないようにする）
+
+        Args:
+            articles: 記事のリスト（新しい順）
+            max_count: 選ぶ最大記事数
+
+        Returns:
+            選ばれた記事のリスト
+        """
+        by_source = {}
+        for article in articles:
+            by_source.setdefault(article['source'], []).append(article)
+
+        selected = []
+        queues = list(by_source.values())
+        while len(selected) < max_count and queues:
+            for queue in queues:
+                if len(selected) >= max_count:
+                    break
+                selected.append(queue.pop(0))
+            queues = [q for q in queues if q]
+
+        return selected
+
+    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3, max_evaluate: int = 80) -> str:
         """
         ニュース記事をまとめて要約（重要度基準で選択）
 
         Args:
             articles: 記事のリスト
             importance_threshold: 重要度の閾値（1-5、この値以上の記事のみ配信）
+            max_evaluate: 重要度を評価する最大記事数
 
         Returns:
             要約されたニュース文字列
@@ -152,7 +179,7 @@ class NewsAnalyzer:
 
         # 各記事の重要度を評価
         all_scored_articles = []
-        for article in articles[:30]:  # 最大30件を評価
+        for article in self._select_articles_for_evaluation(articles, max_evaluate):
             score = self.evaluate_article_importance(article)
             article['importance_score'] = score
             all_scored_articles.append(article)

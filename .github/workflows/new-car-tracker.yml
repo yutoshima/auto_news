@@ -46,4 +46,5 @@ jobs:
           python main.py --mode new-cars --hours 168
 
       - name: 記事をコミット・プッシュ
-        run: scripts/commit_and_push.sh "自動保存: $(date +'%Y-%m-%d %H:%M') の新型車記事"
+        run: |
+          scripts/commit_and_push.sh "自動保存: $(date +'%Y-%m-%d %H:%M') の新型車記事"

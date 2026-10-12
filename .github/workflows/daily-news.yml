@@ -59,4 +59,5 @@ jobs:
           python main.py --mode ${{ github.event.inputs.mode || 'all' }} --hours ${{ github.event.inputs.hours || '24' }}
 
       - name: 記事をコミット・プッシュ
-        run: scripts/commit_and_push.sh "自動保存: $(date +'%Y-%m-%d %H:%M') のニュース記事"
+        run: |
+          scripts/commit_and_push.sh "自動保存: $(date +'%Y-%m-%d %H:%M') のニュース記事"

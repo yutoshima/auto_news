@@ -21,6 +21,8 @@ def main():
                         help='何時間前までのニュースを取得するか（デフォルト: 24時間）')
     parser.add_argument('--importance', type=int, default=3,
                         help='重要度の閾値（1-5、デフォルト: 3）この値以上の記事を配信')
+    parser.add_argument('--alert-importance', type=int, default=4,
+                        help='@everyoneで通知する重要度の閾値（1-5、デフォルト: 4）')
 
     args = parser.parse_args()
 
@@ -131,6 +133,8 @@ def main():
 
                     if it_success:
                         print("✅ IT記事配信完了\n")
+                        if notifier.send_important_alert(it_articles, category='it', alert_threshold=args.alert_importance):
+                            print("🚨 IT重要ニュース通知完了\n")
                     else:
                         print("❌ IT記事配信失敗\n")
                 else:
@@ -154,6 +158,8 @@ def main():
 
                     if car_success:
                         print("✅ 車記事配信完了\n")
+                        if notifier.send_important_alert(car_articles, category='car', alert_threshold=args.alert_importance):
+                            print("🚨 車重要ニュース通知完了\n")
                     else:
                         print("❌ 車記事配信失敗\n")
                 else:

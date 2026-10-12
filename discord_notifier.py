@@ -94,6 +94,43 @@ class DiscordNotifier:
 
         return True
 
+    def send_important_alert(self, articles: List[Dict], category: str, alert_threshold: int = 4) -> bool:
+        """
+        重要度の高い記事を@everyone付きで通知（スマホにプッシュ通知を届ける）
+
+        Args:
+            articles: 記事のリスト（importance_score付き）
+            category: 'it' または 'car'
+            alert_threshold: この重要度以上の記事を通知
+
+        Returns:
+            送信成功したかどうか（対象記事がない場合もTrue）
+        """
+        important = [a for a in articles if a.get('importance_score', 0) >= alert_threshold]
+        if not important:
+            return True
+
+        webhook_url = self._get_webhook_for_category(category)
+        if not webhook_url:
+            print(f"⚠️ カテゴリ '{category}' のWebhook URLが設定されていません")
+            return False
+
+        important.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
+        category_name = "IT" if category == "it" else "車"
+
+        lines = [f"@everyone 🚨 **重要度★{alert_threshold}以上の{category_name}ニュースが {len(important)} 件あります**"]
+        for article in important:
+            score = article.get('importance_score', 0)
+            title = article['title'].replace('[', '［').replace(']', '］')[:100]
+            # <URL> でリンクプレビューを抑制
+            lines.append(f"- {'⭐' * score} [{title}](<{article['url']}>) - *{article['source']}*")
+
+        success = True
+        for chunk in self._split_text('\n'.join(lines), 1900):
+            payload = {"content": chunk, "allowed_mentions": {"parse": ["everyone"]}}
+            success &= self._send_webhook(payload, webhook_url)
+        return success
+
     def send_articles_by_category(self, articles: List[Dict]) -> bool:
         """
         記事をカテゴリ別に分類して適切なチャンネルに送信

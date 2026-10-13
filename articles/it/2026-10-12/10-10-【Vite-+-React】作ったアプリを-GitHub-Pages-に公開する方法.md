@@ -1,6 +1,6 @@
 ---
 title: "【Vite + React】作ったアプリを GitHub Pages に公開する方法"
-source: "Qiita (JavaScript)"
+source: "Qiita (React)"
 category: "it"
 published: 2026-10-12T10:10:32
 url: https://qiita.com/kf_webdev/items/cefea15d3cf2a01c6a53
@@ -10,7 +10,7 @@ url: https://qiita.com/kf_webdev/items/cefea15d3cf2a01c6a53
 
 ## メタデータ
 
-- **情報源**: Qiita (JavaScript)
+- **情報源**: Qiita (React)
 - **カテゴリ**: it
 - **公開日時**: 2026年10月12日 10:10
 - **URL**: [https://qiita.com/kf_webdev/items/cefea15d3cf2a01c6a53](https://qiita.com/kf_webdev/items/cefea15d3cf2a01c6a53)

@@ -1,0 +1,24 @@
+---
+title: "GoogleのEmbeddingGemma 2を音声認識モデルに変換した「Embedding Gemma Transcribe」、オフライン環境のMacなら15分の音声をわずか約3秒で爆速文字起こし可能"
+source: "はてブ テクノロジー"
+category: "it"
+published: 2026-10-14T13:13:34
+url: https://gigazine.net/news/20261014-embetting-gemma-transcribe/
+---
+
+# GoogleのEmbeddingGemma 2を音声認識モデルに変換した「Embedding Gemma Transcribe」、オフライン環境のMacなら15分の音声をわずか約3秒で爆速文字起こし可能
+
+## メタデータ
+
+- **情報源**: はてブ テクノロジー
+- **カテゴリ**: it
+- **公開日時**: 2026年10月14日 13:13
+- **URL**: [https://gigazine.net/news/20261014-embetting-gemma-transcribe/](https://gigazine.net/news/20261014-embetting-gemma-transcribe/)
+
+## 概要
+
+音声をテキストに変換する文字起こしには一般的に音声認識専用のAIモデルが使われます。しかし、文章の意味を数値で表現する埋め込みモデルのEmbeddingGemma 2を利用して音声を文字起こしするという一風変わったアプローチを採用した「Embedding Gemma Transcribe」が登場しました。Embedding Gemma TranscribeはApple S...
+
+---
+
+*この記事は自動収集システムによって保存されました。*

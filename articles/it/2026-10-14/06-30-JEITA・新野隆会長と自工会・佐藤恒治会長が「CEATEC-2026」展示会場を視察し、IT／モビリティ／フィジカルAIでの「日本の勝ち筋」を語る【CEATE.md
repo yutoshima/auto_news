@@ -1,0 +1,24 @@
+---
+title: "JEITA・新野隆会長と自工会・佐藤恒治会長が「CEATEC 2026」展示会場を視察し、IT／モビリティ／フィジカルAIでの「日本の勝ち筋」を語る【CEATEC 2026】"
+source: "INTERNET Watch"
+category: "it"
+published: 2026-10-14T06:30:00
+url: https://internet.watch.impress.co.jp/docs/event/2147942.html
+---
+
+# JEITA・新野隆会長と自工会・佐藤恒治会長が「CEATEC 2026」展示会場を視察し、IT／モビリティ／フィジカルAIでの「日本の勝ち筋」を語る【CEATEC 2026】
+
+## メタデータ
+
+- **情報源**: INTERNET Watch
+- **カテゴリ**: it
+- **公開日時**: 2026年10月14日 06:30
+- **URL**: [https://internet.watch.impress.co.jp/docs/event/2147942.html](https://internet.watch.impress.co.jp/docs/event/2147942.html)
+
+## 概要
+
+「CEATEC 2026」と「Japan Mobility Show Bizweek 2026」が開催されている幕張メッセで、会期初日となる10月13日、CEATEC 2026の主催団体である一般社団法人電子情報技術産業協会（JEITA）の新野隆会長（NEC会長）と、Japan Mobility Show Bizweek 2026を主催する一般社団法人日本自動車工業会（自工会）の佐藤恒治会長（トヨタ自動車副会長兼CIO）が、2つのイベント会場を一緒に視察した。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

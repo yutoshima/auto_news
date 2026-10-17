@@ -17,8 +17,10 @@ class NewsAnalyzer:
             base_url="https://api.poe.com/v1",
         )
         self.model = os.getenv("POE_MODEL", "gemini-3-flash")
+        # 重要度評価・要約用のモデル（翻訳より判断力が必要なため別に指定できる）
+        self.scoring_model = os.getenv("POE_SCORING_MODEL") or self.model
 
-        print(f"🤖 LLMモデル: {self.model}")
+        print(f"🤖 LLMモデル: {self.model}（評価・要約: {self.scoring_model}）")
 
     def translate_to_japanese(self, text: str) -> str:
         """
@@ -103,7 +105,7 @@ class NewsAnalyzer:
 
         try:
             response = self.client.chat.completions.create(
-                model=self.model,
+                model=self.scoring_model,
                 messages=[
                     {"role": "system", "content": "あなたは業界ニュースの重要度を評価する専門家です。必ず日本語でJSON形式で回答してください。英語は一切使用しないでください。"},
                     {"role": "user", "content": prompt}
@@ -200,7 +202,7 @@ class NewsAnalyzer:
 
         try:
             response = self.client.chat.completions.create(
-                model=self.model,
+                model=self.scoring_model,
                 messages=[
                     {"role": "system", "content": "あなたは業界ニュースの重要度を比較評価する専門家です。必ずJSON形式で回答してください。"},
                     {"role": "user", "content": prompt}
@@ -321,7 +323,7 @@ class NewsAnalyzer:
 
             try:
                 response = self.client.chat.completions.create(
-                    model=self.model,
+                    model=self.scoring_model,
                     messages=[
                         {"role": "system", "content": "あなたは車とIT業界に詳しい専門ニュースキュレーターです。必ず日本語のみで回答してください。英語は一切使用しないでください。"},
                         {"role": "user", "content": prompt}

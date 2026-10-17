@@ -17,7 +17,7 @@ url: https://www.theverge.com/entertainment/1013277/wu-tang-once-upon-a-time-in-
 
 ## 概要
 
-Wu-Tangの『Once Upon A Time in Shaolin』アルバムは、ほとんどの部分で聴くのが極めて困難でしたが、独占レコードについてのエピソードを公開したポッドキャスト「Pablo Torre Finds Out」のおかげで、現在そのアルバムの2つの断片を聴くことができます。
+Wu-Tangの「Once Upon A Time in Shaolin」アルバムは、ほとんどの部分で聴くのが非常に難しい状態でしたが、現在は「Pablo Torre Finds Out」というポッドキャストのおかげでアルバムの断片を2つ聴くことができます。というのも、同番組はこの独占盤についてのエピソードを公開したばかりだからです。「Once Upon A Time in Shaolin」には…
 
 ---
 

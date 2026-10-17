@@ -17,7 +17,7 @@ url: https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/
 
 ## 概要
 
-その会社はまず、トロントの街路で自動運転車のテストを開始します。
+会社はトロントの街路で自動運転車のテストを行うことから始める。
 
 ---
 

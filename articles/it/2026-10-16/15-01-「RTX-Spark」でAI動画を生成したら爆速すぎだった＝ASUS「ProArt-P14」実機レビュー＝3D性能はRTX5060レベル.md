@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/443/4443110/?rss
 
 ## 概要
 
-「NVIDIA RTX Spark」を搭載するノートPC「ProArt P14」で速度を測定し、ローカルAIでムービーを生成してみました。
+「NVIDIA RTX Spark」を搭載するノートPC「ProArt P14」で速度を計り、ローカルAIでムービーを生成してみました。
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Apple ML Research: Muse Spark Open with MLX on Mac Studio\n\n日本語訳: Apple の ML リサーチ: Muse Spark を MLX で Mac Studio とともに開く"
+title: "Apple ML Research: Muse Spark Open with MLX on Mac Studio\n\n日本語訳:\nApple の ML リサーチ: Muse Spark を MLX で Mac Studio 上でオープン"
 source: "Hacker News"
 category: "it"
 published: 2026-10-16T13:43:48
@@ -8,7 +8,8 @@ url: https://machinelearning.apple.com/research/mlx-distributed-inference
 
 # Apple ML Research: Muse Spark Open with MLX on Mac Studio
 
-日本語訳: Apple の ML リサーチ: Muse Spark を MLX で Mac Studio とともに開く
+日本語訳:
+Apple の ML リサーチ: Muse Spark を MLX で Mac Studio 上でオープン
 
 ## メタデータ
 

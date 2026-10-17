@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/443/4443443/?rss
 
 ## 概要
 
-ダイソンの製品がAmazonのプライム感謝セールですごく値引きされている。あまりみたことない37%オフの製品も……。
+<p><img align="left" height="60" src="https://ascii.jp/img/2026/10/16/4539692/s/a842e6a59591bfeb.png" width="60" />ダイソンの製品がAmazonのプライム感謝セールでとても値引きされています。あまり見たことない37%オフの製品も……。</p><br clear="left" />
 
 ---
 

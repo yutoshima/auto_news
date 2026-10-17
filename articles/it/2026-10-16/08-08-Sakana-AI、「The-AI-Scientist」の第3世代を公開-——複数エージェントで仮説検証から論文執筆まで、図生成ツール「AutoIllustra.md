@@ -17,7 +17,7 @@ url: https://gihyo.jp/article/2026/10/the-agentic-scientist-v3?utm_source=feed
 
 ## 概要
 
-Sakana AIは2026年10月15日、科学研究の自動化を目的としたThe AI Scientistの第3世代「The Agentic Scientist」を公開しました。
+Sakana AIは、科学研究を自動化するThe AI Scientistの第3世代「The Agentic Scientist」を、2026年10月15日に公開した。
 
 ---
 

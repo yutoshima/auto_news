@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/443/4443502/?rss
 
 ## 概要
 
-デノンは10月17日と18日の2日間、表参道のLIGHT BOX ATELIERで、ポップアップイベント「MEET RECORDS, MEET DENON.」を開催する。入場料は無料。
+デノンは10月17日と18日の2日間、表参道のLIGHT BOX ATELIERで、ポップアップイベント「MEET RECORDS, MEET DENON.」を開催します。入場料は無料です。
 
 ---
 

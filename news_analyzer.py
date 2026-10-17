@@ -66,6 +66,48 @@ class NewsAnalyzer:
             print(f"  ⚠️  翻訳エラー: {str(e)}")
             return text
 
+    def _ask_json(self, system: str, prompt: str, max_tokens: int) -> Dict:
+        """
+        評価用モデルにJSONで回答させて解析する。
+        失敗した場合は翻訳用モデル（POE_MODEL）でもう一度試す。
+
+        Raises:
+            ValueError: どちらのモデルでも解析できなかった場合
+        """
+        models = [self.scoring_model]
+        if self.model != self.scoring_model:
+            models.append(self.model)
+
+        last_error = None
+        for model in models:
+            content = ""
+            try:
+                response = self.client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": system},
+                        {"role": "user", "content": prompt}
+                    ],
+                    temperature=0.2,
+                    max_tokens=max_tokens
+                )
+                content = response.choices[0].message.content or ""
+                return self._parse_json(content)
+            except Exception as e:
+                last_error = e
+                print(f"  ⚠️  {model} の回答を解析できませんでした: {str(e)} / 回答: {content[:80]!r}")
+
+        raise ValueError(f"JSONを取得できませんでした: {last_error}")
+
+    @staticmethod
+    def _parse_json(content: str) -> Dict:
+        """回答テキストからJSONオブジェクトを取り出す（前後の文章やコードブロックは無視する）"""
+        start = content.find("{")
+        end = content.rfind("}")
+        if start == -1 or end < start:
+            raise ValueError("回答にJSONが含まれていません")
+        return json.loads(content[start:end + 1])
+
     def evaluate_article_importance(self, article: Dict) -> int:
         """
         記事の重要度を評価（1-5の星評価）
@@ -104,28 +146,14 @@ class NewsAnalyzer:
 }}"""
 
         try:
-            response = self.client.chat.completions.create(
-                model=self.scoring_model,
-                messages=[
-                    {"role": "system", "content": "あなたは業界ニュースの重要度を評価する専門家です。必ず日本語でJSON形式で回答してください。英語は一切使用しないでください。"},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.2,
-                max_tokens=150
+            result = self._ask_json(
+                "あなたは業界ニュースの重要度を評価する専門家です。必ず日本語でJSON形式で回答してください。英語は一切使用しないでください。",
+                prompt,
+                max_tokens=1000
             )
-
-            content = response.choices[0].message.content
-
-            # JSONブロックを抽出
-            if "```json" in content:
-                json_str = content.split("```json")[1].split("```")[0].strip()
-            elif "```" in content:
-                json_str = content.split("```")[1].split("```")[0].strip()
-            else:
-                json_str = content.strip()
-
-            result = json.loads(json_str)
-            score = result.get("score", 0)
+            score = int(result.get("score", 0))
+            if not 1 <= score <= 5:
+                raise ValueError(f"スコアが範囲外です: {score}")
 
             # 星マークで表示
             stars = "★" * score + "☆" * (5 - score)
@@ -201,27 +229,13 @@ class NewsAnalyzer:
 {{"top": [番号, 番号, ...]}}"""
 
         try:
-            response = self.client.chat.completions.create(
-                model=self.scoring_model,
-                messages=[
-                    {"role": "system", "content": "あなたは業界ニュースの重要度を比較評価する専門家です。必ずJSON形式で回答してください。"},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.2,
-                max_tokens=200
+            result = self._ask_json(
+                "あなたは業界ニュースの重要度を比較評価する専門家です。必ずJSON形式で回答してください。",
+                prompt,
+                max_tokens=1000
             )
 
-            content = response.choices[0].message.content
-
-            # JSONブロックを抽出
-            if "```json" in content:
-                json_str = content.split("```json")[1].split("```")[0].strip()
-            elif "```" in content:
-                json_str = content.split("```")[1].split("```")[0].strip()
-            else:
-                json_str = content.strip()
-
-            top_numbers = json.loads(json_str).get("top", [])
+            top_numbers = result.get("top", [])
             selected_ids = set()
             for n in top_numbers:
                 if isinstance(n, int) and 1 <= n <= len(candidates) and len(selected_ids) < max_top:

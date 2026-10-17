@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/443/4443533/?rss
 
 ## 概要
 
-<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />Eyeglass and watch surface finishing technology adapted for peeling blades. A julienne slicer made with Sena Santetsu edge processing × Sabae titanium加工, now available for pre-orders on Makuake</p><br clear="left" />
+眼鏡や腕時計の表面処理の技術を、ピーラーの刃に。燕三条の刃付け×鯖江のチタン加工でつくった千切りスライサー、Makuakeで先行販売を開始
 
 ---
 

@@ -17,7 +17,7 @@ url: https://www.wired.com/review/microsoft-surface-laptop-ultra/
 
 ## 概要
 
-Surface Laptop Ultraは、Windows機の真のMacBook Pro対抗機であり、MicrosoftがAppleを王座から引きずり下ろす機会にこれほど近づいたことは今までない—ただし、バッテリー駆動時間が足りないのが惜しい。
+Surface Laptop Ultraは、Windows機として真のMacBook Proの競合機であり、マイクロソフトがかつてないほどアップルを王座から引きずり下ろす可能性に近づいている——ただしバッテリー寿命が不足していなければの話だ。
 
 ---
 

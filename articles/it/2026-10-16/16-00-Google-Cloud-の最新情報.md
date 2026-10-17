@@ -17,9 +17,9 @@ url: https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-c
 
 ## 概要
 
-Google Cloudの最新情報を知りたいですか？ここですべてを1か所で確認できます。最新のアップデート、生放送、アナウンス、リソース、イベント、学習機会などを定期的にチェックしてください。
+Google Cloudの最新情報を知りたいですか？ここで一カ所にまとめて紹介します。最新のアップデート、発表、リソース、イベント、学習機会などを定期的にご確認ください。
 
-ヒント：Google Cloudブログで探している情報の場所がわからない場合は、ここから始めてください：https://cloud.google.com/blog/topics/inside-google-cloud/complete-list-google-cloud-blog-links-2021
+ヒント: Google Cloudブログで探している情報の場所が分からない場合は、ここから始めてください。「Google Cloudブログ 101: トピックの完全リスト、リンク、そして…」
 
 ---
 

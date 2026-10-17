@@ -45,7 +45,7 @@ class DiscordNotifier:
             'Unknown': 0x00FF00,           # 緑 - その他
         }
 
-    def send_daily_summary(self, summary_text: str, articles: list = None, category: str = None, importance_threshold: int = 3) -> bool:
+    def send_daily_summary(self, summary_text: str, articles: list = None, category: str = None, importance_threshold: int = 3, max_articles: int = 10) -> bool:
         """
         日次ニュースサマリーをEmbed形式で送信
 
@@ -54,6 +54,7 @@ class DiscordNotifier:
             articles: 記事のリスト（URLリンク用）
             category: 'it', 'car', またはNone（すべて）
             importance_threshold: 重要度の閾値（この値以上の記事のみ送信）
+            max_articles: 送信する最大記事数（重要度の高い順）
 
         Returns:
             送信成功したかどうか
@@ -80,21 +81,26 @@ class DiscordNotifier:
             scored_articles = [a for a in articles if a.get('importance_score', 0) >= importance_threshold]
             # 重要度順にソート
             scored_articles.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
+            scored_articles = scored_articles[:max_articles]
 
+            all_success = True
             for i, article in enumerate(scored_articles, 1):
                 if i > 1:
                     time.sleep(1)  # レート制限対策
 
                 success = self._send_article_embed(article, i, webhook_url)
                 if not success:
+                    # 1件失敗しても残りの記事は送信を続ける
                     print(f"⚠️ ニュース {i}/{len(scored_articles)} の送信に失敗しました")
-                    return False
+                    all_success = False
                 else:
                     print(f"✅ ニュース {i}/{len(scored_articles)} を送信しました")
 
+            return all_success
+
         return True
 
-    def send_important_alert(self, articles: List[Dict], category: str, alert_threshold: int = 4) -> bool:
+    def send_important_alert(self, articles: List[Dict], category: str, alert_threshold: int = 4, max_articles: int = 5) -> bool:
         """
         重要度の高い記事を@everyone付きで通知（スマホにプッシュ通知を届ける）
 
@@ -102,6 +108,7 @@ class DiscordNotifier:
             articles: 記事のリスト（importance_score付き）
             category: 'it' または 'car'
             alert_threshold: この重要度以上の記事を通知
+            max_articles: 通知する最大記事数（重要度の高い順）
 
         Returns:
             送信成功したかどうか（対象記事がない場合もTrue）
@@ -116,9 +123,10 @@ class DiscordNotifier:
             return False
 
         important.sort(key=lambda x: x.get('importance_score', 0), reverse=True)
+        important = important[:max_articles]
         category_name = "IT" if category == "it" else "車"
 
-        lines = [f"@everyone 🚨 **重要度★{alert_threshold}以上の{category_name}ニュースが {len(important)} 件あります**"]
+        lines = [f"@everyone 🚨 **今日の{category_name}重要ニュース（★{alert_threshold}以上）**"]
         for article in important:
             score = article.get('importance_score', 0)
             title = article['title'].replace('[', '［').replace(']', '］')[:100]
@@ -331,18 +339,33 @@ class DiscordNotifier:
             print(f"❌ Webhook URLが設定されていません")
             return False
 
-        try:
-            response = requests.post(webhook_url, json=payload)
+        import time
 
-            if response.status_code in [200, 204]:
-                return True
-            else:
+        for attempt in range(4):
+            try:
+                response = requests.post(webhook_url, json=payload, timeout=30)
+
+                if response.status_code in [200, 204]:
+                    return True
+
+                # レート制限: Discordが指定する時間だけ待って再送
+                if response.status_code == 429 and attempt < 3:
+                    try:
+                        retry_after = float(response.json().get('retry_after', 2))
+                    except ValueError:
+                        retry_after = 2
+                    print(f"⏳ Discordのレート制限のため {retry_after:.1f} 秒待って再送します")
+                    time.sleep(retry_after + 0.5)
+                    continue
+
                 print(f"❌ Discord送信失敗: ステータスコード {response.status_code}")
                 return False
 
-        except Exception as e:
-            print(f"❌ Discord送信エラー: {str(e)}")
-            return False
+            except Exception as e:
+                print(f"❌ Discord送信エラー: {str(e)}")
+                return False
+
+        return False
 
     def _get_webhook_for_category(self, category: Optional[str]) -> Optional[str]:
         """

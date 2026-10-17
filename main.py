@@ -23,6 +23,10 @@ def main():
                         help='重要度の閾値（1-5、デフォルト: 3）この値以上の記事を配信')
     parser.add_argument('--alert-importance', type=int, default=4,
                         help='@everyoneで通知する重要度の閾値（1-5、デフォルト: 4）')
+    parser.add_argument('--max-articles', type=int, default=10,
+                        help='カテゴリごとに配信する最大記事数（デフォルト: 10）')
+    parser.add_argument('--max-alerts', type=int, default=5,
+                        help='カテゴリごとに@everyoneで通知する最大記事数（デフォルト: 5）')
 
     args = parser.parse_args()
 
@@ -129,11 +133,11 @@ def main():
                     print()
 
                     print("📤 ITチャンネルに送信中...\n")
-                    it_success = notifier.send_daily_summary(it_summary, it_articles, category='it', importance_threshold=args.importance)
+                    it_success = notifier.send_daily_summary(it_summary, it_articles, category='it', importance_threshold=args.importance, max_articles=args.max_articles)
 
                     if it_success:
                         print("✅ IT記事配信完了\n")
-                        if notifier.send_important_alert(it_articles, category='it', alert_threshold=args.alert_importance):
+                        if notifier.send_important_alert(it_articles, category='it', alert_threshold=args.alert_importance, max_articles=args.max_alerts):
                             print("🚨 IT重要ニュース通知完了\n")
                     else:
                         print("❌ IT記事配信失敗\n")
@@ -154,11 +158,11 @@ def main():
                     print()
 
                     print("📤 車チャンネルに送信中...\n")
-                    car_success = notifier.send_daily_summary(car_summary, car_articles, category='car', importance_threshold=args.importance)
+                    car_success = notifier.send_daily_summary(car_summary, car_articles, category='car', importance_threshold=args.importance, max_articles=args.max_articles)
 
                     if car_success:
                         print("✅ 車記事配信完了\n")
-                        if notifier.send_important_alert(car_articles, category='car', alert_threshold=args.alert_importance):
+                        if notifier.send_important_alert(car_articles, category='car', alert_threshold=args.alert_importance, max_articles=args.max_alerts):
                             print("🚨 車重要ニュース通知完了\n")
                     else:
                         print("❌ 車記事配信失敗\n")

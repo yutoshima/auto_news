@@ -161,7 +161,83 @@ class NewsAnalyzer:
 
         return selected
 
-    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3, max_evaluate: int = 80) -> str:
+    def _rerank_top_articles(self, articles: List[Dict], max_top: int, top_threshold: int = 4) -> None:
+        """
+        ★4以上の記事をまとめてLLMに比較させ、本当に重要な上位max_top件だけを残す
+        （個別評価では★4が乱発されるため）。選ばれなかった記事は★3に下げる。
+
+        Args:
+            articles: importance_score付きの記事のリスト（その場で書き換える）
+            max_top: ★4以上として残す最大記事数
+            top_threshold: 相対評価の対象にする重要度
+        """
+        candidates = [a for a in articles if a.get('importance_score', 0) >= top_threshold]
+        if len(candidates) <= max_top:
+            return
+
+        print(f"\n⚖️  ★{top_threshold}以上の {len(candidates)} 件を比較して上位 {max_top} 件に絞り込み中...\n")
+
+        article_list = ""
+        for i, article in enumerate(candidates, 1):
+            summary = article.get('summary', '')
+            if isinstance(summary, list):
+                summary = ' '.join(summary)
+            article_list += f"{i}. {article['title']}（{article['source']}）\n   {str(summary)[:120]}\n"
+
+        prompt = f"""あなたは車とIT業界の専門アナリストです。以下は今日のニュース候補です。
+この中から、業界関係者が今日必ず知っておくべき最も重要なニュースを最大{max_top}件選んでください。
+
+選ぶ基準:
+- 業界全体に影響する事実（正式発表、大型提携・買収、重大なリコール・規制・情報漏えいなど）を優先する
+- 同じ出来事を扱った記事が複数ある場合は、最も情報量の多い1件だけを選ぶ
+- コラム・意見記事・ポッドキャスト・試乗記・レビュー・写真ギャラリー・噂や予想は選ばない
+- 該当するものが少なければ{max_top}件未満でもよい
+
+候補:
+{article_list}
+**重要**: 次のJSON形式のみで回答してください（重要な順に番号を並べる）:
+{{"top": [番号, 番号, ...]}}"""
+
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[
+                    {"role": "system", "content": "あなたは業界ニュースの重要度を比較評価する専門家です。必ずJSON形式で回答してください。"},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.2,
+                max_tokens=200
+            )
+
+            content = response.choices[0].message.content
+
+            # JSONブロックを抽出
+            if "```json" in content:
+                json_str = content.split("```json")[1].split("```")[0].strip()
+            elif "```" in content:
+                json_str = content.split("```")[1].split("```")[0].strip()
+            else:
+                json_str = content.strip()
+
+            top_numbers = json.loads(json_str).get("top", [])
+            selected_ids = set()
+            for n in top_numbers:
+                if isinstance(n, int) and 1 <= n <= len(candidates) and len(selected_ids) < max_top:
+                    selected_ids.add(id(candidates[n - 1]))
+
+        except Exception as e:
+            print(f"  ⚠️  相対評価エラー: {str(e)}（個別評価のスコアをそのまま使います）")
+            return
+
+        for article in candidates:
+            if id(article) in selected_ids:
+                print(f"  ✅ ★{article['importance_score']} 維持 - {article['title'][:50]}...")
+            else:
+                article['importance_score'] = top_threshold - 1
+
+        print(f"\n  → ★{top_threshold}以上: {len(candidates)} 件 → {len(selected_ids)} 件\n")
+
+    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3, max_evaluate: int = 80, max_top: int = 5) -> str:
         """
         ニュース記事をまとめて要約（重要度基準で選択）
 
@@ -169,6 +245,7 @@ class NewsAnalyzer:
             articles: 記事のリスト
             importance_threshold: 重要度の閾値（1-5、この値以上の記事のみ配信）
             max_evaluate: 重要度を評価する最大記事数
+            max_top: ★4以上として残す最大記事数（相対評価で絞り込む）
 
         Returns:
             要約されたニュース文字列
@@ -185,6 +262,9 @@ class NewsAnalyzer:
             score = self.evaluate_article_importance(article)
             article['importance_score'] = score
             all_scored_articles.append(article)
+
+        # ★4以上の記事を相対評価で上位数件に絞る
+        self._rerank_top_articles(all_scored_articles, max_top)
 
         # 重要度順にソート
         all_scored_articles.sort(key=lambda x: x.get('importance_score', 0), reverse=True)

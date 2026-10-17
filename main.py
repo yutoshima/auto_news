@@ -122,7 +122,7 @@ def main():
             # IT記事の要約と送信
             if it_articles:
                 print(f"💻 IT記事 {len(it_articles)} 件を処理中...\n")
-                it_summary = analyzer.summarize_daily_news(it_articles, importance_threshold=args.importance)
+                it_summary = analyzer.summarize_daily_news(it_articles, importance_threshold=args.importance, max_top=args.max_alerts)
 
                 # 重要記事が見つかった場合のみ送信
                 if "重要度" not in it_summary or "ありませんでした" not in it_summary:
@@ -137,17 +137,19 @@ def main():
 
                     if it_success:
                         print("✅ IT記事配信完了\n")
-                        if notifier.send_important_alert(it_articles, category='it', alert_threshold=args.alert_importance, max_articles=args.max_alerts):
-                            print("🚨 IT重要ニュース通知完了\n")
                     else:
-                        print("❌ IT記事配信失敗\n")
+                        print("⚠️ IT記事の一部が配信できませんでした\n")
+
+                    # 一部の記事が送れなくても重要ニュースの通知は送る
+                    if notifier.send_important_alert(it_articles, category='it', alert_threshold=args.alert_importance, max_articles=args.max_alerts):
+                        print("🚨 IT重要ニュース通知完了\n")
                 else:
                     print(f"⚠️  重要度 ★{args.importance}/5 以上のIT記事はありませんでした\n")
 
             # 車記事の要約と送信
             if car_articles:
                 print(f"🚗 車記事 {len(car_articles)} 件を処理中...\n")
-                car_summary = analyzer.summarize_daily_news(car_articles, importance_threshold=args.importance)
+                car_summary = analyzer.summarize_daily_news(car_articles, importance_threshold=args.importance, max_top=args.max_alerts)
 
                 # 重要記事が見つかった場合のみ送信
                 if "重要度" not in car_summary or "ありませんでした" not in car_summary:
@@ -162,10 +164,12 @@ def main():
 
                     if car_success:
                         print("✅ 車記事配信完了\n")
-                        if notifier.send_important_alert(car_articles, category='car', alert_threshold=args.alert_importance, max_articles=args.max_alerts):
-                            print("🚨 車重要ニュース通知完了\n")
                     else:
-                        print("❌ 車記事配信失敗\n")
+                        print("⚠️ 車記事の一部が配信できませんでした\n")
+
+                    # 一部の記事が送れなくても重要ニュースの通知は送る
+                    if notifier.send_important_alert(car_articles, category='car', alert_threshold=args.alert_importance, max_articles=args.max_alerts):
+                        print("🚨 車重要ニュース通知完了\n")
                 else:
                     print(f"⚠️  重要度 ★{args.importance}/5 以上の車記事はありませんでした\n")
 

@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/443/4443469/?rss
 
 ## 概要
 
-Amazon.co.jpで、USBゲーミングマイク「NZXT CAPSULE ELITE」がプライム感謝祭セールの対象になっています。しっかり音を拾い、ゲーム実況や配信、ウェブ会議などで活躍します。
+<p><img align="left" height="60" src="https://ascii.jp/img/2026/10/16/4539715/s/f6eed914e480619c.jpg" width="60" />Amazon.co.jpにて、USBゲーミングマイク「NZXT CAPSULE ELITE」がプライム感謝祭セールの対象となっています。しっかりと音を拾い、ゲーム実況や配信、ウェブ会議などで活躍します。</p><br clear="left" />
 
 ---
 

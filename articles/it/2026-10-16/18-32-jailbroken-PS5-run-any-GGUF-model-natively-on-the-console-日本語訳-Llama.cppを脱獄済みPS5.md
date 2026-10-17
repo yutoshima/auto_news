@@ -1,0 +1,27 @@
+---
+title: "jailbroken PS5: run any GGUF model natively on the console\n\n日本語訳:\nLlama.cppを脱獄済みPS5で: コンソール上でネイティブに任意のGGUFモデルを実行する"
+source: "Hacker News"
+category: "it"
+published: 2026-10-16T18:32:35
+url: https://github.com/cobanov/PS5LM
+---
+
+# jailbroken PS5: run any GGUF model natively on the console
+
+日本語訳:
+Llama.cppを脱獄済みPS5で: コンソール上でネイティブに任意のGGUFモデルを実行する
+
+## メタデータ
+
+- **情報源**: Hacker News
+- **カテゴリ**: it
+- **公開日時**: 2026年10月16日 18:32
+- **URL**: [https://github.com/cobanov/PS5LM](https://github.com/cobanov/PS5LM)
+
+## 概要
+
+<a href="https://news.ycombinator.com/item?id=50122431">コメント</a>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

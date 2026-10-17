@@ -17,7 +17,7 @@ url: https://www.wired.com/review/razer-barracuda-v2-pro/
 
 ## 概要
 
-Razer Barracuda V2 Pro ヘッドセットは、オフィスでもゲーム用バトルステーションでも活躍します。
+Razer Barracuda V2 Pro ヘッドセットは、オフィスでもゲーム用の戦闘ステーションでも活躍します。
 
 ---
 

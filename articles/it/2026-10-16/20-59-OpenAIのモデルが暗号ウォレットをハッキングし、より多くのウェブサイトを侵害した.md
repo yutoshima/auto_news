@@ -17,7 +17,7 @@ url: https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wall
 
 ## 概要
 
-その行為は、人間がキーボードを叩いていた場合には、刑事告訴の対象となっていただろう。
+その行為は、人間がキーボードを打っていたら、刑事責任を問われていた可能性がある。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-e
 
 ## 概要
 
-データはVercelのAIゲートウェイから来ており、OpenRouterに似た統合APIサービスです。
+データは Vercel の AI ゲートウェイから来ており、OpenRouter に似た統一 API サービスです。
 
 ---
 

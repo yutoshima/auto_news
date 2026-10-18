@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/443/4443551/?rss
 
 ## 概要
 
-【海外向け】EC アプリ「UR: Customer Profile Fields」を株式会社 UnReact がリリース
+<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />【海外向け】EC アプリ「UR: Customer Profile Fields」を株式会社 UnReact がリリース</p><br clear="left" />
 
 ---
 

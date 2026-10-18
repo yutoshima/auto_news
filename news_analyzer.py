@@ -115,6 +115,9 @@ class NewsAnalyzer:
         Args:
             article: 記事の辞書
 
+        記事の中身から判定したカテゴリ（'it' / 'car'）が情報源のカテゴリと違う場合は、
+        article['category'] を書き換える。
+
         Returns:
             重要度スコア（1-5）、エラー時は0
         """
@@ -139,9 +142,15 @@ class NewsAnalyzer:
 
 迷ったら低い方の点数を付けてください。Qiita・Zenn・DevelopersIOなどの技術記事は、原則★1〜2です。
 
+あわせて記事の内容が主に何についてかを分類してください（情報源ではなく記事の中身で判断する）:
+- "car": 自動車・バイク・トラック・自動車メーカー・自動運転車・EV・カーシェアなど車が主題の記事
+- "it": IT・ソフトウェア・AI・ガジェット・ネットサービス・セキュリティなどが主題の記事
+- "other": どちらでもない記事
+
 **重要**: 必ず日本語でJSON形式で回答してください:
 {{
     "score": 1-5の数値,
+    "category": "car" または "it" または "other",
     "reason": "評価理由を日本語で簡潔に（30文字以内）"
 }}"""
 
@@ -158,6 +167,12 @@ class NewsAnalyzer:
             # 星マークで表示
             stars = "★" * score + "☆" * (5 - score)
             print(f"  {stars} ({score}/5) - {article['title'][:50]}...")
+
+            # 情報源のカテゴリと記事の中身が違う場合は振り分け直す（総合テック系サイトの車記事など）
+            detected = result.get("category")
+            if detected in ("it", "car") and detected != article.get('category'):
+                print(f"    ↪️  カテゴリを {article.get('category')} → {detected} に変更")
+                article['category'] = detected
 
             return score
 
@@ -253,14 +268,25 @@ class NewsAnalyzer:
 
         print(f"\n  → ★{top_threshold}以上: {len(candidates)} 件 → {len(selected_ids)} 件\n")
 
-    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3, max_evaluate: int = 80, max_top: int = 5) -> str:
+    def score_articles(self, articles: List[Dict], max_evaluate: int = 80) -> None:
         """
-        ニュース記事をまとめて要約（重要度基準で選択）
+        記事の重要度とカテゴリを評価して importance_score / category を設定する
 
         Args:
-            articles: 記事のリスト
-            importance_threshold: 重要度の閾値（1-5、この値以上の記事のみ配信）
+            articles: 記事のリスト（その場で書き換える）
             max_evaluate: 重要度を評価する最大記事数
+        """
+        print(f"🔍 記事の重要度を評価中...\n")
+        for article in self._select_articles_for_evaluation(articles, max_evaluate):
+            article['importance_score'] = self.evaluate_article_importance(article)
+
+    def summarize_daily_news(self, articles: List[Dict], importance_threshold: int = 3, max_top: int = 5) -> str:
+        """
+        評価済みの記事をまとめて要約（重要度基準で選択）。先に score_articles で評価しておくこと。
+
+        Args:
+            articles: 記事のリスト（評価されていない記事は無視する）
+            importance_threshold: 重要度の閾値（1-5、この値以上の記事のみ配信）
             max_top: ★4以上として残す最大記事数（相対評価で絞り込む）
 
         Returns:
@@ -270,14 +296,8 @@ class NewsAnalyzer:
             return "本日は新しいニュースがありませんでした。"
 
         threshold_stars = "★" * importance_threshold + "☆" * (5 - importance_threshold)
-        print(f"🔍 記事の重要度を評価中（閾値: {threshold_stars} {importance_threshold}/5）...\n")
 
-        # 各記事の重要度を評価
-        all_scored_articles = []
-        for article in self._select_articles_for_evaluation(articles, max_evaluate):
-            score = self.evaluate_article_importance(article)
-            article['importance_score'] = score
-            all_scored_articles.append(article)
+        all_scored_articles = [a for a in articles if 'importance_score' in a]
 
         # ★4以上の記事を相対評価で上位数件に絞る
         self._rerank_top_articles(all_scored_articles, max_top)

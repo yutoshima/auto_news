@@ -119,6 +119,19 @@ def main():
             it_articles = [a for a in articles if a.get('category') == 'it']
             car_articles = [a for a in articles if a.get('category') == 'car']
 
+            # 重要度を評価（記事の中身で it / car を判定し直す）
+            print(f"💻 IT記事 {len(it_articles)} 件を評価中...\n")
+            analyzer.score_articles(it_articles)
+            print(f"\n🚗 車記事 {len(car_articles)} 件を評価中...\n")
+            analyzer.score_articles(car_articles)
+
+            # 評価で判定したカテゴリで振り分け直す
+            moved_to_car = sum(1 for a in it_articles if a.get('category') == 'car')
+            moved_to_it = sum(1 for a in car_articles if a.get('category') == 'it')
+            it_articles = [a for a in articles if a.get('category') == 'it']
+            car_articles = [a for a in articles if a.get('category') == 'car']
+            print(f"\n↪️  IT→車: {moved_to_car} 件 / 車→IT: {moved_to_it} 件 を振り分け直しました\n")
+
             # IT記事の要約と送信
             if it_articles:
                 print(f"💻 IT記事 {len(it_articles)} 件を処理中...\n")

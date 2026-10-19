@@ -17,7 +17,7 @@ url: https://www.caranddriver.com/photos/a74049993/2026-polaris-rzr-pro-r-boost-
 
 ## 概要
 
-2027年型 Polaris RZR Pro R Boostが実演される様子を見てください。
+2027年モデルの Polaris RZR Pro R Boost の走行シーンを見てみよう。
 
 ---
 

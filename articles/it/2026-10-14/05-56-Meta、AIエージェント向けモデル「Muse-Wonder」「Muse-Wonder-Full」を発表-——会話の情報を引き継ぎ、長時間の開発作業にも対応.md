@@ -17,7 +17,7 @@ url: https://gihyo.jp/article/2026/10/muse-wonder?utm_source=feed
 
 ## 概要
 
-Metaは2026年10月12日、AIモデル「Muse Wonder」と「Muse Wonder Full」を発表した。
+Metaは2026年10月12日、AIモデル「Muse Wonder」と「Muse Wonder Full」を発表しました。
 
 ---
 

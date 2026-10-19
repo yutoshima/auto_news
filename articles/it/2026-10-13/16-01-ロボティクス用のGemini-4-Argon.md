@@ -1,0 +1,24 @@
+---
+title: "ロボティクス用のGemini 4 Argon"
+source: "Google DeepMind"
+category: "it"
+published: 2026-10-13T16:01:58
+url: https://deepmind.google/blog/gemini-4-argon-for-robotics/
+---
+
+# ロボティクス用のGemini 4 Argon
+
+## メタデータ
+
+- **情報源**: Google DeepMind
+- **カテゴリ**: it
+- **公開日時**: 2026年10月13日 16:01
+- **URL**: [https://deepmind.google/blog/gemini-4-argon-for-robotics/](https://deepmind.google/blog/gemini-4-argon-for-robotics/)
+
+## 概要
+
+
+
+---
+
+*この記事は自動収集システムによって保存されました。*

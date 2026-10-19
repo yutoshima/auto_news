@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-t8i-instances-south-
 
 ## 概要
 
-Amazon Elastic Compute Cloud（Amazon EC2） T8i インスタンスが南米（サンパウロ）で利用可能になりました。これらのインスタンスは、AWS 限定で提供されるカスタム第6世代 Intel Xeon 6 プロセッサを搭載し、最新の第6世代 AWS Nitro カードを基盤としています。T8i インスタンスは、従来世代の T3 インスタンスと比べて最大30％のコストパフォーマンス improvements を実現し、 nano、micro、small、medium の4つのサイズを提供します。これらのインスタンスは、低〜中程度のワークロードを必要とする用途向けに設計されています。
+<p>Amazon Elastic Compute Cloud（Amazon EC2）T8i インスタンスが南米（サンパウロ）で利用可能になりました。これらのインスタンスは、AWS 専用のカスタム第六世代 Intel Xeon 6 プロセッサを搭載し、最新の第六世代 AWS Nitro カード上に構築されています。T8i インスタンスは、従来世代の T3 インスタンスと比較して最大で30％の価格性能向上を実現し、nano、micro、small、medium の4サイズを提供します。これらのインスタンスは、低～中程度の負荷を必要とするワークロードに適した設計となっています。
 
 ---
 

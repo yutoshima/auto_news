@@ -17,9 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-supe
 
 ## 概要
 
-NVIDIAの Nemotron 3.5 Super VL が現在 Amazon SageMaker JumpStart で利用可能になり、AWSのお客様が利用できる基盤モデルのラインアップを拡張します。Nemotron 3.5 ファミリーのこのビジョン-言語モデルは、画像・動画・テキストを入力として受け取り、テキストを生成することで、顧客が AWS インフラストラクチャ上でマルチモーダルAIソリューションを展開できるようにします。
+NVIDIAの Nemotron 3.5 Super VL が Amazon SageMaker JumpStart で利用可能になり、AWSのお客様向けのファウンデーションモデルのラインアップが拡張されました。この Nemotron 3.5 ファミリーのビジョン-言語モデルは、画像・動画・テキストを入力として受け取りテキストを生成し、ユーザーが AWS のインフラ上でマルチモーダルAIソリューションを展開できるようにします。
 
-Nemotron 3.5 Super VL は、文書知能、GUI理解、動画質問応答、マルチモーダルエージェント型アプリケーション向けに設計されています。 It
+Nemotron 3.5 Super VL は、文書情報処理、GUI理解、動画質問応答、マルチモーダル・エージェント型アプリケーション向けに設計されています。それは
 
 ---
 

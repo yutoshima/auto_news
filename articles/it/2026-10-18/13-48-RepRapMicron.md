@@ -17,7 +17,9 @@ url: https://github.com/VikOlliver/RepRapMicron/wiki
 
 ## 概要
 
-<a href="https://news.ycombinator.com/item?id=50141076">コメント</a>
+<a href="https://news.ycombinator.com/item?id=50141076">Comments</a>
+
+コメント</a>
 
 ---
 

@@ -1,0 +1,24 @@
+---
+title: "生産計画を手を動かして学ぶ ― OSS の frePPLe で MRP・需要予測・CP-SAT まで"
+source: "Zenn"
+category: "it"
+published: 2026-10-17T21:06:40
+url: https://zenn.dev/rkawajiri/books/frepple-tutorial-ja
+---
+
+# 生産計画を手を動かして学ぶ ― OSS の frePPLe で MRP・需要予測・CP-SAT まで
+
+## メタデータ
+
+- **情報源**: Zenn
+- **カテゴリ**: it
+- **公開日時**: 2026年10月17日 21:06
+- **URL**: [https://zenn.dev/rkawajiri/books/frepple-tutorial-ja](https://zenn.dev/rkawajiri/books/frepple-tutorial-ja)
+
+## 概要
+
+受注から購買・製造・配送の計画がどう作られるかを、OSS の生産計画ソフト frePPLe を Docker で動かして体験する無料ハンズオンです。MRP（所要量計算）と有限能力の制約あり計画の違い、遅れの原因をたどる方法、What-if、在庫・拠点間の配送、需要予測、OR-Tools CP-SAT による最適化まで、小さなモデルから順に学べます。業務知識は不要で、最初の3章はインストールなしで読めます。非公式ガイドです。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

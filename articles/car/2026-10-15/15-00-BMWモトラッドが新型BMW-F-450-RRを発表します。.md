@@ -17,7 +17,7 @@ url: https://www.press.bmwgroup.com/global/article/detail/T0461452EN?language=en
 
 ## 概要
 
-ロードとトラックのためのスーパースポーツ精度と明確なRRのDNA。
+ロードとトラックのための超スポーツ精密性と、紛れのないRRのDNA。
 
 ---
 

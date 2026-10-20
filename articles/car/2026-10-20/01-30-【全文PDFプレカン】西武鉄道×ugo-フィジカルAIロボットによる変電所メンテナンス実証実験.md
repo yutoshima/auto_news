@@ -1,0 +1,24 @@
+---
+title: "【全文PDFプレカン】西武鉄道×ugo フィジカルAIロボットによる変電所メンテナンス実証実験"
+source: "Response"
+category: "car"
+published: 2026-10-20T01:30:03
+url: https://response.jp/article/2026/10/20/418008.html
+---
+
+# 【全文PDFプレカン】西武鉄道×ugo フィジカルAIロボットによる変電所メンテナンス実証実験
+
+## メタデータ
+
+- **情報源**: Response
+- **カテゴリ**: car
+- **公開日時**: 2026年10月20日 01:30
+- **URL**: [https://response.jp/article/2026/10/20/418008.html](https://response.jp/article/2026/10/20/418008.html)
+
+## 概要
+
+
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -1,0 +1,24 @@
+---
+title: "「AI活用でIT部門の人員が増える」は本当か？　人材構成の「二重の変化」をGartnerが解説"
+source: "ITmedia AI+"
+category: "it"
+published: 2026-10-21T00:00:00
+url: https://www.itmedia.co.jp/enterprise/articles/2610/21/news030.html
+---
+
+# 「AI活用でIT部門の人員が増える」は本当か？　人材構成の「二重の変化」をGartnerが解説
+
+## メタデータ
+
+- **情報源**: ITmedia AI+
+- **カテゴリ**: it
+- **公開日時**: 2026年10月21日 00:00
+- **URL**: [https://www.itmedia.co.jp/enterprise/articles/2610/21/news030.html](https://www.itmedia.co.jp/enterprise/articles/2610/21/news030.html)
+
+## 概要
+
+AIを使えばIT部門の人員は減る――。多くのリーダーがそう想定する中、Gartnerの調査では回答者の40％が2027年にIT部門の人員を増やすと見込んだ。AIで成果を上げるCIOが見据える、人材構成の二重の変化とは。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

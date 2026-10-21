@@ -1,0 +1,24 @@
+---
+title: "Claude Opus 5.5 の返事が英語になりがちだったのでClaude Code のフック機能でこの問題を解決してみた"
+source: "DevelopersIO"
+category: "it"
+published: 2026-10-20T02:19:47
+url: https://dev.classmethod.jp/articles/claude-code-hooks-prevent-english-reply/
+---
+
+# Claude Opus 5.5 の返事が英語になりがちだったのでClaude Code のフック機能でこの問題を解決してみた
+
+## メタデータ
+
+- **情報源**: DevelopersIO
+- **カテゴリ**: it
+- **公開日時**: 2026年10月20日 02:19
+- **URL**: [https://dev.classmethod.jp/articles/claude-code-hooks-prevent-english-reply/](https://dev.classmethod.jp/articles/claude-code-hooks-prevent-english-reply/)
+
+## 概要
+
+Claude Code で英語の返事が止まらない問題に直面して、CLAUDE.md への記述では対応できないことに気付きました。そこで、フックの仕組みを使って「お願い」ではなく「仕組み」で英語を止める方法を試してみたので、その手法と作ったプラグインを紹介します。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

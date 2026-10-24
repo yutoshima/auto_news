@@ -112,21 +112,28 @@ def explain_repository(analyzer, repo: Dict, readme: str) -> str:
 README（抜粋）:
 {readme or 'なし'}"""
 
-    try:
-        response = analyzer.client.chat.completions.create(
-            model=analyzer.scoring_model,
-            messages=[
-                {"role": "system", "content": "あなたは技術の話を分かりやすく伝える日本語のテックライターです。"},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.3,
-            max_tokens=1000
-        )
-        explanation = (response.choices[0].message.content or "").strip()
-        if explanation:
-            return explanation
-    except Exception as e:
-        print(f"  ⚠️  説明の生成エラー ({repo['name']}): {str(e)}")
+    # 評価用モデルで失敗・空回答だった場合は翻訳用モデルでもう一度試す
+    models = [analyzer.scoring_model]
+    if analyzer.model != analyzer.scoring_model:
+        models.append(analyzer.model)
+
+    for model in models:
+        try:
+            response = analyzer.client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": "あなたは技術の話を分かりやすく伝える日本語のテックライターです。"},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.3,
+                max_tokens=1000
+            )
+            explanation = (response.choices[0].message.content or "").strip()
+            if explanation:
+                return explanation
+            print(f"  ⚠️  説明が空でした ({repo['name']}, {model})")
+        except Exception as e:
+            print(f"  ⚠️  説明の生成エラー ({repo['name']}, {model}): {str(e)}")
 
     return analyzer.translate_to_japanese(repo.get('description', ''))
 

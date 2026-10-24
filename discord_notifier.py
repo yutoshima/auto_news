@@ -17,7 +17,7 @@ class DiscordNotifier:
         self.car_webhook_url = os.getenv("CAR_WEBHOOK_URL")
         self.new_car_webhook_url = os.getenv("NEW_CAR_WEBHOOK_URL")
         # GitHub Trending専用（他チャンネルへのフォールバックはしない）
-        self.github_trending_webhook_url = os.getenv("GITHUB_TRENDING_WEBHOOK_URL")
+        self.github_trending_webhook_url = os.getenv("TRENDING_WEBHOOK_URL")
 
         # 後方互換性のため、古い設定もサポート
         default_webhook = os.getenv("DISCORD_WEBHOOK_URL")
@@ -358,7 +358,7 @@ class DiscordNotifier:
         """
         webhook_url = self.github_trending_webhook_url
         if not webhook_url:
-            print("⚠️ GITHUB_TRENDING_WEBHOOK_URL が設定されていません")
+            print("⚠️ TRENDING_WEBHOOK_URL が設定されていません")
             return False
 
         if not repos:

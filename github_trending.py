@@ -131,7 +131,7 @@ README（抜粋）:
             explanation = (response.choices[0].message.content or "").strip()
             if explanation:
                 return explanation
-            print(f"  ⚠️  説明が空でした ({repo['name']}, {model})")
+            print(f"  ⚠️  説明が空でした ({repo['name']}, {model}, finish_reason={response.choices[0].finish_reason})")
         except Exception as e:
             print(f"  ⚠️  説明の生成エラー ({repo['name']}, {model}): {str(e)}")
 

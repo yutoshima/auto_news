@@ -1,5 +1,7 @@
 import openai
 import json
+import requests
+from bs4 import BeautifulSoup
 from typing import List, Dict, Optional
 import os
 from dotenv import load_dotenv
@@ -491,6 +493,77 @@ class NewsAnalyzer:
             print(f"  ⚠️  新型車判定エラー: {str(e)}")
             return None
 
+    @staticmethod
+    def _fetch_article_text(url: str, max_chars: int = 4000) -> str:
+        """記事ページの本文を取得する（取得できなければ空文字）"""
+        try:
+            response = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0 (auto_news)"})
+            response.raise_for_status()
+            response.encoding = response.apparent_encoding
+            soup = BeautifulSoup(response.text, "html.parser")
+            for tag in soup(["script", "style", "nav", "header", "footer", "aside"]):
+                tag.decompose()
+            root = soup.find("article") or soup.find("main") or soup.body or soup
+            paragraphs = [p.get_text(" ", strip=True) for p in root.find_all("p")]
+            text = "\n".join(p for p in paragraphs if len(p) > 20)
+            return text[:max_chars]
+        except Exception as e:
+            print(f"    ⚠️  本文を取得できませんでした: {str(e)}")
+            return ""
+
+    def describe_new_car(self, car: Dict) -> Dict:
+        """
+        記事本文を読んで、新型車の特徴・すごい点・主な仕様を日本語でまとめる
+
+        Returns:
+            summary_ja / highlights / specs を含む辞書（失敗時は空の辞書）
+        """
+        article = car.get('original_article', {})
+        summary = article.get('summary', '')
+        if isinstance(summary, list):
+            summary = ' '.join(summary)
+        body = self._fetch_article_text(article.get('url', '')) or str(summary)
+
+        prompt = f"""以下は {car.get('manufacturer')} {car.get('model_name')} の発表記事です。
+車に詳しくない人にも「どんな車で、何がすごいのか」が伝わるように日本語でまとめてください。
+記事に書かれていない数値や事実は推測で書かないでください。
+
+記事タイトル: {article.get('title', '')}
+記事本文:
+{body}
+
+次のJSON形式で回答してください:
+{{
+    "summary_ja": "どんな車か（車格・ボディタイプ・狙っている客層など）を2〜3文で（150文字以内）",
+    "highlights": ["この車のすごい点・新しい点を具体的に（各60文字以内、最大3つ）"],
+    "specs": {{
+        "パワートレイン": "エンジン/ハイブリッド/EVの種類・出力・航続距離など（不明なら空文字）",
+        "価格": "記事にある価格（不明なら空文字）",
+        "発売時期": "記事にある発売・発表時期（不明なら空文字）"
+    }}
+}}"""
+
+        try:
+            result = self._ask_json(
+                "あなたは自動車ジャーナリストです。必ず日本語のJSONだけで回答してください。",
+                prompt,
+                max_tokens=1500
+            )
+        except ValueError as e:
+            print(f"    ⚠️  特徴の要約に失敗しました: {str(e)}")
+            return {}
+
+        details = {}
+        if result.get('summary_ja'):
+            details['summary_ja'] = str(result['summary_ja'])
+        highlights = [str(h) for h in result.get('highlights') or [] if h]
+        if highlights:
+            details['highlights'] = highlights[:3]
+        specs = {k: str(v) for k, v in (result.get('specs') or {}).items() if v}
+        if specs:
+            details['specs'] = specs
+        return details
+
     def analyze_all_for_new_cars(self, articles: List[Dict]) -> List[Dict]:
         """
         全記事を分析して新型車情報を抽出
@@ -511,8 +584,9 @@ class NewsAnalyzer:
             result = self.detect_new_car_announcement(article)
 
             if result:
-                new_cars.append(result)
                 print(f"    ✅ 新型車発見: {result['manufacturer']} {result['model_name']}")
+                result.update(self.describe_new_car(result))
+                new_cars.append(result)
 
         print(f"\n🚗 {len(new_cars)} 件の新型車情報を発見しました\n")
 

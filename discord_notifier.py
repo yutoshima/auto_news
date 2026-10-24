@@ -371,7 +371,7 @@ class DiscordNotifier:
             meta = f"⭐ +{repo['stars_gained']:,}（累計 {repo['stars']:,}）"
             if repo.get('language'):
                 meta += f" ・ {repo['language']}"
-            value = f"{meta}\n{self._truncate_text(repo.get('description', ''), 300)}\n[GitHubで見る]({repo['url']})"
+            value = f"{meta}\n{self._truncate_text(repo.get('description', ''), 400)}\n[GitHubで見る]({repo['url']})"
             fields.append({"name": f"{rank} {repo['name']}"[:256], "value": value[:1024], "inline": False})
 
         embed = {

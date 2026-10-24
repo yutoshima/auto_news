@@ -9,7 +9,7 @@ from news_collector import NewsCollector
 from news_analyzer import NewsAnalyzer
 from discord_notifier import DiscordNotifier
 from article_storage import ArticleStorage
-from github_trending import GitHubTrendingCollector, TrendingHistory
+from github_trending import GitHubTrendingCollector, TrendingHistory, explain_repository
 
 
 def main():
@@ -213,7 +213,8 @@ def main():
 def send_github_trending(analyzer, notifier, top: int, min_stars: int):
     """今日スターが増えたリポジトリの上位と、初めてTrendingに載ったリポジトリの上位を配信"""
     print("⭐ GitHub Trendingを取得中...\n")
-    repos = GitHubTrendingCollector().fetch_repositories(since='daily')
+    collector = GitHubTrendingCollector()
+    repos = collector.fetch_repositories(since='daily')
     if not repos:
         print("⚠️  Trendingのリポジトリを取得できませんでした")
         return
@@ -226,8 +227,11 @@ def send_github_trending(analyzer, notifier, top: int, min_stars: int):
     # 履歴にないもののうち、今日のスター増加が min_stars を超えるものだけ
     new_repos = [r for r in repos if r['name'] not in known and r['stars_gained'] > min_stars][:top]
 
+    print("📝 リポジトリの説明を作成中...\n")
     for repo in {r['name']: r for r in top_repos + new_repos}.values():
-        repo['description'] = analyzer.translate_to_japanese(repo['description'])
+        repo['description'] = explain_repository(analyzer, repo, collector.fetch_readme(repo['name']))
+        print(f"  {repo['name']}: {repo['description'][:60]}...")
+    print()
 
     today = datetime.now().strftime('%Y年%m月%d日')
     print("📤 GitHub Trendingチャンネルに送信中...\n")

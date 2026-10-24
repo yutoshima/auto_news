@@ -16,6 +16,7 @@ on:
         options:
           - all
           - new-cars
+          - github-trending
       hours:
         description: '何時間前までのニュースを取得するか'
         required: false
@@ -48,6 +49,7 @@ jobs:
           uv pip install -r requirements.txt
 
       - name: ニュース配信を実行
+        if: ${{ github.event.inputs.mode != 'github-trending' }}
         env:
           POE_API_KEY: ${{ secrets.POE_API_KEY }}
           IT_WEBHOOK_URL: ${{ secrets.IT_WEBHOOK_URL }}
@@ -58,6 +60,17 @@ jobs:
         run: |
           source .venv/bin/activate
           python main.py --mode ${{ github.event.inputs.mode || 'all' }} --hours ${{ github.event.inputs.hours || '24' }}
+
+      - name: GitHub Trendingを配信
+        # 毎朝の all 実行のついでに配信（手動で github-trending を選んだ場合はこれだけ実行）
+        if: ${{ always() && (github.event.inputs.mode || 'all') != 'new-cars' }}
+        env:
+          POE_API_KEY: ${{ secrets.POE_API_KEY }}
+          GITHUB_TRENDING_WEBHOOK_URL: ${{ secrets.GITHUB_TRENDING_WEBHOOK_URL }}
+          POE_MODEL: gpt-5-nano
+        run: |
+          source .venv/bin/activate
+          python main.py --mode github-trending
 
       - name: 記事をコミット・プッシュ
         run: |

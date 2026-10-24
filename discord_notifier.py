@@ -16,6 +16,8 @@ class DiscordNotifier:
         self.it_webhook_url = os.getenv("IT_WEBHOOK_URL")
         self.car_webhook_url = os.getenv("CAR_WEBHOOK_URL")
         self.new_car_webhook_url = os.getenv("NEW_CAR_WEBHOOK_URL")
+        # GitHub Trending専用（他チャンネルへのフォールバックはしない）
+        self.github_trending_webhook_url = os.getenv("GITHUB_TRENDING_WEBHOOK_URL")
 
         # 後方互換性のため、古い設定もサポート
         default_webhook = os.getenv("DISCORD_WEBHOOK_URL")
@@ -27,13 +29,14 @@ class DiscordNotifier:
         if not self.new_car_webhook_url:
             self.new_car_webhook_url = default_webhook
 
-        if not any([self.it_webhook_url, self.car_webhook_url, self.new_car_webhook_url]):
+        if not any([self.it_webhook_url, self.car_webhook_url, self.new_car_webhook_url, self.github_trending_webhook_url]):
             raise ValueError("少なくとも1つのWebhook URLを設定してください")
 
         print(f"🔔 Discord設定:")
         print(f"   - ITチャンネル: {'✅' if self.it_webhook_url else '❌'}")
         print(f"   - 車チャンネル: {'✅' if self.car_webhook_url else '❌'}")
         print(f"   - 新車チャンネル: {'✅' if self.new_car_webhook_url else '❌'}")
+        print(f"   - GitHub Trendingチャンネル: {'✅' if self.github_trending_webhook_url else '❌'}")
 
         # 発表タイプ別の色分け
         self.color_scheme = {
@@ -242,6 +245,23 @@ class DiscordNotifier:
                 "inline": False
             })
 
+        # この車のすごい点・主な仕様（記事本文から要約したもの）
+        highlights = car_info.get('highlights') or []
+        if highlights:
+            fields.append({
+                "name": "✨ ここがすごい",
+                "value": self._truncate_text("\n".join(f"• {self._clean_html(h)}" for h in highlights), 1000),
+                "inline": False
+            })
+
+        specs = car_info.get('specs') or {}
+        if specs:
+            fields.append({
+                "name": "🔧 主な仕様",
+                "value": self._truncate_text("\n".join(f"**{k}**: {self._clean_html(v)}" for k, v in specs.items()), 1000),
+                "inline": False
+            })
+
         # 情報源とリンク
         fields.extend([
             {
@@ -323,6 +343,45 @@ class DiscordNotifier:
             content += f"• [記事を読む]({article.get('url', '#')})\n\n"
 
         return self.send_daily_summary(content)
+
+    def send_github_trending(self, repos: List[Dict], title: str, empty_message: str = None) -> bool:
+        """
+        GitHub Trendingのランキングを専用チャンネルにEmbed形式で送信
+
+        Args:
+            repos: リポジトリ情報のリスト（並び順がそのまま順位になる）
+            title: Embedのタイトル
+            empty_message: 対象がない場合に送るメッセージ（Noneなら何も送らない）
+
+        Returns:
+            送信成功したかどうか
+        """
+        webhook_url = self.github_trending_webhook_url
+        if not webhook_url:
+            print("⚠️ GITHUB_TRENDING_WEBHOOK_URL が設定されていません")
+            return False
+
+        if not repos:
+            return self._send_message(empty_message, webhook_url) if empty_message else True
+
+        medals = ["🥇", "🥈", "🥉"]
+        fields = []
+        for i, repo in enumerate(repos):
+            rank = medals[i] if i < len(medals) else f"{i + 1}位"
+            meta = f"⭐ +{repo['stars_gained']:,}（累計 {repo['stars']:,}）"
+            if repo.get('language'):
+                meta += f" ・ {repo['language']}"
+            value = f"{meta}\n{self._truncate_text(repo.get('description', ''), 300)}\n[GitHubで見る]({repo['url']})"
+            fields.append({"name": f"{rank} {repo['name']}"[:256], "value": value[:1024], "inline": False})
+
+        embed = {
+            "title": title,
+            "url": "https://github.com/trending?since=daily",
+            "color": 0x24292F,
+            "fields": fields,
+            "timestamp": datetime.now().isoformat(),
+        }
+        return self._send_webhook({"embeds": [embed]}, webhook_url)
 
     def _send_message(self, content: str, webhook_url: str = None) -> bool:
         """シンプルなテキストメッセージを送信"""

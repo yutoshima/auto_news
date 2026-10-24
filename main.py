@@ -9,14 +9,15 @@ from news_collector import NewsCollector
 from news_analyzer import NewsAnalyzer
 from discord_notifier import DiscordNotifier
 from article_storage import ArticleStorage
+from github_trending import GitHubTrendingCollector, TrendingHistory
 
 
 def main():
     """メイン処理"""
 
     parser = argparse.ArgumentParser(description='車とITニュース自動配信システム')
-    parser.add_argument('--mode', choices=['all', 'new-cars', 'test'], default='all',
-                        help='実行モード: all=全ニュース配信, new-cars=新型車のみ, test=接続テスト')
+    parser.add_argument('--mode', choices=['all', 'new-cars', 'github-trending', 'test'], default='all',
+                        help='実行モード: all=全ニュース配信, new-cars=新型車のみ, github-trending=GitHub Trending配信, test=接続テスト')
     parser.add_argument('--hours', type=int, default=24,
                         help='何時間前までのニュースを取得するか（デフォルト: 24時間）')
     parser.add_argument('--importance', type=int, default=3,
@@ -27,6 +28,10 @@ def main():
                         help='カテゴリごとに配信する最大記事数（デフォルト: 10）')
     parser.add_argument('--max-alerts', type=int, default=5,
                         help='カテゴリごとに@everyoneで通知する最大記事数（デフォルト: 5）')
+    parser.add_argument('--trending-top', type=int, default=5,
+                        help='GitHub Trendingで配信する上位リポジトリ数（デフォルト: 5）')
+    parser.add_argument('--trending-min-stars', type=int, default=500,
+                        help='初登場ランキングに載せる「今日増えたスター数」の下限（この値以下は除外、デフォルト: 500）')
 
     args = parser.parse_args()
 
@@ -52,6 +57,11 @@ def main():
                 print("✅ Discord接続: 成功")
             else:
                 print("❌ Discord接続: 失敗")
+            return
+
+        # GitHub Trending配信モード
+        if args.mode == 'github-trending':
+            send_github_trending(analyzer, notifier, args.trending_top, args.trending_min_stars)
             return
 
         # ニュース収集
@@ -198,6 +208,39 @@ def main():
         print(f"\n❌ エラーが発生しました: {str(e)}")
         import traceback
         traceback.print_exc()
+
+
+def send_github_trending(analyzer, notifier, top: int, min_stars: int):
+    """今日スターが増えたリポジトリの上位と、初めてTrendingに載ったリポジトリの上位を配信"""
+    print("⭐ GitHub Trendingを取得中...\n")
+    repos = GitHubTrendingCollector().fetch_repositories(since='daily')
+    if not repos:
+        print("⚠️  Trendingのリポジトリを取得できませんでした")
+        return
+    print(f"✅ {len(repos)} 件のリポジトリを取得しました\n")
+
+    history = TrendingHistory()
+    known = history.known_names()
+
+    top_repos = repos[:top]
+    # 履歴にないもののうち、今日のスター増加が min_stars を超えるものだけ
+    new_repos = [r for r in repos if r['name'] not in known and r['stars_gained'] > min_stars][:top]
+
+    for repo in {r['name']: r for r in top_repos + new_repos}.values():
+        repo['description'] = analyzer.translate_to_japanese(repo['description'])
+
+    today = datetime.now().strftime('%Y年%m月%d日')
+    print("📤 GitHub Trendingチャンネルに送信中...\n")
+    notifier.send_github_trending(top_repos, f"⭐ GitHub スター急上昇 TOP{top} ({today})")
+    notifier.send_github_trending(
+        new_repos,
+        f"🆕 Trending初登場 TOP{top}（+{min_stars}超） ({today})",
+        empty_message=f"🆕 今日はTrending初登場で +{min_stars} を超えたリポジトリはありませんでした。",
+    )
+
+    # 配信後に履歴を更新（今回Trendingに載ったものはすべて既出扱いにする）
+    history.record(repos)
+    print("✅ GitHub Trending配信完了\n")
 
 
 if __name__ == "__main__":

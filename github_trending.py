@@ -126,7 +126,8 @@ README（抜粋）:
                     {"role": "user", "content": prompt}
                 ],
                 temperature=0.3,
-                max_tokens=1000
+                # 回答前の思考でトークンを使い切って本文が空になることがあるため多めに取る
+                max_tokens=4000
             )
             explanation = (response.choices[0].message.content or "").strip()
             if explanation:

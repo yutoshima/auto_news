@@ -1,0 +1,24 @@
+---
+title: "Grow Light シリーズ"
+source: "日経クロステック"
+category: "it"
+published: 2026-10-21T17:02:00
+url: https://xtech.nikkei.com/atcl/nxt/mag/na/18/00014/101601013/
+---
+
+# Grow Light シリーズ
+
+## メタデータ
+
+- **情報源**: 日経クロステック
+- **カテゴリ**: it
+- **公開日時**: 2026年10月21日 17:02
+- **URL**: [https://xtech.nikkei.com/atcl/nxt/mag/na/18/00014/101601013/](https://xtech.nikkei.com/atcl/nxt/mag/na/18/00014/101601013/)
+
+## 概要
+
+突っ張り棒にソケットやトレーを付けた観葉植物育成用の照明セット。壁や床、天井を傷つけずに棒を設置できる。植物育成ライトは専門会社BARREL（バレル）と共同開発した。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

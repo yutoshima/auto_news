@@ -17,9 +17,8 @@ url: https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using
 
 ## 概要
 
-3人のJavaチャンピオンが、GitHub Copilotをどう活用して問題を解決し、開発を加速させ、結果について人間が責任を持つ状態を保つかを語る。
-
-投稿「3人のJavaチャンピオンはGitHub Copilotをどのように活用して生産性を高めているか」は、The GitHub Blogのサイトに初出しました。
+3人のJavaチャンピオンが、GitHub Copilotをどう活用して問題を解決し、開発を加速させ、成果に対する人間の責任を保つかを語る。  
+この投稿「How 3 Java Champions are using GitHub Copilot for increased productivity」は、The GitHub Blogに初出しました。
 
 ---
 

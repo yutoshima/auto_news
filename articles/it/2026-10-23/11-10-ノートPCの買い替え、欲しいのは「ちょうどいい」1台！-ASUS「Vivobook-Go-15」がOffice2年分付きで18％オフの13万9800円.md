@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/445/4445125/?rss
 
 ## 概要
 
-ASUSの15.6型ノートPC「Vivobook Go 15（E1504FA-R5165BLSAM）」がAmazonのタイムセール対象。過去価格169,800円から18％オフの139,800円で販売中。Ryzen 5 40、16GBメモリ、512GB SSDを搭載し、Microsoft 365 Personal（24か月版）も付属。テンキー付き日本語キーボードを備え、毎日の作業に使いやすい構成だ。
+ASUSの15.6型ノートPC「Vivobook Go 15（E1504FA-R5165BLSAM）」がAmazonのタイムセール対象。過去価格169,800円から18％オフの139,800円で販売中。Ryzen 5、16GBメモリ、512GB SSDを搭載し、Microsoft 365 Personal（24か月版）も付属。テンキー付き日本語キーボードを備え、毎日の作業に使いやすい構成だ。
 
 ---
 

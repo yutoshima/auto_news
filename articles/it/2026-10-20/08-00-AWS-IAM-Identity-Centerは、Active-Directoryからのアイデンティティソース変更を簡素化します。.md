@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-center-chg-
 
 ## 概要
 
-<p>AWS IAM Identity Centerは、アイデンティティソースをActive DirectoryからOktaやMicrosoft Entra IDなどの外部IdP、またはIdentity Centerディレクトリに変更した場合でも、ワークフォースのアイデンティティとその割り当てを保持します。具体的には、ユーザー、グループ、グループメンバーシップ、許可セットの割り当て、およびアプリケーションの割り当てを維持します。以前はこの変更を行うと、IAM Identity Centerでそれらを再作成する必要がありました。</p> 
+<p>AWS IAM Identity Centerは、アイデンティティソースをActive Directoryから外部アイデンティティプロバイダー（IdP）であるOktaやMicrosoft Entra ID、またはIdentity Centerディレクトリへ変更した場合でも、ワークフォースのIDとその割り当てを保持します。具体的には、ユーザー、グループ、グループメンバーシップ、権限セットの割り当て、アプリケーションの割り当てを保持します。以前はこの変更を行うと、IAM Identity Center内でそれらを再作成する必要がありました。</p> 
 <p>IAM Identity Centerは、共同作業を支援します</p>
 
 ---

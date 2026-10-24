@@ -1,0 +1,24 @@
+---
+title: "「推進系非依存」：GMはガスSUVにもテスラ風のソフトウェア機能を提供したいという考え"
+source: "InsideEVs"
+category: "car"
+published: 2026-10-22T20:35:10
+url: https://insideevs.com/features/812982/gm-software-platform-powertrain-agnostic/
+---
+
+# 「推進系非依存」：GMはガスSUVにもテスラ風のソフトウェア機能を提供したいという考え
+
+## メタデータ
+
+- **情報源**: InsideEVs
+- **カテゴリ**: car
+- **公開日時**: 2026年10月22日 20:35
+- **URL**: [https://insideevs.com/features/812982/gm-software-platform-powertrain-agnostic/](https://insideevs.com/features/812982/gm-software-platform-powertrain-agnostic/)
+
+## 概要
+
+次世代の電気自動車はセキュリティカメラ機能と自動運転を提供します。しかしガソリン車のSUVも置き去りにはしません。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

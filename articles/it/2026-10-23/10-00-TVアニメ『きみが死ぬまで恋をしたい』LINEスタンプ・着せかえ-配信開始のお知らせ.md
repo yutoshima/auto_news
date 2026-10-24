@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/445/4445458/?rss
 
 ## 概要
 
-TVアニメ『きみが死ぬまで恋をしたい』LINEスタンプ・着せかえ 配信開始のお知らせ
+<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />TVアニメ「きみが死ぬまで恋をしたい」LINEスタンプ・着せかえ 配信開始のお知らせ</p><br clear="left" />
 
 ---
 

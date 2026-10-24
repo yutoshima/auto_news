@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/445/4445431/?rss
 
 ## 概要
 
-HOMEGAMEより、MLBスター選手をフィーチャーしたオリジナルTシャツコレクション「MLB PLAYERS TEE COLLECTION」が10月24日発売
+HOMEGAMEより、MLBのスター選手をフィーチャーしたオリジナルTシャツコレクション「MLB PLAYERS TEE COLLECTION」が10月24日に発売されます。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://openai.com/index/openai-models-google-cloud
 
 ## 概要
 
-OpenAIとGoogle Cloudが、最先端モデルとCodexワークフローをGeminiのModel Gardenに提供し、Google Cloud Marketplace経由で利用できるようにします。
+OpenAIとGoogle Cloudが、最先端モデルとCodexのワークフローを、Google Cloud Marketplaceを通じてGeminiのModel Gardenに提供します。
 
 ---
 

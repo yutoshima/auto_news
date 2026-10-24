@@ -1,0 +1,26 @@
+---
+title: "私は199ドルのWalmartのeバイクを買いましたが、届いたものには驚かされました"
+source: "Electrek"
+category: "car"
+published: 2026-10-20T15:10:00
+url: https://electrek.co/2026/10/20/i-bought-a-199-walmart-e-bike-and-what-arrived-shocked-me/
+---
+
+# 私は199ドルのWalmartのeバイクを買いましたが、届いたものには驚かされました
+
+## メタデータ
+
+- **情報源**: Electrek
+- **カテゴリ**: car
+- **公開日時**: 2026年10月20日 15:10
+- **URL**: [https://electrek.co/2026/10/20/i-bought-a-199-walmart-e-bike-and-what-arrived-shocked-me/](https://electrek.co/2026/10/20/i-bought-a-199-walmart-e-bike-and-what-arrived-shocked-me/)
+
+## 概要
+
+私は10,000ドルのeバイクを試したことがあります。500ドルのeバイクも試したことがあります。しかし最近まで、良い自転車用タイヤ一式より安い新車のeバイクを試したことはありませんでした。  
+
+なので、Walmartのウェブサイトで199ドルのeバイクを見つけたとき、
+
+---
+
+*この記事は自動収集システムによって保存されました。*

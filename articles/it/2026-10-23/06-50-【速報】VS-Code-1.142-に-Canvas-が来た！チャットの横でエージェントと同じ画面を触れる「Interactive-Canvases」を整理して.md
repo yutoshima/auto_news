@@ -18,7 +18,7 @@ url: https://qiita.com/shahin0809/items/81e6a6737b2254bdc6ed?utm_campaign=popula
 ## 概要
 
 はじめに
-常に VS Code / GitHub Copilot の動向を追っている、Microsoft Student Ambassador 兼 GitHub Copilot User Group Japan（Gh-CUG）運営のロホマン・シャヒンです！
+常に VS Code / GitHub Copilot の動向を追っている、Microsoft Student Ambassador 兼 GitHub Copilot User Group Japan（Gh-CUG）運営のロホマン シャヒンです！
 
 この記事が...
 

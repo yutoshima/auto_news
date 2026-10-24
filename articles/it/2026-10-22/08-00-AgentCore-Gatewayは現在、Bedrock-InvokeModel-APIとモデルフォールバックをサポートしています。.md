@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-invoke
 
 ## 概要
 
-<p>Amazon Bedrock AgentCore Gateway は、推論エンドポイントで Amazon Bedrock InvokeModel および InvokeModelWithResponseStream API をサポートするようになり、推論トラフィック向けのモデルフォールバックルーティングも追加されました。InvokeModel のサポートにより、既存の Amazon Bedrock SDK 統合をゲートウェイへ指し示すだけで、各プロバイダごとにクライアントコードを再作成することなく、1つの統一エンドポイントを通じて任意のモデルプロバイダへアクセスできます。モデルフォールバックを用いると、ゲートウェイはリクエストを自動的に別のモデルへルーティングします。</p>
+<p>Amazon Bedrock AgentCore Gateway は、推論エンドポイントで Amazon Bedrock InvokeModel および InvokeModelWithResponseStream API をサポートするとともに、推論トラフィック用のモデルフォールバックルーティングも提供します。InvokeModel のサポートにより、既存の Amazon Bedrock SDK 統合をゲートウェイに向けるだけで、各プロバイダーごとにクライアントコードを再作成することなく、1つの統治されたエンドポイントを通じて任意のモデルプロバイダーに到達できます。モデルフォールバック付きでは、ゲートウェイが自動的に代替モデルへリクエストをルーティングします。
 
 ---
 

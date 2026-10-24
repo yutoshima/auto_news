@@ -1,19 +1,19 @@
 ---
 title: "canvas上の文字にプロポーショナルメトリクスを適用したい！"
-source: "Qiita (JavaScript)"
+source: "Qiita トレンド"
 category: "it"
 published: 2026-10-23T01:05:08
-url: https://qiita.com/Kaitou/items/9746c5c262f994c1548c
+url: https://qiita.com/Kaitou/items/9746c5c262f994c1548c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
 ---
 
 # canvas上の文字にプロポーショナルメトリクスを適用したい！
 
 ## メタデータ
 
-- **情報源**: Qiita (JavaScript)
+- **情報源**: Qiita トレンド
 - **カテゴリ**: it
 - **公開日時**: 2026年10月23日 01:05
-- **URL**: [https://qiita.com/Kaitou/items/9746c5c262f994c1548c](https://qiita.com/Kaitou/items/9746c5c262f994c1548c)
+- **URL**: [https://qiita.com/Kaitou/items/9746c5c262f994c1548c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items](https://qiita.com/Kaitou/items/9746c5c262f994c1548c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
 
 ## 概要
 

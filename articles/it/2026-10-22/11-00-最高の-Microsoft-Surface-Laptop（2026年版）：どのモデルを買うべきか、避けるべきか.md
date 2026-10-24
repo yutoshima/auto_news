@@ -17,7 +17,7 @@ url: https://www.wired.com/story/microsoft-surface-buying-guide/
 
 ## 概要
 
-価格が変動し、新モデルが登場する中、購入すべきSurface LaptopとSurface Proはこれだ。
+価格が変動し、新モデルが登場する中、どのSurface LaptopとSurface Proを買うべきか。
 
 ---
 

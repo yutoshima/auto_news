@@ -17,7 +17,7 @@ url: https://gigazine.net/news/20261023-usb-c-magnetic-connect-microsoft/
 
 ## 概要
 
-Microsoftは2026年10月7日にNVIDIAの新型SoC「RTX Spark」を搭載するWindows PC「Surface Laptop Ultra」を発表しました。そんなSurface Laptop Ultraに搭載されたマグネット式USB Type-Cコネクタ「Magnetic Connect」について、ガジェット系メディアのLTT Labsがまとめています。 USB-C Magnetic Connect Hardware an...
+マイクロソフトは2026年10月7日に発売されるNVIDIAの新型SoC「RTX Spark」を搭載したWindows PC「Surface Laptop Ultra」を発表しました。そんなSurface Laptop Ultraに搭載されたマグネット式USB Type-Cコネクタ「Magnetic Connect」について、ガジェット系メディアのLTT Labsがまとめています。 USB-C Magnetic Connect Hardware an...
 
 ---
 

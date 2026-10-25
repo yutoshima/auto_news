@@ -1,0 +1,24 @@
+---
+title: "DevelopersIO 2026 TOKYOで「生成AIを使ってエンジニアとタッグを組んだ話」を発表しました"
+source: "DevelopersIO"
+category: "it"
+published: 2026-10-24T10:55:23
+url: https://dev.classmethod.jp/articles/devio2026-tag-with-engineers-using-generative-ai/
+---
+
+# DevelopersIO 2026 TOKYOで「生成AIを使ってエンジニアとタッグを組んだ話」を発表しました
+
+## メタデータ
+
+- **情報源**: DevelopersIO
+- **カテゴリ**: it
+- **公開日時**: 2026年10月24日 10:55
+- **URL**: [https://dev.classmethod.jp/articles/devio2026-tag-with-engineers-using-generative-ai/](https://dev.classmethod.jp/articles/devio2026-tag-with-engineers-using-generative-ai/)
+
+## 概要
+
+PMMの私が、生成AI（Claude）を使ってエンジニアとタッグを組み、職種の違いによる「前提条件」「言葉」「ゴール」のズレを埋めた経験をお話しします。相互理解が劇的に早くなった工夫と、他職種との協働にも使える聞き方の型をご紹介します。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

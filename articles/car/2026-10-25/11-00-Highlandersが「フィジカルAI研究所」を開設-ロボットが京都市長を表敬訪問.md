@@ -1,0 +1,24 @@
+---
+title: "Highlandersが「フィジカルAI研究所」を開設---ロボットが京都市長を表敬訪問"
+source: "Response"
+category: "car"
+published: 2026-10-25T11:00:03
+url: https://response.jp/article/2026/10/25/418187.html
+---
+
+# Highlandersが「フィジカルAI研究所」を開設---ロボットが京都市長を表敬訪問
+
+## メタデータ
+
+- **情報源**: Response
+- **カテゴリ**: car
+- **公開日時**: 2026年10月25日 11:00
+- **URL**: [https://response.jp/article/2026/10/25/418187.html](https://response.jp/article/2026/10/25/418187.html)
+
+## 概要
+
+
+
+---
+
+*この記事は自動収集システムによって保存されました。*

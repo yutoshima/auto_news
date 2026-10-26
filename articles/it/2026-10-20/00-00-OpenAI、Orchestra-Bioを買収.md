@@ -17,7 +17,7 @@ url: https://openai.com/index/openai-to-acquire-orchestra-bio
 
 ## 概要
 
-OpenAIはOrchestra Bioを買収し、AIを活用したオペレーションをライフサイエンスの研究開発に実現します。これにより、バイオファーマ業界のチームが薬剤開発を加速し、新しい治療法の開発を推進します。
+OpenAIはOrchestra Bioを買収し、AIを活用したオペレーションをライフサイエンスの研究開発に実装して、バイオファーマのチームが薬剤開発を加速し新しい治療法の進展を促進できるようにします。
 
 ---
 

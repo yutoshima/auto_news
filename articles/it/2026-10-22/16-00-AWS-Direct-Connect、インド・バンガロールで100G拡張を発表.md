@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/10/aws-direct-connect-100g-
 
 ## 概要
 
-今日は、インド・バンガロール近郊のNetmagic DC2データセンターにある既存のAWS Direct Connect拠点で、100 Gbps専用接続の拡張を発表しました。ここから、プライベートで直接的なネットワークアクセスを、公開AWSリージョンのうち中国を除く全リージョン、AWS GovCloudリージョン、そしてAWS Local Zonesへ提供します。
+本日、AWSはインド・バンガロール近郊のNetmagic DC2データセンターにある既存のAWS Direct Connect拠点で、100 Gbpsの専用接続を拡張することを発表しました。これにより、公開AWSリージョン（中国を除く）、AWS GovCloudリージョン、およびAWS Local Zonesへのプライベートで直接的なネットワークアクセスをこの拠点から利用できるようになります。
 
 ---
 

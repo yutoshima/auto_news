@@ -17,7 +17,7 @@ url: https://news.mynavi.jp/techplus/article/20261025-5175531/
 
 ## 概要
 
-Android Police Teamは2026年10月20日（現地時間）に「I replaced Google Photos, Drive, and Gemini with free open source alternatives; now I can't go back」で、Googleフォト、Googleドライブ、Geminiに代わる無償のオープンソース代替アプリをAndroid端末で利用し、Googleサービスへの依存を減らした体験を紹介した。今回、代替…
+Android Police Teamは2026年10月20日（現地時間）に「I replaced Google Photos, Drive, and Gemini with free open source alternatives; now I can't go back」で、Googleフォト、Googleドライブ、Geminiの代わりに無償のオープンソース代替アプリをAndroid端末で利用してGoogleサービスへの依存を減らす体験を紹介しました。今回、代替...
 
 ---
 

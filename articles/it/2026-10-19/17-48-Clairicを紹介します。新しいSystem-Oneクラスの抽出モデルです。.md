@@ -17,7 +17,7 @@ url: https://blog.cloudflare.com/clairic-extraction-model/
 
 ## 概要
 
-ClairicはCloudflareの新モデルで、System One抽出モードIを備え、非構造化入力からデータを抽出・計算・推定・予測することができます。
+ClairicはCloudflareの新しいモデルで、System Oneの抽出モードIを搭載し、非構造化データからの抽出・計算・推定・予測が可能です。
 
 ---
 

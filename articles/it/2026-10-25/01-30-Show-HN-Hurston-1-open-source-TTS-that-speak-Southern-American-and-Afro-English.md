@@ -1,5 +1,5 @@
 ---
-title: "Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English\n\n日本語訳:\nShow HN: Southern American英語とアフロ英語を話すオープンソースのTTS、Hurston-1"
+title: "Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English\n\n日本語訳: Show HN: Southern American 方言と Afro-English を話すオープンソースの TTS「Hurston-1」"
 source: "Hacker News"
 category: "it"
 published: 2026-10-25T01:30:13
@@ -8,8 +8,7 @@ url: https://huggingface.co/destined/hurston-1
 
 # Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English
 
-日本語訳:
-Show HN: Southern American英語とアフロ英語を話すオープンソースのTTS、Hurston-1
+日本語訳: Show HN: Southern American 方言と Afro-English を話すオープンソースの TTS「Hurston-1」
 
 ## メタデータ
 

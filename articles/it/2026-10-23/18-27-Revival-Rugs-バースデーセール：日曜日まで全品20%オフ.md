@@ -17,7 +17,7 @@ url: https://www.wired.com/story/revival-rugs-birthday-sale-october-2026/
 
 ## 概要
 
-そのブランドの手で結ばれた手織りのウールラグが手頃な価格で揃っており、WIREDのスタッフのお気に入りになっています。
+ブランドの手結び・手織りのウールラグを手頃な価格で揃えたセレクションは、WIREDのスタッフのお気に入りです。
 
 ---
 

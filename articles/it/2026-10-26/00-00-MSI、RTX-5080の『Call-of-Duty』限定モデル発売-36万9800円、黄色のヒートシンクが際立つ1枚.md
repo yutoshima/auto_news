@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/445/4445538/?rss
 
 ## 概要
 
-MSIがGeForce RTX 5080搭載グラフィックスカード「GeForce RTX 5080 16G COD MW4 EDITION OC」を数量限定で発売した。Call of Duty: Modern Warfare 4をイメージした限定デザインとTRI FROZR 4冷却を備えた高性能モデルだ。
+MSIはGeForce RTX 5080を搭載したグラフィックスカード「GeForce RTX 5080 16G COD MW4 EDITION OC」を数量限定で発売しました。Call of Duty: Modern Warfare 4をイメージした限定デザインとTRI FROZR 4冷却を備えた高性能モデルです。
 
 ---
 

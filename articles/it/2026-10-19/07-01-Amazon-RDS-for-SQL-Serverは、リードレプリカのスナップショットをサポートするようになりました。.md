@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/10/rds-sqlserver-supports-s
 
 ## 概要
 
-Amazon Relational Database Service (Amazon RDS) for SQL Server は、読み取りレプリカインスタンス上で直接DBスナップショットを作成できる機能をサポートしました。これまではスタンドアロンおよびプライマリDBインスタンス上でのみスナップショットを作成できました。読み取りレプリカを昇格させることなく、スナップショットを作成できるようになり、バックアップおよび災害復旧（DR）のワークフローにおける柔軟性が向上します。
+Amazon Relational Database Service (Amazon RDS) for SQL Serverは現在、読み取り専用レプリカインスタンス上でDBスナップショットを直接作成できるようになりました。以前はスタンドアロンおよびプライマリDBインスタンス上でのみスナップショットを作成できました。読み取り専用レプリカを先に昇格させることなくスナップショットを取れるようになり、バックアップおよび災害復旧（DR）ワークフローの柔軟性が高まりました。
 
 ---
 

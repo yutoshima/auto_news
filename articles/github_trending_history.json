@@ -5,19 +5,27 @@
   },
   "JetBrains/thinkrail": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
   },
   "NVIDIA/OpenShell": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-25"
   },
+  "NVIDIA/SkillSpector": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
+  },
   "Nutlope/hallmark": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
   },
   "OpenBMB/VoxCPM": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
+  },
+  "Panniantong/Agent-Reach": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
   },
   "Renhuai123/ziwei-doushu": {
     "first_seen": "2026-10-24",
@@ -29,7 +37,15 @@
   },
   "TauricResearch/TradingAgents": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
+  },
+  "affaan-m/ECC": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
+  },
+  "alchaincyf/huashu-design": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
   },
   "anthropics/knowledge-work-plugins": {
     "first_seen": "2026-10-24",
@@ -49,7 +65,11 @@
   },
   "debpalash/VoiceStudio": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
+  },
+  "gitroomhq/postiz-app": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
   },
   "google-gemini/gemini-cli": {
     "first_seen": "2026-10-25",
@@ -65,7 +85,15 @@
   },
   "makecindy/cindy": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
+  },
+  "nightly-labs/openbot": {
+    "first_seen": "2026-10-27",
+    "last_seen": "2026-10-27"
   },
   "nodejs/node": {
     "first_seen": "2026-10-24",
@@ -73,7 +101,7 @@
   },
   "pbakaus/impeccable": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
   },
   "php/php-src": {
     "first_seen": "2026-10-24",
@@ -81,6 +109,6 @@
   },
   "pollen-robotics/microduck": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-27"
   }
 }

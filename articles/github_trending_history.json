@@ -3,9 +3,13 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-26"
   },
+  "HKUDS/DeepTutor": {
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28"
+  },
   "JetBrains/thinkrail": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "NVIDIA/OpenShell": {
     "first_seen": "2026-10-24",
@@ -17,7 +21,7 @@
   },
   "Nutlope/hallmark": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "OpenBMB/VoxCPM": {
     "first_seen": "2026-10-24",
@@ -41,7 +45,7 @@
   },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "alchaincyf/huashu-design": {
     "first_seen": "2026-10-27",
@@ -67,9 +71,13 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-27"
   },
+  "elayadesign/ai-design-skills": {
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28"
+  },
   "gitroomhq/postiz-app": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "google-gemini/gemini-cli": {
     "first_seen": "2026-10-25",
@@ -85,7 +93,7 @@
   },
   "makecindy/cindy": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "multica-ai/andrej-karpathy-skills": {
     "first_seen": "2026-10-27",
@@ -93,15 +101,19 @@
   },
   "nightly-labs/openbot": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "nodejs/node": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
   },
+  "obra/superpowers": {
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28"
+  },
   "pbakaus/impeccable": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-27"
+    "last_seen": "2026-10-28"
   },
   "php/php-src": {
     "first_seen": "2026-10-24",
@@ -110,5 +122,9 @@
   "pollen-robotics/microduck": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-27"
+  },
+  "togg53192-cmd/jailbreaks": {
+    "first_seen": "2026-10-28",
+    "last_seen": "2026-10-28"
   }
 }

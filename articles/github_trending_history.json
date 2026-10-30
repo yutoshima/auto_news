@@ -3,13 +3,21 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-26"
   },
+  "CopilotKit/OpenBot": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30"
+  },
+  "Donchitos/Claude-Code-Game-Studios": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30"
+  },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "JetBrains/thinkrail": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "NVIDIA/OpenShell": {
     "first_seen": "2026-10-24",
@@ -73,7 +81,7 @@
   },
   "elayadesign/ai-design-skills": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "expo/skills": {
     "first_seen": "2026-10-29",
@@ -107,13 +115,17 @@
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-29"
   },
+  "milind-soni/OpenMausBot": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30"
+  },
   "multica-ai/andrej-karpathy-skills": {
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-27"
   },
   "nightly-labs/openbot": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "nodejs/node": {
     "first_seen": "2026-10-24",
@@ -121,11 +133,11 @@
   },
   "obra/superpowers": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "pbakaus/impeccable": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "php/php-src": {
     "first_seen": "2026-10-24",
@@ -139,9 +151,13 @@
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-29"
   },
+  "thedotmack/claude-mem": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30"
+  },
   "togg53192-cmd/jailbreaks": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-30"
   },
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",

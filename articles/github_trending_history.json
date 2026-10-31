@@ -5,7 +5,7 @@
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "Donchitos/Claude-Code-Game-Studios": {
     "first_seen": "2026-10-30",
@@ -13,11 +13,11 @@
   },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "JetBrains/thinkrail": {
     "first_seen": "2026-10-26",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "NVIDIA/OpenShell": {
     "first_seen": "2026-10-24",
@@ -41,7 +41,7 @@
   },
   "Renhuai123/ziwei-doushu": {
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-10-31"
   },
   "SnailSploit/Claude-Red": {
     "first_seen": "2026-10-24",
@@ -62,6 +62,10 @@
   "anthropics/knowledge-work-plugins": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
+  },
+  "anthropics/skills": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31"
   },
   "aws/agent-toolkit-for-aws": {
     "first_seen": "2026-10-25",
@@ -85,7 +89,7 @@
   },
   "expo/skills": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-31"
   },
   "gitroomhq/postiz-app": {
     "first_seen": "2026-10-27",
@@ -103,21 +107,29 @@
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
   },
+  "lightpanda-io/browser": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31"
+  },
   "luongnv89/claude-howto": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
   },
   "macro-inc/macro": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-10-31"
   },
   "makecindy/cindy": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-29"
   },
+  "mattpocock/skills": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31"
+  },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "multica-ai/andrej-karpathy-skills": {
     "first_seen": "2026-10-27",
@@ -133,15 +145,19 @@
   },
   "obra/superpowers": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "pbakaus/impeccable": {
     "first_seen": "2026-10-25",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "php/php-src": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
+  },
+  "pingdotgg/t3code": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31"
   },
   "pollen-robotics/microduck": {
     "first_seen": "2026-10-25",
@@ -153,11 +169,11 @@
   },
   "thedotmack/claude-mem": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "togg53192-cmd/jailbreaks": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-30"
+    "last_seen": "2026-10-31"
   },
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",

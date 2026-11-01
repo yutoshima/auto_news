@@ -1,0 +1,24 @@
+---
+title: "CloudFront の AWS WAF SDK 自動統合を有効にして、HTML への script タグ挿入と応答の変化を確認してみた"
+source: "DevelopersIO"
+category: "it"
+published: 2026-10-31T17:55:11
+url: https://dev.classmethod.jp/articles/waf-cloudfront-automatic-sdk-integration/
+---
+
+# CloudFront の AWS WAF SDK 自動統合を有効にして、HTML への script タグ挿入と応答の変化を確認してみた
+
+## メタデータ
+
+- **情報源**: DevelopersIO
+- **カテゴリ**: it
+- **公開日時**: 2026年10月31日 17:55
+- **URL**: [https://dev.classmethod.jp/articles/waf-cloudfront-automatic-sdk-integration/](https://dev.classmethod.jp/articles/waf-cloudfront-automatic-sdk-integration/)
+
+## 概要
+
+アプリケーションや CI/CD にタグを組み込むことなく、web ACL の設定だけで WAF SDK のシグナルを Bot Control などの判定に利用できます。一方で、ETag と Range 要求の扱いにも影響します。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

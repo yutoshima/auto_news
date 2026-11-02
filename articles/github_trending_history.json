@@ -5,11 +5,15 @@
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-10-31"
+    "last_seen": "2026-11-02"
   },
   "Donchitos/Claude-Code-Game-Studios": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-02"
+  },
+  "FlashML-org/FreeToken": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
   },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
@@ -45,7 +49,7 @@
   },
   "Renhuai123/ziwei-doushu": {
     "first_seen": "2026-10-24",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-02"
   },
   "SnailSploit/Claude-Red": {
     "first_seen": "2026-10-24",
@@ -67,6 +71,10 @@
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-27"
   },
+  "anomalyco/hex": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "anthropics/knowledge-work-plugins": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
@@ -79,9 +87,17 @@
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
   },
+  "beenuar/AiSOC": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "bregman-arie/devops-exercises": {
     "first_seen": "2026-11-01",
     "last_seen": "2026-11-01"
+  },
+  "cjpais/Handy": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-10-24",
@@ -115,13 +131,21 @@
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-29"
   },
+  "hyprwm/Hyprland": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "jbiaojerry/ebook-treasure-chest": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
   },
+  "kornia/kornia": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "lightpanda-io/browser": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-02"
   },
   "luongnv89/claude-howto": {
     "first_seen": "2026-10-25",
@@ -141,7 +165,7 @@
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-02"
   },
   "multica-ai/andrej-karpathy-skills": {
     "first_seen": "2026-10-27",
@@ -159,6 +183,10 @@
     "first_seen": "2026-10-28",
     "last_seen": "2026-11-01"
   },
+  "patchy631/ai-engineering-hub": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "pbakaus/impeccable": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-11-01"
@@ -169,23 +197,31 @@
   },
   "pingdotgg/t3code": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-02"
   },
   "pollen-robotics/microduck": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-27"
   },
+  "public-apis/public-apis": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "ruvnet/RuView": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-29"
   },
+  "shiyu-coder/Kronos": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-02"
+  },
   "thedotmack/claude-mem": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-02"
   },
   "togg53192-cmd/jailbreaks": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-10-31"
+    "last_seen": "2026-11-02"
   },
   "vorssaint/vorssaint-utils": {
     "first_seen": "2026-11-01",

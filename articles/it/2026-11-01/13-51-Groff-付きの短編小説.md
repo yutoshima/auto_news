@@ -1,0 +1,24 @@
+---
+title: "Groff 付きの短編小説"
+source: "Hacker News"
+category: "it"
+published: 2026-11-01T13:51:41
+url: https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html
+---
+
+# Groff 付きの短編小説
+
+## メタデータ
+
+- **情報源**: Hacker News
+- **カテゴリ**: it
+- **公開日時**: 2026年11月01日 13:51
+- **URL**: [https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html](https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html)
+
+## 概要
+
+<a href="https://news.ycombinator.com/item?id=50325694">コメント</a>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

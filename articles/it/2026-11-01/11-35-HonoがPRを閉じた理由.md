@@ -17,7 +17,19 @@ url: https://slides.yusu.ke/foss4g-2026
 
 ## 概要
 
-HonoがPRを閉じた理由 Yusuke Wada FOSS4G分科会シンポジウム 2026「AI時代のFOSS4G」 ・ 2026年11月1日 Yusuke Wada Cloudflare Senior Developer Advocate Honoのクリエイター Hono  JavaScriptで動くWebフレームワーク GitHub上でOSSとして開発 2021年12月〜 32K stars / 月間2.67億 ダウンロード hono.dev -# api.npm...
+HonoがPRを閉じた理由
+Yusuke Wada FOSS4G分科会シンポジウム 2026「AI時代のFOSS4G」
+・ November 1, 2026
+Yusuke Wada
+Cloudflare Senior Developer Advocate
+Honoの creator
+Hono
+JavaScriptで動くWebフレームワーク
+GitHub上でOSSとして開発
+2021年12月〜
+32K stars / 月間2.67億ダウンロード
+hono.dev
+-# api.npm...
 
 ---
 

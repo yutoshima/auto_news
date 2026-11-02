@@ -17,7 +17,7 @@ url: https://techcrunch.com/2026/10/31/tiktoks-road-to-becoming-a-super-app/
 
 ## 概要
 
-TikTokは、人々がデジタル活動の大半を行うアプリになろうとしているかもしれない。
+TikTokは、人々がデジタル活動のほとんどを行うアプリになるよう努めているかもしれません。
 
 ---
 

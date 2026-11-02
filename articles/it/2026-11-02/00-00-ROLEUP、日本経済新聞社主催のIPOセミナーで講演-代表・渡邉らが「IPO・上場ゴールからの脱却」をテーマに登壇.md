@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/447/4447657/?rss
 
 ## 概要
 
-<RoleUp>、日本経済新聞社主催のIPOセミナーで講演　代表・渡邉らが「IPO・上場ゴールからの脱却」をテーマに登壇
+<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />ROLEUP、日経BP主催のIPOセミナーで講演　代表・渡邉らが「IPO・上場ゴールからの脱却」をテーマに登壇</p><br clear="left" />
 
 ---
 

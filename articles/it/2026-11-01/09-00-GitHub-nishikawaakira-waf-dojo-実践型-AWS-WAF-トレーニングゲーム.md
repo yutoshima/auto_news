@@ -17,7 +17,7 @@ url: https://github.com/nishikawaakira/waf-dojo
 
 ## 概要
 
-実際の攻撃に対抗して防御することで学ぶ、実践型のAWS WAFトレーニングゲーム。英語 | 日本語 管理者向け：環境の構築、参加者への配布、実行、後片付けの手順はAdminガイド（docs/ADMIN.md）で解説されており、参加者向けの配布資料は Getting started ...
+実際の攻撃から守って学ぶ AWS WAF の実践トレーニングゲーム。英語 | 日本語 管理者向け: 環境の構築方法、参加者への割り当て、実行方法、後片付けまで Admin ガイド（docs/ADMIN.md）で解説されており、参加者向けの配布資料は Getting started ...
 
 ---
 

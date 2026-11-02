@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/447/4447613/?rss
 
 ## 概要
 
-日本エイサーが約960gの軽量AI PC「Acer Swift Air 14」新モデル4機種を10月30日から順次発売する。AMD Ryzen AI搭載、最大50 TOPSのNPU、14インチOLEDを備え、10月30日発売モデルと11月27日発売予定モデルで解像度やMicrosoft 365 Personal同梱の有無が異なる。
+日本エイサーが、約960gの軽量AI PC「Acer Swift Air 14」新モデル4機種を10月30日から順次発売します。AMD Ryzen AI搭載、最大50 TOPSのNPU、14インチOLEDを備え、10月30日発売モデルと11月27日発売予定モデルで解像度やMicrosoft 365 Personal同梱の有無が異なります。
 
 ---
 

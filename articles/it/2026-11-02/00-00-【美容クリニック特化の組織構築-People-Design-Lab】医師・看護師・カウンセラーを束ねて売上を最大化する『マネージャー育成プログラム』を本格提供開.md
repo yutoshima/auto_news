@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/447/4447652/?rss
 
 ## 概要
 
-<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />【美容クリニック特化の組織構築 People Design Lab】医師・看護師・カウンセラーを束ねて売上を最大化する『マネージャー育成プログラム』を本格提供開始</p><br clear="left" />
+【美容クリニック特化の組織構築 People Design Lab】医師・看護師・カウンセラーを束ねて売上を最大化する『マネージャー育成プログラム』を本格提供開始
 
 ---
 

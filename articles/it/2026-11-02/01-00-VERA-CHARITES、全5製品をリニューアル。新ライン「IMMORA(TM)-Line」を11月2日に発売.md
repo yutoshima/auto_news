@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/447/4447638/?rss
 
 ## 概要
 
-VERA CHARITES、全5製品をリニューアル。新ライン「IMMORA(TM) Line」を11月2日に発売
+VERA CHARITES、全5製品をリニューアル。新ライン「IMMORA(TM)ライン」を11月2日に発売
 
 ---
 

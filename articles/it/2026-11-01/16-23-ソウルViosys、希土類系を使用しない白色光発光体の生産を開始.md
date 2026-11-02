@@ -1,0 +1,24 @@
+---
+title: "ソウルViosys、希土類系を使用しない白色光発光体の生産を開始"
+source: "Hacker News"
+category: "it"
+published: 2026-11-01T16:23:26
+url: https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml
+---
+
+# ソウルViosys、希土類系を使用しない白色光発光体の生産を開始
+
+## メタデータ
+
+- **情報源**: Hacker News
+- **カテゴリ**: it
+- **公開日時**: 2026年11月01日 16:23
+- **URL**: [https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml](https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml)
+
+## 概要
+
+<a href="https://news.ycombinator.com/item?id=50327058">コメント</a>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

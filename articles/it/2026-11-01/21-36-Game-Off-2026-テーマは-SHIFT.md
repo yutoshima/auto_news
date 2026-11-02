@@ -17,9 +17,9 @@ url: https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/
 
 ## 概要
 
-GitHubの年間1か月間のゲームジャムが、14年目を迎えて再び開催されます！今月11月は、テーマ「SHIFT」にインスパイアされたゲームを作ってください。ギアを変え、視点を切り替え、現実を曲げる、あるいは特定のキーを押すだけでもいいです。
+GitHubの年に一度の月間ゲームジャムが、今年も14回目を迎えました！今月の11月は、SHIFTをテーマに着想を得たゲームを作ろう。ギアを切り替え、視点を入れ替え、現実を曲げる、または特定のキーを押すだけでもいい。
 
-投稿「Game Off 2026: The theme is SHIFT」は、まずGitHubブログに掲載されました。
+投稿「Game Off 2026: The theme is SHIFT」は、まずThe GitHub Blogに掲載されました。
 
 ---
 

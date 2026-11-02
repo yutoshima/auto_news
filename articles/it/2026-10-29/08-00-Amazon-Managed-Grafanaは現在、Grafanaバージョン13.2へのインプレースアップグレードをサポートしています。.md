@@ -17,9 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/10/managed-grafana-upgrade-
 
 ## 概要
 
-Amazon Managed Grafana は現在、Grafana バージョン 12.4 から 13.2 へのインプレースアップグレードをサポートしています。バージョン 13.2 へのアップグレードにより、オープンソース Grafana のバージョン 13.0 〜 13.2 に含まれる機能が利用可能になります。これには、ダッシュボードの Git Sync、ダイナミックダッシュボード、そして Amazon CloudWatch データソースプラグインでの PromQL クエリサポートが含まれます。
+Amazon Managed Grafana は now supports in-place upgrade from Grafana version 12.4 to 13.2. Upgrading to version 13.2 brings features launched as part of open-source Grafana versions 13.0 to 13.2. These include Git Sync for dashboards, dynamic dashboards, and PromQL query support in the Amazon CloudWatch data source plugin.
 
-Git Sync を使えば、ワークスペースを Git リポジトリにリンクすることで、ダッシュボードをコードとして扱うことができます。ダッシュボードの変更は、バージョン管理、レビュー、元に戻すことが可能になります。
+With Git Sync, you can treat dashboards as code by linking a workspace to a Git repository. Dashboard modifications can be tracked, reviewed, and reverted through versi
 
 ---
 

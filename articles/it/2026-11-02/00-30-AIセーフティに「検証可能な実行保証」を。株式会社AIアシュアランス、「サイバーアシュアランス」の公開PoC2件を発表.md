@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/447/4447645/?rss
 
 ## 概要
 
-<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />AIセーフティに「検証可能な実行保証」を。株式会社AIアシュアランス、「サイバーアシュアランス」の公開PoC2件を発表</p><br clear="left" />
+AIセーフティに「検証可能な実行保証」を。株式会社AIアシュアランス、「サイバーアシュアランス」の公開PoC2件を発表
 
 ---
 

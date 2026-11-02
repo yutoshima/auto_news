@@ -17,7 +17,9 @@ url: https://cleantechnica.com/2026/10/30/homepower-1000-plus-v2-portable-power-
 
 ## 概要
 
-私は過去数か月、クイーンズ区ニューヨークの自宅周辺でJackery HomePower 1000 Plus v2をさまざまな用途で使用してきました。柔軟性と携帯性があり、特にアパート暮らしの人にとって有用です。以前、Jackery HomePower 1000 Plus についても… [続く]
+数か月間、クイーンズ区ニューヨークの私のアパート周辺で、Jackery HomePower 1000 Plus v2 を様々な用途に幅広く使用してきました。柔軟性と携帯性があり、特にアパート暮らしの人には役立つと感じます。以前、Jackery HomePower 1000 Plus についても書いたことがあります … [続く] 
+
+投稿「HomePower 1000 Plus v2: Portable Power Put To Use」は最初に掲載されました
 
 ---
 

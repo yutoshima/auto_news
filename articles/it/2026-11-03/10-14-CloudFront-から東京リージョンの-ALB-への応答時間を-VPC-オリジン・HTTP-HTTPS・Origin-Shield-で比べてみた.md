@@ -1,0 +1,24 @@
+---
+title: "CloudFront から東京リージョンの ALB への応答時間を VPC オリジン・HTTP/HTTPS・Origin Shield で比べてみた"
+source: "DevelopersIO"
+category: "it"
+published: 2026-11-03T10:14:39
+url: https://dev.classmethod.jp/articles/cloudfront-vpc-origin-http-origin-shield-latency/
+---
+
+# CloudFront から東京リージョンの ALB への応答時間を VPC オリジン・HTTP/HTTPS・Origin Shield で比べてみた
+
+## メタデータ
+
+- **情報源**: DevelopersIO
+- **カテゴリ**: it
+- **公開日時**: 2026年11月03日 10:14
+- **URL**: [https://dev.classmethod.jp/articles/cloudfront-vpc-origin-http-origin-shield-latency/](https://dev.classmethod.jp/articles/cloudfront-vpc-origin-http-origin-shield-latency/)
+
+## 概要
+
+CloudFront からオリジンへの応答時間を、VPC オリジンの有無、HTTP/HTTPS、Origin Shield の有無を組み合わせた 8 構成で、地域別に比べました。VPC オリジンによる差は最大でも約 10 ms、Origin Shield は HTTPS で最大約 500 ms 短縮しました。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

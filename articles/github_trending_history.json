@@ -9,11 +9,11 @@
   },
   "D4Vinci/Scrapling": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "Donchitos/Claude-Code-Game-Studios": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "FlashML-org/FreeToken": {
     "first_seen": "2026-11-02",
@@ -29,7 +29,7 @@
   },
   "JustVugg/colibri": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "NVIDIA/OpenShell": {
     "first_seen": "2026-10-24",
@@ -71,6 +71,10 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-27"
   },
+  "Usagi-org/ai-goofish-monitor": {
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04"
+  },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-28"
@@ -81,7 +85,7 @@
   },
   "anomalyco/hex": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-02"
+    "last_seen": "2026-11-04"
   },
   "anthropics/knowledge-work-plugins": {
     "first_seen": "2026-10-24",
@@ -126,6 +130,10 @@
   "expo/skills": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-31"
+  },
+  "floci-io/floci": {
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04"
   },
   "gitroomhq/postiz-app": {
     "first_seen": "2026-10-27",
@@ -173,11 +181,11 @@
   },
   "mattpocock/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "max-sixty/worktrunk": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
@@ -201,7 +209,7 @@
   },
   "p-e-w/heretic": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "paperclipai/paperclip": {
     "first_seen": "2026-11-03",
@@ -237,11 +245,15 @@
   },
   "shiyu-coder/Kronos": {
     "first_seen": "2026-11-02",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
+  },
+  "spotify/portal-ai-plugins": {
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-04"
   },
   "thedotmack/claude-mem": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "togg53192-cmd/jailbreaks": {
     "first_seen": "2026-10-28",
@@ -249,7 +261,7 @@
   },
   "vercel-labs/agent-desktop": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-03"
+    "last_seen": "2026-11-04"
   },
   "vorssaint/vorssaint-utils": {
     "first_seen": "2026-11-01",

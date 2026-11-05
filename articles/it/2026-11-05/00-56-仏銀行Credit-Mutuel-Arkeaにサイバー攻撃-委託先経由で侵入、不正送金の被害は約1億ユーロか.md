@@ -1,0 +1,24 @@
+---
+title: "仏銀行Credit Mutuel Arkeaにサイバー攻撃　委託先経由で侵入、不正送金の被害は約1億ユーロか"
+source: "ITmedia News"
+category: "it"
+published: 2026-11-05T00:56:19
+url: https://www.itmedia.co.jp/news/article/2611/05/2000002891/
+---
+
+# 仏銀行Credit Mutuel Arkeaにサイバー攻撃　委託先経由で侵入、不正送金の被害は約1億ユーロか
+
+## メタデータ
+
+- **情報源**: ITmedia News
+- **カテゴリ**: it
+- **公開日時**: 2026年11月05日 00:56
+- **URL**: [https://www.itmedia.co.jp/news/article/2611/05/2000002891/](https://www.itmedia.co.jp/news/article/2611/05/2000002891/)
+
+## 概要
+
+フランスの銀行グループCredit Mutuel Arkeaは、外部委託先のシステム経由でサイバー攻撃を受け、不正送金されたと発表した。被害額は数千万から1億ユーロ規模とみられ、暗号資産に交換された可能性がある。銀行自身の口座が悪用されたため、顧客資産への直接的な被害はないという。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

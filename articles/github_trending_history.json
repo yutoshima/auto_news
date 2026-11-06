@@ -3,13 +3,17 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-26"
   },
+  "ConardLi/garden-skills": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06"
+  },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-10-30",
     "last_seen": "2026-11-02"
   },
   "D4Vinci/Scrapling": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "Donchitos/Claude-Code-Game-Studios": {
     "first_seen": "2026-10-30",
@@ -33,7 +37,7 @@
   },
   "JiaFeiMiao-K-Cat/DiscImageStudio": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "JustVugg/colibri": {
     "first_seen": "2026-11-03",
@@ -53,7 +57,7 @@
   },
   "NVIDIA/auto-ontology": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "Nutlope/hallmark": {
     "first_seen": "2026-10-25",
@@ -97,7 +101,7 @@
   },
   "Usagi-org/ai-goofish-monitor": {
     "first_seen": "2026-11-04",
-    "last_seen": "2026-11-04"
+    "last_seen": "2026-11-06"
   },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
@@ -157,11 +161,11 @@
   },
   "floci-io/floci": {
     "first_seen": "2026-11-04",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "garrytan/gstack": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "github/spec-kit": {
     "first_seen": "2026-11-05",
@@ -174,6 +178,10 @@
   "google-gemini/gemini-cli": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
+  },
+  "google/skills": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06"
   },
   "harry0703/MoneyPrinterTurbo": {
     "first_seen": "2026-11-05",
@@ -207,6 +215,10 @@
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
   },
+  "lz4/lz4": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06"
+  },
   "macro-inc/macro": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-31"
@@ -217,11 +229,15 @@
   },
   "mattpocock/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "max-sixty/worktrunk": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
+  },
+  "microsoft/VibeVoice": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06"
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
@@ -281,7 +297,7 @@
   },
   "scenario-labs/skills": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "shiyu-coder/Kronos": {
     "first_seen": "2026-11-02",
@@ -299,9 +315,13 @@
     "first_seen": "2026-10-28",
     "last_seen": "2026-11-02"
   },
+  "vercel-labs/agent-browser": {
+    "first_seen": "2026-11-06",
+    "last_seen": "2026-11-06"
+  },
   "vercel-labs/agent-desktop": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-05"
+    "last_seen": "2026-11-06"
   },
   "vorssaint/vorssaint-utils": {
     "first_seen": "2026-11-01",

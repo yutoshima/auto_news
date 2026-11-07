@@ -57,7 +57,7 @@
   },
   "NVIDIA/auto-ontology": {
     "first_seen": "2026-11-05",
-    "last_seen": "2026-11-06"
+    "last_seen": "2026-11-07"
   },
   "Nutlope/hallmark": {
     "first_seen": "2026-10-25",
@@ -111,6 +111,10 @@
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-27"
   },
+  "angular/angular": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
+  },
   "anomalyco/hex": {
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-04"
@@ -122,6 +126,10 @@
   "anthropics/skills": {
     "first_seen": "2026-10-31",
     "last_seen": "2026-10-31"
+  },
+  "astral-sh/ruff": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   },
   "aws/agent-toolkit-for-aws": {
     "first_seen": "2026-10-25",
@@ -141,7 +149,7 @@
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-26"
+    "last_seen": "2026-11-07"
   },
   "coollabsio/coolify": {
     "first_seen": "2026-10-26",
@@ -154,6 +162,10 @@
   "elayadesign/ai-design-skills": {
     "first_seen": "2026-10-28",
     "last_seen": "2026-10-30"
+  },
+  "etcd-io/etcd": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   },
   "expo/skills": {
     "first_seen": "2026-10-29",
@@ -181,7 +193,7 @@
   },
   "google/skills": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-06"
+    "last_seen": "2026-11-07"
   },
   "harry0703/MoneyPrinterTurbo": {
     "first_seen": "2026-11-05",
@@ -229,7 +241,7 @@
   },
   "mattpocock/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-06"
+    "last_seen": "2026-11-07"
   },
   "max-sixty/worktrunk": {
     "first_seen": "2026-11-03",
@@ -239,9 +251,17 @@
     "first_seen": "2026-11-06",
     "last_seen": "2026-11-06"
   },
+  "microsoft/vscode": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
+  },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
     "last_seen": "2026-11-02"
+  },
+  "mpv-player/mpv": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   },
   "multica-ai/andrej-karpathy-skills": {
     "first_seen": "2026-10-27",
@@ -255,9 +275,17 @@
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
   },
+  "nushell/nushell": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
+  },
   "obra/superpowers": {
     "first_seen": "2026-10-28",
     "last_seen": "2026-11-01"
+  },
+  "openssl/openssl": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   },
   "p-e-w/heretic": {
     "first_seen": "2026-11-03",
@@ -287,9 +315,25 @@
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-27"
   },
+  "prometheus/prometheus": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
+  },
   "public-apis/public-apis": {
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-02"
+  },
+  "rails/rails": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
+  },
+  "react/react": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
+  },
+  "rust-lang/rust": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   },
   "ruvnet/RuView": {
     "first_seen": "2026-10-29",
@@ -306,6 +350,10 @@
   "spotify/portal-ai-plugins": {
     "first_seen": "2026-11-04",
     "last_seen": "2026-11-04"
+  },
+  "symfony/symfony": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   },
   "thedotmack/claude-mem": {
     "first_seen": "2026-10-30",
@@ -330,5 +378,9 @@
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-29"
+  },
+  "zed-industries/zed": {
+    "first_seen": "2026-11-07",
+    "last_seen": "2026-11-07"
   }
 }

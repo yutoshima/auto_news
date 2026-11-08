@@ -125,11 +125,11 @@
   },
   "anthropics/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-10-31"
+    "last_seen": "2026-11-08"
   },
   "astral-sh/ruff": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-07"
+    "last_seen": "2026-11-08"
   },
   "aws/agent-toolkit-for-aws": {
     "first_seen": "2026-10-25",
@@ -149,7 +149,7 @@
   },
   "cloudflare/security-audit-skill": {
     "first_seen": "2026-10-24",
-    "last_seen": "2026-11-07"
+    "last_seen": "2026-11-08"
   },
   "coollabsio/coolify": {
     "first_seen": "2026-10-26",
@@ -158,6 +158,10 @@
   "debpalash/VoiceStudio": {
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-27"
+  },
+  "dsx-ai-factory/nvke": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08"
   },
   "elayadesign/ai-design-skills": {
     "first_seen": "2026-10-28",
@@ -193,7 +197,7 @@
   },
   "google/skills": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-07"
+    "last_seen": "2026-11-08"
   },
   "harry0703/MoneyPrinterTurbo": {
     "first_seen": "2026-11-05",
@@ -241,11 +245,19 @@
   },
   "mattpocock/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-07"
+    "last_seen": "2026-11-08"
   },
   "max-sixty/worktrunk": {
     "first_seen": "2026-11-03",
     "last_seen": "2026-11-06"
+  },
+  "mbillow/localthings": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08"
+  },
+  "meta/astryx": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08"
   },
   "microsoft/VibeVoice": {
     "first_seen": "2026-11-06",
@@ -257,7 +269,7 @@
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-02"
+    "last_seen": "2026-11-08"
   },
   "mpv-player/mpv": {
     "first_seen": "2026-11-07",
@@ -317,7 +329,7 @@
   },
   "prometheus/prometheus": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-07"
+    "last_seen": "2026-11-08"
   },
   "public-apis/public-apis": {
     "first_seen": "2026-11-02",
@@ -326,6 +338,10 @@
   "rails/rails": {
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-07"
+  },
+  "ranxianglei/billion-context": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08"
   },
   "react/react": {
     "first_seen": "2026-11-07",
@@ -343,6 +359,10 @@
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-06"
   },
+  "sherlock-project/sherlock": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08"
+  },
   "shiyu-coder/Kronos": {
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-04"
@@ -355,6 +375,10 @@
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-07"
   },
+  "tailwindlabs/tailwindcss": {
+    "first_seen": "2026-11-08",
+    "last_seen": "2026-11-08"
+  },
   "thedotmack/claude-mem": {
     "first_seen": "2026-10-30",
     "last_seen": "2026-11-05"
@@ -365,7 +389,7 @@
   },
   "vercel-labs/agent-browser": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-06"
+    "last_seen": "2026-11-08"
   },
   "vercel-labs/agent-desktop": {
     "first_seen": "2026-11-03",
@@ -381,6 +405,6 @@
   },
   "zed-industries/zed": {
     "first_seen": "2026-11-07",
-    "last_seen": "2026-11-07"
+    "last_seen": "2026-11-08"
   }
 }

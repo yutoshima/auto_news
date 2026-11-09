@@ -1,0 +1,24 @@
+---
+title: "このグランドツーリングクーペは、他の Subaru とは違う特別な一台だ"
+source: "Car and Driver"
+category: "car"
+published: 2026-11-08T16:00:00
+url: https://www.caranddriver.com/news/a74359416/1993-subaru-svx-bring-a-trailer-auction/
+---
+
+# このグランドツーリングクーペは、他の Subaru とは違う特別な一台だ
+
+## メタデータ
+
+- **情報源**: Car and Driver
+- **カテゴリ**: car
+- **公開日時**: 2026年11月08日 16:00
+- **URL**: [https://www.caranddriver.com/news/a74359416/1993-subaru-svx-bring-a-trailer-auction/](https://www.caranddriver.com/news/a74359416/1993-subaru-svx-bring-a-trailer-auction/)
+
+## 概要
+
+1993年式のSVXで、Bring a Trailerで販売されています。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

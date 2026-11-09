@@ -119,13 +119,17 @@
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-04"
   },
+  "anthropics/claude-quickstarts": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09"
+  },
   "anthropics/knowledge-work-plugins": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-10-24"
   },
   "anthropics/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "astral-sh/ruff": {
     "first_seen": "2026-11-07",
@@ -161,7 +165,7 @@
   },
   "dsx-ai-factory/nvke": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "elayadesign/ai-design-skills": {
     "first_seen": "2026-10-28",
@@ -190,6 +194,10 @@
   "gitroomhq/postiz-app": {
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-28"
+  },
+  "google-deepmind/mujoco": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09"
   },
   "google-gemini/gemini-cli": {
     "first_seen": "2026-10-25",
@@ -257,7 +265,7 @@
   },
   "meta/astryx": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "microsoft/VibeVoice": {
     "first_seen": "2026-11-06",
@@ -269,7 +277,7 @@
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "mpv-player/mpv": {
     "first_seen": "2026-11-07",
@@ -341,7 +349,7 @@
   },
   "ranxianglei/billion-context": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "react/react": {
     "first_seen": "2026-11-07",
@@ -361,7 +369,7 @@
   },
   "sherlock-project/sherlock": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "shiyu-coder/Kronos": {
     "first_seen": "2026-11-02",
@@ -389,7 +397,7 @@
   },
   "vercel-labs/agent-browser": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-08"
+    "last_seen": "2026-11-09"
   },
   "vercel-labs/agent-desktop": {
     "first_seen": "2026-11-03",

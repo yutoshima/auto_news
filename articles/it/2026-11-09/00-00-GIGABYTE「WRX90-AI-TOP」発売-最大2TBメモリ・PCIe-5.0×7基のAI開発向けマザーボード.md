@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/449/4449579/?rss
 
 ## 概要
 
-GIGABYTEがワークステーション向けのE-ATXマザーボード「WRX90 AI TOP」を11月6日に発売しました。AMDのWRX90チップセット、最大2TBのDDR5メモリ、PCIe 5.0拡張、USB4、10GbE LAN、IPMI対応BIOS管理コンソール（BMC）などを搭載し、AI開発や高負荷業務を支える高機能モデルです。
+GIGABYTEがワークステーション向けE-ATXマザーボード「WRX90 AI TOP」を11月6日に発売した。AMDのWRX90チップセットに対応し、最大2TBのDDR5メモリ、PCIe 5.0拡張、USB4、10GbE LAN、IPMI対応のBMCなどを搭載。AI開発や高負荷業務を支える高機能モデルだ。
 
 ---
 

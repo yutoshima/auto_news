@@ -19,7 +19,7 @@ url: https://qiita.com/TT-Resolver/items/cc97728b487c23ac9f6a
 
 TL;DR
 
-Strands Agents SDK の上に載るエージェントハーネス StiraCore を OSS（Apache-2.0）で公開した。アルファ版。
+Strands Agents SDK の上に載るエージェントハーネス StiraCore を OSS（Apache-2.0）で公開した。アルファ版
 
 足したのは3つ。①3層の記憶（Markdown + SQLite）、②内部状態（Neural State）…
 

@@ -19,8 +19,8 @@ url: https://qiita.com/inoyu-qiita/items/48094b9b40752483f5cd?utm_campaign=popul
 
 一緒にQiita書きましょう！！！！！
 この熱量で社内に呼びかけました。
-一時的にはみんなが記事を書いてくれて、Qiita Organizationの週間投稿数ランキングで1位にもなれました。でも、約3か月後に投稿一覧を見たら、、、、
-Qiita投稿文化を社内に広めようと...
+一時的にはみんなが記事を書いてくれて、Qiita Organizationの週間投稿数ランキングで1位にもなれました。でも、3か月後に投稿一覧を見たら、、、、
+Qiita投稿文化を社内に広めようとし...
 
 ---
 

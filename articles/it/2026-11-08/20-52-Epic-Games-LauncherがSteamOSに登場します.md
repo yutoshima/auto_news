@@ -17,7 +17,7 @@ url: https://www.theverge.com/games/1029557/epic-games-launcher-is-coming-to-ste
 
 ## 概要
 
-10月、Epic GamesはFortniteをValveのLinuxベースのSteamOSと互換にすることを「調査している」と述べました。当時、Epic Games Launcherはプレビュー段階でしたが、SteamOSは特にサポートされるディストリビューションとして挙げられていませんでした。現在、広報ディレクターのジェイク・ジョーンズがGamingOnLinuxに対して、SteamOSを含むいくつかの他のディストリビューションにも互換性があることを確認しました。回答に対して[…]
+10月、Epic GamesはFortniteをValveのLinuxベースのSteamOSと互換性を持たせる「調査中」であると述べました。当時、Epic Games Launcherはプレビュー段階でしたが、SteamOSが公式にサポートされるディストリビューションとして特に挙げられていませんでした。今回、広報ディレクターのジェイク・ジョーンズがGamingOnLinuxに対し、SteamOSを含むいくつかの他ディストリビューションとの互換性を確認したと語りました。反応…
 
 ---
 

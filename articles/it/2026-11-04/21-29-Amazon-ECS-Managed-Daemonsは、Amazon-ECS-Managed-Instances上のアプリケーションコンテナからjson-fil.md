@@ -1,12 +1,12 @@
 ---
-title: "Amazon ECS Managed Daemonsは、Amazon ECS Managed Instances上のアプリケーションコンテナからjson-fileログを収集できるようになりました"
+title: "Amazon ECS Managed Daemonsは、Amazon ECS Managed Instances上のアプリケーションコンテナからjson-fileログを収集できるようになりました。"
 source: "AWS What's New"
 category: "it"
 published: 2026-11-04T21:29:00
 url: https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-instances-json-file-log-driver/
 ---
 
-# Amazon ECS Managed Daemonsは、Amazon ECS Managed Instances上のアプリケーションコンテナからjson-fileログを収集できるようになりました
+# Amazon ECS Managed Daemonsは、Amazon ECS Managed Instances上のアプリケーションコンテナからjson-fileログを収集できるようになりました。
 
 ## メタデータ
 
@@ -17,8 +17,8 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-managed-insta
 
 ## 概要
 
-Amazon Elastic Container Service（Amazon ECS）は、Amazon ECS Managed Instances 用の json-file ログドライバのサポートと、Amazon ECS Managed Daemons 用のログドライバボリュームを導入します。これらの機能を組み合わせることで、お好みの観測性エージェントを使用してアプリケーションログを収集し、任意の送信先へ転送できます。  
-このリリースにより、ECS Managed Instances 上のアプリケーションコンテナは、標準のローカルファイルとしてログを出力できるようになります。
+Amazon Elastic Container Service（Amazon ECS）は、Amazon ECS Managed Instances向けの json-file ログドライバーのサポートと、Amazon ECS Managed Daemons向けのログドライバーボリュームを導入します。これらの機能を組み合わせることで、任意の観測性エージェントを使用してアプリケーションログを収集し、任意の宛先へ転送できます。  
+このリリースにより、ECS Managed Instances 上のアプリケーションコンテナは、標準のローカルファイルとしてログを書き出すことが可能になります。
 
 ---
 

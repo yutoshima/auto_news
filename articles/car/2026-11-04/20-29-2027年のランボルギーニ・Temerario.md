@@ -1,0 +1,24 @@
+---
+title: "2027年のランボルギーニ・Temerario"
+source: "Car and Driver"
+category: "car"
+published: 2026-11-04T20:29:12
+url: https://www.caranddriver.com/lamborghini/temerario-2027
+---
+
+# 2027年のランボルギーニ・Temerario
+
+## メタデータ
+
+- **情報源**: Car and Driver
+- **カテゴリ**: car
+- **公開日時**: 2026年11月04日 20:29
+- **URL**: [https://www.caranddriver.com/lamborghini/temerario-2027](https://www.caranddriver.com/lamborghini/temerario-2027)
+
+## 概要
+
+<p>レビュー、価格、仕様</p>
+
+---
+
+*この記事は自動収集システムによって保存されました。*

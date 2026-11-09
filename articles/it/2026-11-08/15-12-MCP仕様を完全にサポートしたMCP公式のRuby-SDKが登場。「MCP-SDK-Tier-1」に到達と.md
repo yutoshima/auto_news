@@ -17,7 +17,7 @@ url: https://www.publickey1.jp/blog/26/mcpmcpruby_sdkmcp_sdk_tier_1.html
 
 ## 概要
 
-Linux Foundationの下でMCP（Model Context Protocol）の仕様策定を進めている「Agentic AI Foundation（AAIF）」は、MCP公式のRuby SDKがMCP仕様を完全にサポートした「M...
+Linux Foundation傘下でMCP（Model Context Protocol）の仕様策定を行っている「Agentic AI Foundation（AAIF）」は、MCP公式のRuby SDKがMCP仕様を完全にサポートした「M...
 
 ---
 

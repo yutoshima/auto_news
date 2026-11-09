@@ -17,9 +17,9 @@ url: https://cloud.google.com/blog/products/data-analytics/whats-new-with-google
 
 ## 概要
 
-11月2日〜11月6日
+11月2日～11月6日
 
-- BigQuery observability for data agents is now generally available: データチームは現在、BigQueryデータエージェントとそのマルチターン対話のパフォーマンス、採用状況、待機時間、コストを監視できるようになりました。
+BigQuery observability for data agents is now generally available: Data teams can now monitor the performance, adoption, latency, and cost of BigQuery data agents and their multi-turn conversations.
 
 ---
 

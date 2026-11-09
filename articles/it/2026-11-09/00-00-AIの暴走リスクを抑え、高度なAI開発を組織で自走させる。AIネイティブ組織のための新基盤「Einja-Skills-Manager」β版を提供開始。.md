@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/449/4449605/?rss
 
 ## 概要
 
-AIの暴走リスクを抑えつつ、高度なAI開発を組織内で自走させる。AIネイティブ組織のための新基盤「Einja Skills Manager」β版の提供を開始。
+AIの暴走リスクを抑え、組織が高度なAI開発を自走できるようにする。AIネイティブ組織のための新しい基盤「Einja Skills Manager」β版の提供を開始。
 
 ---
 

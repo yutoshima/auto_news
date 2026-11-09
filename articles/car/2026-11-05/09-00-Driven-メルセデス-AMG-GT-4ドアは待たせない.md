@@ -17,7 +17,7 @@ url: https://www.caranddriver.com/reviews/a74335359/2027-mercedes-amg-gt-4-door-
 
 ## 概要
 
-メルセデス-AMG GT55とGT63のEVは、F1のバッテリー技術を市販車へ。
+メルセデス-AMG GT55とGT63 EVは、F1のバッテリー技術を車両へと持ち込む。
 
 ---
 

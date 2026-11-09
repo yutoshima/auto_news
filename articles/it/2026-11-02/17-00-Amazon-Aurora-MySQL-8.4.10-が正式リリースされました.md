@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8410
 
 ## 概要
 
-本日より、<a href="https://aws.amazon.com/rds/aurora/" rel="noopener noreferrer" target="_blank">Amazon Aurora MySQL-Compatible Edition</a> 8.4 は MySQL 8.4.10 をサポートします。以前のバージョンの MySQL における脆弱性と公開情報（CVEs）に対する修正を受け取り、バグ修正、パフォーマンスの改善、新機能を利用するため、最新のマイナー バージョンへアップグレードすることをお勧めします。詳細については、<a href="https://docs.aws.amazon.com/Amazo
+本日より、<a href="https://aws.amazon.com/rds/aurora/" rel="noopener noreferrer" target="_blank">Amazon Aurora MySQL-Compatible Edition</a> 8.4 は MySQL 8.4.10 をサポートします。以前のバージョンの MySQL に対する脆弱性情報（CVEs）の修正を受け入れ、バグ修正・パフォーマンス改善・MySQL コミュニティによる新機能を利用するために、新しい小版本へアップグレードすることを推奨します。詳細については、<a href="https://docs.aws.amazon.com/Amazo"
 
 ---
 

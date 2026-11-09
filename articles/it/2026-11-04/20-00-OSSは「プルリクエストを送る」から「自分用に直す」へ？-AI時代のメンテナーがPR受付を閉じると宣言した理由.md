@@ -1,6 +1,6 @@
 ---
 title: "OSSは「プルリクエストを送る」から「自分用に直す」へ？　AI時代のメンテナーがPR受付を閉じると宣言した理由"
-source: "ITmedia AI+"
+source: "@IT"
 category: "it"
 published: 2026-11-04T20:00:00
 url: https://atmarkit.itmedia.co.jp/ait/articles/2611/05/news004.html
@@ -10,7 +10,7 @@ url: https://atmarkit.itmedia.co.jp/ait/articles/2611/05/news004.html
 
 ## メタデータ
 
-- **情報源**: ITmedia AI+
+- **情報源**: @IT
 - **カテゴリ**: it
 - **公開日時**: 2026年11月04日 20:00
 - **URL**: [https://atmarkit.itmedia.co.jp/ait/articles/2611/05/news004.html](https://atmarkit.itmedia.co.jp/ait/articles/2611/05/news004.html)

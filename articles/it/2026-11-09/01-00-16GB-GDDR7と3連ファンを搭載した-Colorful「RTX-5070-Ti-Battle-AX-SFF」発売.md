@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/449/4449580/?rss
 
 ## 概要
 
-Colorfulの「GeForce RTX 5070 Ti Battle AX SFF 16GB-V」が登場。16GB GDDR7メモリとトリプルファンを搭載し、低負荷時にはファンを停止するセミファンレス機能に対応。予価は23万4,800円前後で、保証期間は2年。
+Colorfulの「GeForce RTX 5070 Ti Battle AX SFF 16GB-V」が登場。16GB GDDR7メモリとトリプルファンを搭載し、低負荷時にはファンを停止するセミファンレス機能に対応。予価は23万4800円前後で、保証期間は2年。
 
 ---
 

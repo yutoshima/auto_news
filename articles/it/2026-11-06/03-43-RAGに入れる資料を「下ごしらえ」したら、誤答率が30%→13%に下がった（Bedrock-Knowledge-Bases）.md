@@ -1,0 +1,27 @@
+---
+title: "RAGに入れる資料を「下ごしらえ」したら、誤答率が30%→13%に下がった（Bedrock Knowledge Bases）"
+source: "Qiita トレンド"
+category: "it"
+published: 2026-11-06T03:43:41
+url: https://qiita.com/MURAMASA2470/items/a7c351ba251da81f507e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
+---
+
+# RAGに入れる資料を「下ごしらえ」したら、誤答率が30%→13%に下がった（Bedrock Knowledge Bases）
+
+## メタデータ
+
+- **情報源**: Qiita トレンド
+- **カテゴリ**: it
+- **公開日時**: 2026年11月06日 03:43
+- **URL**: [https://qiita.com/MURAMASA2470/items/a7c351ba251da81f507e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items](https://qiita.com/MURAMASA2470/items/a7c351ba251da81f507e?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
+
+## 概要
+
+はじめに
+業務で「社内の資料を検索して、その内容だけを根拠に答える」RAGのチャットボットを作っています。
+Bedrock Knowledge Bases は、資料を S3 に置けば、分割（チャンク分け）から埋め込みまで全部やってくれます。
+なので「資料はそのまま置けばい...
+
+---
+
+*この記事は自動収集システムによって保存されました。*

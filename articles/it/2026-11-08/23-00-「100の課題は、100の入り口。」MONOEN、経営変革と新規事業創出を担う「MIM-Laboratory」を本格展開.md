@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/449/4449615/?rss
 
 ## 概要
 
-「100の課題は、100の入り口。」MONOEN、経営変革と新規事業創出を担う「MIM Laboratory」を本格展開
+<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />「100の課題は、100の入り口。」MONOEN、経営変革と新規事業創出を担う「MIM Laboratory」を本格展開</p><br clear="left" />
 
 ---
 

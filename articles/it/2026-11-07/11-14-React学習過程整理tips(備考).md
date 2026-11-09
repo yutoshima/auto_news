@@ -1,19 +1,19 @@
 ---
 title: "React学習過程整理tips(備考)"
-source: "Qiita (React)"
+source: "Qiita トレンド"
 category: "it"
 published: 2026-11-07T11:14:30
-url: https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c
+url: https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
 ---
 
 # React学習過程整理tips(備考)
 
 ## メタデータ
 
-- **情報源**: Qiita (React)
+- **情報源**: Qiita トレンド
 - **カテゴリ**: it
 - **公開日時**: 2026年11月07日 11:14
-- **URL**: [https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c](https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c)
+- **URL**: [https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items](https://qiita.com/polymetisoutis/items/9e6a8e16f11e7e8f834c?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
 
 ## 概要
 

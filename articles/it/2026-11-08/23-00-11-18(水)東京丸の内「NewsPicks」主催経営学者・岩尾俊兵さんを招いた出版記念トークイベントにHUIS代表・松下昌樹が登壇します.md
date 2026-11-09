@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/449/4449614/?rss
 
 ## 概要
 
-11/18（水）東京・丸の内で開催される「NewsPicks」主催の出版記念トークイベントに、経営学者の岩尾俊兵さんを招き、HUIS代表・松下昌樹が登壇します。
+<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />11/18(水)東京丸の内「NewsPicks」主催経営学者・岩尾俊兵さんを招いた出版記念トークイベントにHUIS代表・松下昌樹が登壇します</p><br clear="left" />
 
 ---
 

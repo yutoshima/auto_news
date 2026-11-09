@@ -1,0 +1,24 @@
+---
+title: "WaymoとUberのロボタクシー提携は終焉を迎える"
+source: "InsideEVs"
+category: "car"
+published: 2026-11-04T21:59:14
+url: https://insideevs.com/news/814451/waymo-uber-robotaxi-partnership-is-ending/
+---
+
+# WaymoとUberのロボタクシー提携は終焉を迎える
+
+## メタデータ
+
+- **情報源**: InsideEVs
+- **カテゴリ**: car
+- **公開日時**: 2026年11月04日 21:59
+- **URL**: [https://insideevs.com/news/814451/waymo-uber-robotaxi-partnership-is-ending/](https://insideevs.com/news/814451/waymo-uber-robotaxi-partnership-is-ending/)
+
+## 概要
+
+Waymoはオースティンとアトランタで自社アプリを通じてライダーにサービスを提供する予定です。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -103,6 +103,10 @@
     "first_seen": "2026-11-04",
     "last_seen": "2026-11-06"
   },
+  "ZhuLinsen/daily_stock_analysis": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10"
+  },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-28"
@@ -121,7 +125,7 @@
   },
   "anthropics/claude-quickstarts": {
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "anthropics/knowledge-work-plugins": {
     "first_seen": "2026-10-24",
@@ -129,7 +133,7 @@
   },
   "anthropics/skills": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "astral-sh/ruff": {
     "first_seen": "2026-11-07",
@@ -183,6 +187,10 @@
     "first_seen": "2026-11-04",
     "last_seen": "2026-11-06"
   },
+  "garrytan/gbrain": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10"
+  },
   "garrytan/gstack": {
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-06"
@@ -197,7 +205,7 @@
   },
   "google-deepmind/mujoco": {
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "google-gemini/gemini-cli": {
     "first_seen": "2026-10-25",
@@ -214,6 +222,10 @@
   "hmjz100/LinkSwift": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-29"
+  },
+  "homeassistant-ai/ha-mcp": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-10"
   },
   "hyprwm/Hyprland": {
     "first_seen": "2026-11-02",
@@ -265,7 +277,7 @@
   },
   "meta/astryx": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "microsoft/VibeVoice": {
     "first_seen": "2026-11-06",
@@ -277,7 +289,7 @@
   },
   "milind-soni/OpenMausBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "mpv-player/mpv": {
     "first_seen": "2026-11-07",
@@ -361,7 +373,7 @@
   },
   "ruvnet/RuView": {
     "first_seen": "2026-10-29",
-    "last_seen": "2026-10-29"
+    "last_seen": "2026-11-10"
   },
   "scenario-labs/skills": {
     "first_seen": "2026-11-05",
@@ -369,7 +381,7 @@
   },
   "sherlock-project/sherlock": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "shiyu-coder/Kronos": {
     "first_seen": "2026-11-02",
@@ -397,7 +409,7 @@
   },
   "vercel-labs/agent-browser": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-09"
+    "last_seen": "2026-11-10"
   },
   "vercel-labs/agent-desktop": {
     "first_seen": "2026-11-03",

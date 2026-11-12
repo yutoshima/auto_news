@@ -27,6 +27,10 @@
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-03"
   },
+  "GoogleChrome/modern-web-guidance-src": {
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12"
+  },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
     "last_seen": "2026-11-01"
@@ -95,6 +99,10 @@
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-05"
   },
+  "TheAlgorithms/Java": {
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12"
+  },
   "Thysrael/Horizon": {
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-05"
@@ -105,11 +113,11 @@
   },
   "ZhuLinsen/daily_stock_analysis": {
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-10"
+    "last_seen": "2026-11-12"
   },
   "addyosmani/agent-skills": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11"
+    "last_seen": "2026-11-12"
   },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
@@ -229,7 +237,7 @@
   },
   "homeassistant-ai/ha-mcp": {
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-11"
+    "last_seen": "2026-11-12"
   },
   "hyprwm/Hyprland": {
     "first_seen": "2026-11-02",
@@ -281,7 +289,7 @@
   },
   "meta/astryx": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-11"
+    "last_seen": "2026-11-12"
   },
   "microsoft/VibeVoice": {
     "first_seen": "2026-11-06",
@@ -318,6 +326,10 @@
   "obra/superpowers": {
     "first_seen": "2026-10-28",
     "last_seen": "2026-11-01"
+  },
+  "openai/codex-security": {
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12"
   },
   "openssl/openssl": {
     "first_seen": "2026-11-07",
@@ -383,6 +395,10 @@
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-06"
   },
+  "shadcn/improve": {
+    "first_seen": "2026-11-12",
+    "last_seen": "2026-11-12"
+  },
   "sherlock-project/sherlock": {
     "first_seen": "2026-11-08",
     "last_seen": "2026-11-11"
@@ -417,7 +433,7 @@
   },
   "vercel-labs/agent-browser": {
     "first_seen": "2026-11-06",
-    "last_seen": "2026-11-11"
+    "last_seen": "2026-11-12"
   },
   "vercel-labs/agent-desktop": {
     "first_seen": "2026-11-03",
@@ -429,7 +445,7 @@
   },
   "we-promise/sure": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-11"
+    "last_seen": "2026-11-12"
   },
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",

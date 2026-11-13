@@ -1,0 +1,24 @@
+---
+title: "「AI処理、データ非保持が守られず」――Notionが委託先の問題指摘、漏えいの恐れ巡り"
+source: "ITmedia AI+"
+category: "it"
+published: 2026-11-13T01:22:05
+url: https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/
+---
+
+# 「AI処理、データ非保持が守られず」――Notionが委託先の問題指摘、漏えいの恐れ巡り
+
+## メタデータ
+
+- **情報源**: ITmedia AI+
+- **カテゴリ**: it
+- **公開日時**: 2026年11月13日 01:22
+- **URL**: [https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/](https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/)
+
+## 概要
+
+クラウド型ワークスペース「Notion」のAI機能「Notion AI」のチャット記録が漏えいした恐れがある事案を巡り、Notion運営の米Notion Labsは、法人向けプランでZDR（ゼロデータ保持）を利用するーユーザーでも漏えいした可能性があることを明らかにした。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

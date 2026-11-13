@@ -3,13 +3,17 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-26"
   },
+  "Alishahryar1/free-claude-code": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13"
+  },
   "ConardLi/garden-skills": {
     "first_seen": "2026-11-06",
     "last_seen": "2026-11-06"
   },
   "CopilotKit/OpenBot": {
     "first_seen": "2026-10-30",
-    "last_seen": "2026-11-02"
+    "last_seen": "2026-11-13"
   },
   "D4Vinci/Scrapling": {
     "first_seen": "2026-11-03",
@@ -29,7 +33,7 @@
   },
   "GoogleChrome/modern-web-guidance-src": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-12"
+    "last_seen": "2026-11-13"
   },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
@@ -79,6 +83,10 @@
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-27"
   },
+  "QwenLM/qwen-code": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13"
+  },
   "Renhuai123/ziwei-doushu": {
     "first_seen": "2026-10-24",
     "last_seen": "2026-11-02"
@@ -117,7 +125,7 @@
   },
   "addyosmani/agent-skills": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-12"
+    "last_seen": "2026-11-13"
   },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
@@ -146,6 +154,10 @@
   "anthropics/skills": {
     "first_seen": "2026-10-31",
     "last_seen": "2026-11-11"
+  },
+  "ashhart/TensorFold": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13"
   },
   "astral-sh/ruff": {
     "first_seen": "2026-11-07",
@@ -206,6 +218,10 @@
   "garrytan/gstack": {
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-06"
+  },
+  "ggml-org/llama.cpp": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13"
   },
   "github/spec-kit": {
     "first_seen": "2026-11-05",
@@ -289,7 +305,7 @@
   },
   "meta/astryx": {
     "first_seen": "2026-11-08",
-    "last_seen": "2026-11-12"
+    "last_seen": "2026-11-13"
   },
   "microsoft/VibeVoice": {
     "first_seen": "2026-11-06",
@@ -317,11 +333,15 @@
   },
   "nodejs/node": {
     "first_seen": "2026-10-24",
-    "last_seen": "2026-10-24"
+    "last_seen": "2026-11-13"
   },
   "nushell/nushell": {
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-07"
+  },
+  "nvm-sh/nvm": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13"
   },
   "obra/superpowers": {
     "first_seen": "2026-10-28",
@@ -329,7 +349,7 @@
   },
   "openai/codex-security": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-12"
+    "last_seen": "2026-11-13"
   },
   "openssl/openssl": {
     "first_seen": "2026-11-07",
@@ -362,6 +382,10 @@
   "pollen-robotics/microduck": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-27"
+  },
+  "pookjw/HermesEnabler": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-13"
   },
   "prometheus/prometheus": {
     "first_seen": "2026-11-07",
@@ -445,7 +469,7 @@
   },
   "we-promise/sure": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-12"
+    "last_seen": "2026-11-13"
   },
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",

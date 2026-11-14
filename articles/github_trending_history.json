@@ -7,6 +7,10 @@
     "first_seen": "2026-11-13",
     "last_seen": "2026-11-13"
   },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
+  },
   "ConardLi/garden-skills": {
     "first_seen": "2026-11-06",
     "last_seen": "2026-11-06"
@@ -33,7 +37,7 @@
   },
   "GoogleChrome/modern-web-guidance-src": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-13"
+    "last_seen": "2026-11-14"
   },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
@@ -50,6 +54,10 @@
   "JustVugg/colibri": {
     "first_seen": "2026-11-03",
     "last_seen": "2026-11-04"
+  },
+  "Likely7/Veyra-NRVideo": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
   },
   "MichaelCade/90DaysOfDevOps": {
     "first_seen": "2026-11-05",
@@ -121,7 +129,7 @@
   },
   "ZhuLinsen/daily_stock_analysis": {
     "first_seen": "2026-11-10",
-    "last_seen": "2026-11-12"
+    "last_seen": "2026-11-14"
   },
   "addyosmani/agent-skills": {
     "first_seen": "2026-11-11",
@@ -134,6 +142,10 @@
   "alchaincyf/huashu-design": {
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-27"
+  },
+  "alibaba/open-code-review": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
   },
   "angular/angular": {
     "first_seen": "2026-11-07",
@@ -167,9 +179,17 @@
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
   },
+  "backnotprop/plannotator": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
+  },
   "beenuar/AiSOC": {
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-02"
+  },
+  "block/buzz": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
   },
   "bregman-arie/devops-exercises": {
     "first_seen": "2026-11-01",
@@ -275,6 +295,10 @@
     "first_seen": "2026-10-31",
     "last_seen": "2026-11-02"
   },
+  "louislam/uptime-kuma": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
+  },
   "luongnv89/claude-howto": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
@@ -349,7 +373,7 @@
   },
   "openai/codex-security": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-13"
+    "last_seen": "2026-11-14"
   },
   "openssl/openssl": {
     "first_seen": "2026-11-07",
@@ -439,6 +463,10 @@
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-07"
   },
+  "tailscale/tailcat": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
+  },
   "tailwindlabs/tailwindcss": {
     "first_seen": "2026-11-08",
     "last_seen": "2026-11-08"
@@ -455,6 +483,10 @@
     "first_seen": "2026-11-11",
     "last_seen": "2026-11-11"
   },
+  "tradermonty/claude-trading-skills": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14"
+  },
   "vercel-labs/agent-browser": {
     "first_seen": "2026-11-06",
     "last_seen": "2026-11-12"
@@ -469,7 +501,7 @@
   },
   "we-promise/sure": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-13"
+    "last_seen": "2026-11-14"
   },
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",

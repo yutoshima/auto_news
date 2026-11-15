@@ -1,0 +1,24 @@
+---
+title: "テスラ、個人利用を前提としたCybercabの事前予約を開始、地理制限と月額299ドルの料金設定付き"
+source: "TechCrunch Japan"
+category: "it"
+published: 2026-11-14T20:04:44
+url: https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/
+---
+
+# テスラ、個人利用を前提としたCybercabの事前予約を開始、地理制限と月額299ドルの料金設定付き
+
+## メタデータ
+
+- **情報源**: TechCrunch Japan
+- **カテゴリ**: it
+- **公開日時**: 2026年11月14日 20:04
+- **URL**: [https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/](https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/)
+
+## 概要
+
+イーロン・ムスケルですら月額料金は「高すぎる」と言った。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -9,7 +9,7 @@
   },
   "ChromeDevTools/chrome-devtools-mcp": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "ConardLi/garden-skills": {
     "first_seen": "2026-11-06",
@@ -37,7 +37,7 @@
   },
   "GoogleChrome/modern-web-guidance-src": {
     "first_seen": "2026-11-12",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
@@ -51,13 +51,17 @@
     "first_seen": "2026-11-05",
     "last_seen": "2026-11-06"
   },
+  "JuliusBrussee/caveman": {
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15"
+  },
   "JustVugg/colibri": {
     "first_seen": "2026-11-03",
     "last_seen": "2026-11-04"
   },
   "Likely7/Veyra-NRVideo": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "MichaelCade/90DaysOfDevOps": {
     "first_seen": "2026-11-05",
@@ -93,7 +97,7 @@
   },
   "QwenLM/qwen-code": {
     "first_seen": "2026-11-13",
-    "last_seen": "2026-11-13"
+    "last_seen": "2026-11-15"
   },
   "Renhuai123/ziwei-doushu": {
     "first_seen": "2026-10-24",
@@ -110,6 +114,10 @@
   "TauricResearch/TradingAgents": {
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-27"
+  },
+  "Tencent/LoopForge": {
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15"
   },
   "The-PR-Agent/pr-agent": {
     "first_seen": "2026-11-05",
@@ -139,13 +147,17 @@
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-28"
   },
+  "ag-ui-protocol/ag-ui": {
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15"
+  },
   "alchaincyf/huashu-design": {
     "first_seen": "2026-10-27",
     "last_seen": "2026-10-27"
   },
   "alibaba/open-code-review": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "angular/angular": {
     "first_seen": "2026-11-07",
@@ -169,7 +181,7 @@
   },
   "ashhart/TensorFold": {
     "first_seen": "2026-11-13",
-    "last_seen": "2026-11-13"
+    "last_seen": "2026-11-15"
   },
   "astral-sh/ruff": {
     "first_seen": "2026-11-07",
@@ -181,7 +193,7 @@
   },
   "backnotprop/plannotator": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "beenuar/AiSOC": {
     "first_seen": "2026-11-02",
@@ -210,6 +222,10 @@
   "debpalash/VoiceStudio": {
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-27"
+  },
+  "dream-num/univer": {
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15"
   },
   "dsx-ai-factory/nvke": {
     "first_seen": "2026-11-08",
@@ -297,7 +313,7 @@
   },
   "louislam/uptime-kuma": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "luongnv89/claude-howto": {
     "first_seen": "2026-10-25",
@@ -314,6 +330,10 @@
   "makecindy/cindy": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-29"
+  },
+  "martin-olivier/airgorah": {
+    "first_seen": "2026-11-15",
+    "last_seen": "2026-11-15"
   },
   "mattpocock/skills": {
     "first_seen": "2026-10-31",
@@ -485,7 +505,7 @@
   },
   "tradermonty/claude-trading-skills": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "vercel-labs/agent-browser": {
     "first_seen": "2026-11-06",
@@ -501,7 +521,7 @@
   },
   "we-promise/sure": {
     "first_seen": "2026-11-11",
-    "last_seen": "2026-11-14"
+    "last_seen": "2026-11-15"
   },
   "xiaolai/the-craft-of-selfteaching": {
     "first_seen": "2026-10-29",

@@ -17,7 +17,7 @@ url: https://dev.classmethod.jp/articles/amazon-fsx-lustre-intelligent-tiering-l
 
 ## 概要
 
-Amazon FSx for Lustre の Intelligent-Tiering は、月額おおよそ 760 USD から利用を開始できるようになりました。
+Amazon FSx for Lustre の Intelligent-Tiering が、月額およそ 760 USD から利用できるようになりました。
 
 ---
 

@@ -17,9 +17,8 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/fsx-lustre-intelligent-t
 
 ## 概要
 
-Amazon FSx for Lustre は、Intelligent-Tiering ファイルシステムの最小提供スループット容量とメタデータ IOPS を 75% 削減し、初期データセットが小さく成長していく高性能計算（HPC）および機械学習ワークロードに対して、Intelligent-Tiering のコスト効果をさらに高めて利用できるようにします。
-
-FSx for Lustre Intelligent-Tiering ストレージクラスは、最も低コストで、かつ唯一の完全に弾性な Lustre ファイルシステムを提供します。
+<p><a href="https://aws.amazon.com/fsx/lustre/">Amazon FSx for Lustre</a>は、インテリジェント・ティアリング・ファイルシステムの最小提供スループット容量とメタデータIOPSを75%削減し、データセットが小さく開始して徐々に成長する高可用性計算（HPC）および機械学習ワークロードに対して、よりコスト効果高くインテリジェント・ティアリングを利用できるようにします。</p>
+<p>FSx for Lustre Intelligent-Tieringストレージクラスは、最も低コストで、Lustreファイルを完全に弾力的に拡張できる唯一のストレージクラスです。</p>
 
 ---
 

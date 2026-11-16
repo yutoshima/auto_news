@@ -17,7 +17,7 @@ url: https://www.wired.com/story/get-steamos-easily-running-on-your-mac/
 
 ## 概要
 
-無料アプリを使えば、Apple Silicon搭載のMac上で仮想マシンを起動してSteamOSを実行でき、そうでなければ動かないPC用・レガシーゲームを解放します。
+無料アプリを使えば、Apple Silicon搭載のMacで仮想マシン上にSteamOSをブートでき、通常は動作しないPCゲームやレガシーゲームを解放します。
 
 ---
 

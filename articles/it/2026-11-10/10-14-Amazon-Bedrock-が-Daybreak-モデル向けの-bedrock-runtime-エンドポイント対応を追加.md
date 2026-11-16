@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-a
 
 ## 概要
 
-<p>適格な顧客は、OpenAI の専門的なサイバーセキュリティモデル「Daybreak Red: GPT-5.6 Cyber」および「Daybreak Blue: GPT-5.6 Sol」を、Amazon Bedrock の bedrock-runtime エンドポイントを通じて利用できるようになりました。<br /><br /> Daybreak Blue は、防御的なワークフロー全般、脆弱性の発見、検出エンジニアリング、インシデント対応を含む多くのセキュリティチームの出発点です。 Daybreak Red は、脆弱性研究、悪用再現、緩和策の実装など、高度で認可されたタスク向けに設計されています。
+<p>適格な顧客は現在、Amazon Bedrock の bedrock-runtime エンドポイントを通じて、OpenAI の専門的なサイバーセキュリティモデル Daybreak Red: GPT-5.6 Cyber および Daybreak Blue: GPT-5.6 Sol にアクセスできます。<br /><br /> Daybreak Blue は、脆弱性の発見、検出エンジニアリング、インシデント対応といった防御的ワークフローの多くの出発点となります。 Daybreak Red は、脆弱性調査、悪用の再現、緩和策の評価といった高度で認可されたタスクを想定して設計されています。
 
 ---
 

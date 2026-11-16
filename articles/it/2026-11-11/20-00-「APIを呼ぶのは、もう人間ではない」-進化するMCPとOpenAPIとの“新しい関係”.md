@@ -1,6 +1,6 @@
 ---
 title: "「APIを呼ぶのは、もう人間ではない」　進化するMCPとOpenAPIとの“新しい関係”"
-source: "ITmedia AI+"
+source: "@IT"
 category: "it"
 published: 2026-11-11T20:00:00
 url: https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html
@@ -10,7 +10,7 @@ url: https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html
 
 ## メタデータ
 
-- **情報源**: ITmedia AI+
+- **情報源**: @IT
 - **カテゴリ**: it
 - **公開日時**: 2026年11月11日 20:00
 - **URL**: [https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html](https://atmarkit.itmedia.co.jp/ait/articles/2611/12/news004.html)

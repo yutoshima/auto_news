@@ -1,5 +1,5 @@
 ---
-title: "Systems Manager Cloud Connector で Google Cloud の VM を管理対象ノードに登録して Run Command を実行してみた\n\n日本語訳:\nSystems Manager Cloud Connector を使って Google Cloud の VM を管理対象ノードとして登録し、Run Command を実行してみた"
+title: "Systems Manager Cloud Connector で Google Cloud の VM を管理対象ノードに登録して Run Command を実行してみた"
 source: "DevelopersIO"
 category: "it"
 published: 2026-11-15T08:39:13
@@ -7,9 +7,6 @@ url: https://dev.classmethod.jp/articles/ssm-cloud-connector-google-cloud-vm/
 ---
 
 # Systems Manager Cloud Connector で Google Cloud の VM を管理対象ノードに登録して Run Command を実行してみた
-
-日本語訳:
-Systems Manager Cloud Connector を使って Google Cloud の VM を管理対象ノードとして登録し、Run Command を実行してみた
 
 ## メタデータ
 

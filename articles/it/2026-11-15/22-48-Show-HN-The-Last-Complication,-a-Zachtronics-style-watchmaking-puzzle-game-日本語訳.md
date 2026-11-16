@@ -1,5 +1,5 @@
 ---
-title: "Show HN: The Last Complication, a Zachtronics-style watchmaking puzzle game\n\n日本語訳: \nshow hN: ザ・ラスト・コンプリケーション、ザックトロニクス風の時計作りパズルゲーム"
+title: "Show HN: The Last Complication, a Zachtronics-style watchmaking puzzle game\n\n日本語訳: シャウHN: ラスト・コンプリケーション、ザックトロニクス風の懐中時計作りパズルゲーム"
 source: "Hacker News"
 category: "it"
 published: 2026-11-15T22:48:52
@@ -8,8 +8,7 @@ url: https://lastcomplication.com/
 
 # Show HN: The Last Complication, a Zachtronics-style watchmaking puzzle game
 
-日本語訳: 
-show hN: ザ・ラスト・コンプリケーション、ザックトロニクス風の時計作りパズルゲーム
+日本語訳: シャウHN: ラスト・コンプリケーション、ザックトロニクス風の懐中時計作りパズルゲーム
 
 ## メタデータ
 

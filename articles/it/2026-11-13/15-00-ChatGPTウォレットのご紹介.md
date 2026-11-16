@@ -17,7 +17,7 @@ url: https://openai.com/index/introducing-chatgpt-wallet
 
 ## 概要
 
-ChatGPT Walletを紹介します。ChatGPT Work、Codex、dotsのエージェントが、ユーザーの承認と既存のカード保護機能を利用して安全に購入を完了できる新しい方法です。
+ChatGPT Walletのご紹介。ChatGPT Work、Codex、dotsのエージェントが、ユーザーの承認と既存のカード保護機能を使って、安全に購入を完了できる方法です。
 
 ---
 

@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/451/4451689/?rss
 
 ## 概要
 
-VOCs DeepTech Lab、京都大学の推薦を経て【JETRO】国際事業化プログラム「GRIP JAPAN」に選出
+VOCs DeepTech Lab、京都大学の推薦を経てJETROの国際事業化プログラム「GRIP JAPAN」に選出
 
 ---
 

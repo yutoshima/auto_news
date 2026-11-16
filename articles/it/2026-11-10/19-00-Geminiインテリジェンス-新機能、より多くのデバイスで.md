@@ -1,0 +1,24 @@
+---
+title: "Geminiインテリジェンス: 新機能、より多くのデバイスで"
+source: "Google AI Blog"
+category: "it"
+published: 2026-11-10T19:00:00
+url: https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/
+---
+
+# Geminiインテリジェンス: 新機能、より多くのデバイスで
+
+## メタデータ
+
+- **情報源**: Google AI Blog
+- **カテゴリ**: it
+- **公開日時**: 2026年11月10日 19:00
+- **URL**: [https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/](https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/)
+
+## 概要
+
+男性が電話をかけている。画面の文字には『Gemini Intelligence』と書かれている。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

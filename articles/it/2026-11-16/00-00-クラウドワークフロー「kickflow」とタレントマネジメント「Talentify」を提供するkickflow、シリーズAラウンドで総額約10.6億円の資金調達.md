@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/451/4451681/?rss
 
 ## 概要
 
-クラウドワークフロー「kickflow」とタレントマネジメント「Talentify」を提供するkickflow、シリーズAラウンドで総額約10.6億円の資金調達を実施
+クラウドワークフロー「kickflow」とタレントマネジメント「Talentify」を提供するkickflow、シリーズAラウンドで総額約106億円の資金調達を実施
 
 ---
 

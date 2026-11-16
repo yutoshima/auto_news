@@ -1,19 +1,19 @@
 ---
 title: "【Vitest + RTL】Reactアプリをテストする"
-source: "Qiita (React)"
+source: "Qiita トレンド"
 category: "it"
 published: 2026-11-14T15:35:42
-url: https://qiita.com/ryu0947/items/f9d1cf940005b7a7909a
+url: https://qiita.com/ryu0947/items/f9d1cf940005b7a7909a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items
 ---
 
 # 【Vitest + RTL】Reactアプリをテストする
 
 ## メタデータ
 
-- **情報源**: Qiita (React)
+- **情報源**: Qiita トレンド
 - **カテゴリ**: it
 - **公開日時**: 2026年11月14日 15:35
-- **URL**: [https://qiita.com/ryu0947/items/f9d1cf940005b7a7909a](https://qiita.com/ryu0947/items/f9d1cf940005b7a7909a)
+- **URL**: [https://qiita.com/ryu0947/items/f9d1cf940005b7a7909a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items](https://qiita.com/ryu0947/items/f9d1cf940005b7a7909a?utm_campaign=popular_items&utm_medium=feed&utm_source=popular_items)
 
 ## 概要
 

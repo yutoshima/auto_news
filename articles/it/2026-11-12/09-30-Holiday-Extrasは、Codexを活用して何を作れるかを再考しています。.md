@@ -17,7 +17,7 @@ url: https://openai.com/business/customer-stories/holidays-extras-codex
 
 ## 概要
 
-Codexを活用して、Holiday Extrasは顧客の専門知識をより良いアプリ、より高い予約コンバージョン、そして成長の新たな可能性へと変えています。
+Codex を使って、Holiday Extras は顧客の専門知識を活かして、より優れたアプリ、より高い予約転換率、そして成長の新たな可能性を生み出しています。
 
 ---
 

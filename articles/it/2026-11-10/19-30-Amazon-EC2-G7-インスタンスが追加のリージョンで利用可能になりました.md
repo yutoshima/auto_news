@@ -17,9 +17,9 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-additional-reg
 
 ## 概要
 
-Amazon Elastic Compute Cloud（Amazon EC2）G7インスタンスは、NVIDIA RTX PRO 4500 Blackwell Server Edition GPUを搭載し、欧州（ロンドン）、アジア太平洋（ムンバイ、シドニー）、南米（サンパウロ） Regions で利用可能になりました。G7インスタンスは、G6インスタンスと比べてAI推論性能を最大4.6倍、グラフィックス性能を最大2.1倍向上させます。さらに、GPU加速データ分析ワークロードのパフォーマンスも向上します。
+Amazon Elastic Compute Cloud（Amazon EC2）G7インスタンスは、NVIDIA RTX PRO 4500 Blackwell Server Edition GPUを搭載しており、ヨーロッパ（ロンドン）、アジア太平洋（ムンバイ、シドニー）、南米（サンパウロ）リージョンで利用可能になりました。G7インスタンスは、G6インスタンスと比較してAI推論性能を最大4.6倍、グラフィックス性能を最大2.1倍向上させます。G7インスタンスは、GPU加速データ分析ワークロードの性能も向上させます。  
 
-顧客は、AIモデルをデプロイするためにG7インスタンスを利用できます。
+顧客はAIモデルのデプロイにG7インスタンスを活用できます。
 
 ---
 

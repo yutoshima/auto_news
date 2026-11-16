@@ -1,0 +1,26 @@
+---
+title: "この1968年式の Shelby Mustang GT350は非常に希少です。それにも関わらず、所有者はそれをスーパーチャージャー化しました。"
+source: "The Drive"
+category: "car"
+published: 2026-11-15T17:00:00
+url: https://www.thedrive.com/news/this-1968-shelby-mustang-gt350-is-seriously-rare-that-didnt-stop-the-owner-from-supercharging-it
+---
+
+# この1968年式の Shelby Mustang GT350は非常に希少です。それにも関わらず、所有者はそれをスーパーチャージャー化しました。
+
+## メタデータ
+
+- **情報源**: The Drive
+- **カテゴリ**: car
+- **公開日時**: 2026年11月15日 17:00
+- **URL**: [https://www.thedrive.com/news/this-1968-shelby-mustang-gt350-is-seriously-rare-that-didnt-stop-the-owner-from-supercharging-it](https://www.thedrive.com/news/this-1968-shelby-mustang-gt350-is-seriously-rare-that-didnt-stop-the-owner-from-supercharging-it)
+
+## 概要
+
+オリジナリティがすべてではない。
+
+投稿 This 1968 Shelby Mustang GT350 Is Seriously Rare. That Didn’t Stop the Owner From Supercharging It が最初に掲載されました on The Drive.
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -125,7 +125,7 @@
   },
   "Tencent/LoopForge": {
     "first_seen": "2026-11-15",
-    "last_seen": "2026-11-16"
+    "last_seen": "2026-11-18"
   },
   "The-PR-Agent/pr-agent": {
     "first_seen": "2026-11-05",
@@ -153,11 +153,11 @@
   },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-10-28"
+    "last_seen": "2026-11-18"
   },
   "ag-ui-protocol/ag-ui": {
     "first_seen": "2026-11-15",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "alchaincyf/huashu-design": {
     "first_seen": "2026-10-27",
@@ -165,7 +165,7 @@
   },
   "alibaba/open-code-review": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "angular/angular": {
     "first_seen": "2026-11-07",
@@ -201,7 +201,7 @@
   },
   "backnotprop/plannotator": {
     "first_seen": "2026-11-14",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "beenuar/AiSOC": {
     "first_seen": "2026-11-02",
@@ -227,13 +227,17 @@
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-26"
   },
+  "cursor/plugins": {
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18"
+  },
   "debpalash/VoiceStudio": {
     "first_seen": "2026-10-26",
     "last_seen": "2026-10-27"
   },
   "dream-num/univer": {
     "first_seen": "2026-11-15",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "dsx-ai-factory/nvke": {
     "first_seen": "2026-11-08",
@@ -245,7 +249,7 @@
   },
   "elementalsouls/Claude-BugHunter": {
     "first_seen": "2026-11-16",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "etcd-io/etcd": {
     "first_seen": "2026-11-07",
@@ -269,7 +273,7 @@
   },
   "getarcaneapp/arcane": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "ggml-org/ggml": {
     "first_seen": "2026-11-16",
@@ -297,11 +301,11 @@
   },
   "google-labs-code/stitch-skills": {
     "first_seen": "2026-11-16",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "google-research/paper-orchestra": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "google/skills": {
     "first_seen": "2026-11-06",
@@ -326,6 +330,10 @@
   "jbiaojerry/ebook-treasure-chest": {
     "first_seen": "2026-10-25",
     "last_seen": "2026-10-25"
+  },
+  "jingyaogong/minimind": {
+    "first_seen": "2026-11-18",
+    "last_seen": "2026-11-18"
   },
   "kajisho5/ffmpeg-skill": {
     "first_seen": "2026-11-17",
@@ -405,7 +413,7 @@
   },
   "mvanhorn/last30days-skill": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "nightly-labs/openbot": {
     "first_seen": "2026-10-27",
@@ -425,7 +433,7 @@
   },
   "obra/superpowers": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-11-01"
+    "last_seen": "2026-11-18"
   },
   "openai/codex-security": {
     "first_seen": "2026-11-12",
@@ -517,7 +525,7 @@
   },
   "sveltejs/svelte": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-18"
   },
   "symfony/symfony": {
     "first_seen": "2026-11-07",

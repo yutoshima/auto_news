@@ -25,7 +25,7 @@
   },
   "DeanChensj/jiangshan-map": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-19"
   },
   "Donchitos/Claude-Code-Game-Studios": {
     "first_seen": "2026-10-30",
@@ -42,6 +42,10 @@
   "GoogleChrome/modern-web-guidance-src": {
     "first_seen": "2026-11-12",
     "last_seen": "2026-11-16"
+  },
+  "HKUDS/CLI-Anything": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
   },
   "HKUDS/DeepTutor": {
     "first_seen": "2026-10-28",
@@ -77,7 +81,7 @@
   },
   "NVIDIA/SkillEvaluator": {
     "first_seen": "2026-11-16",
-    "last_seen": "2026-11-17"
+    "last_seen": "2026-11-19"
   },
   "NVIDIA/SkillSpector": {
     "first_seen": "2026-10-27",
@@ -153,7 +157,7 @@
   },
   "affaan-m/ECC": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "ag-ui-protocol/ag-ui": {
     "first_seen": "2026-11-15",
@@ -187,6 +191,10 @@
     "first_seen": "2026-10-31",
     "last_seen": "2026-11-11"
   },
+  "appwrite/appwrite": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
+  },
   "ashhart/TensorFold": {
     "first_seen": "2026-11-13",
     "last_seen": "2026-11-15"
@@ -194,6 +202,10 @@
   "astral-sh/ruff": {
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-08"
+  },
+  "astral-sh/uv": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
   },
   "aws/agent-toolkit-for-aws": {
     "first_seen": "2026-10-25",
@@ -229,7 +241,7 @@
   },
   "cursor/plugins": {
     "first_seen": "2026-11-18",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "debpalash/VoiceStudio": {
     "first_seen": "2026-10-26",
@@ -273,7 +285,7 @@
   },
   "getarcaneapp/arcane": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "ggml-org/ggml": {
     "first_seen": "2026-11-16",
@@ -301,11 +313,11 @@
   },
   "google-labs-code/stitch-skills": {
     "first_seen": "2026-11-16",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "google-research/paper-orchestra": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "google/skills": {
     "first_seen": "2026-11-06",
@@ -334,6 +346,10 @@
   "jingyaogong/minimind": {
     "first_seen": "2026-11-18",
     "last_seen": "2026-11-18"
+  },
+  "jquery/jquery": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
   },
   "kajisho5/ffmpeg-skill": {
     "first_seen": "2026-11-17",
@@ -413,7 +429,11 @@
   },
   "mvanhorn/last30days-skill": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
+  },
+  "n8n-io/n8n": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
   },
   "nightly-labs/openbot": {
     "first_seen": "2026-10-27",
@@ -429,11 +449,11 @@
   },
   "nvm-sh/nvm": {
     "first_seen": "2026-11-13",
-    "last_seen": "2026-11-13"
+    "last_seen": "2026-11-19"
   },
   "obra/superpowers": {
     "first_seen": "2026-10-28",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "openai/codex-security": {
     "first_seen": "2026-11-12",
@@ -442,6 +462,10 @@
   "openssl/openssl": {
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-07"
+  },
+  "openvinotoolkit/openvino": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
   },
   "p-e-w/heretic": {
     "first_seen": "2026-11-03",
@@ -483,6 +507,10 @@
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-02"
   },
+  "punkpeye/awesome-mcp-servers": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
+  },
   "rails/rails": {
     "first_seen": "2026-11-07",
     "last_seen": "2026-11-07"
@@ -519,13 +547,17 @@
     "first_seen": "2026-11-02",
     "last_seen": "2026-11-04"
   },
+  "solidjs/solid": {
+    "first_seen": "2026-11-19",
+    "last_seen": "2026-11-19"
+  },
   "spotify/portal-ai-plugins": {
     "first_seen": "2026-11-04",
     "last_seen": "2026-11-04"
   },
   "sveltejs/svelte": {
     "first_seen": "2026-11-17",
-    "last_seen": "2026-11-18"
+    "last_seen": "2026-11-19"
   },
   "symfony/symfony": {
     "first_seen": "2026-11-07",

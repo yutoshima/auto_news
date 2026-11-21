@@ -1,0 +1,24 @@
+---
+title: "「httpS://」だと暗号化されず平文で送信……「PHP」に約20年潜んでいた脆弱性が解決／問題はいたってシンプル、なんともはや……【やじうまの杜】"
+source: "はてブ テクノロジー"
+category: "it"
+published: 2026-11-20T09:26:32
+url: https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html
+---
+
+# 「httpS://」だと暗号化されず平文で送信……「PHP」に約20年潜んでいた脆弱性が解決／問題はいたってシンプル、なんともはや……【やじうまの杜】
+
+## メタデータ
+
+- **情報源**: はてブ テクノロジー
+- **カテゴリ**: it
+- **公開日時**: 2026年11月20日 09:26
+- **URL**: [https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html](https://forest.watch.impress.co.jp/docs/serial/yajiuma/2158241.html)
+
+## 概要
+
+
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -17,9 +17,7 @@ url: https://cleantechnica.com/2026/11/19/leapmotor-produces-its-2-millionth-ev/
 
 ## 概要
 
-Leapmotorはわずか2百万人目の車を生産しました。もちろんすべて電気自動車です。この電気自動車スタートアップは、競争の激しい中国の電気自動車市場で急成長を遂げ、海外市場へもますます進出しています。もちろん、米国の私たちの多く、欧州でもほとんどあるいはほとんど知られていないのがLeapmotorですが、... [続く]
-
-投稿 <a href="https://cleantechnica.com/2026/11/19/leapmotor-produces-its-2-millionth-ev/">Leapmotor Produces Its 2 Millionth EV</a> は、まず Cleantechnica に掲載されました <a href="https://cleantechnica.com">
+Leapmotorは2台目の100万台を達成したのではなく、2百万台目の車両を生産しました。もちろんすべて電気自動車（EV）です。この電動車メーカーは、中国の競争の激しいEV市場で急速に台頭し、海外へと広がりつつあります。もちろん、私たちの多くが米国や欧州でLeapmotorについてほとんど、あるいはほとんど知らないのが現状ですが、… [続く]
 
 ---
 

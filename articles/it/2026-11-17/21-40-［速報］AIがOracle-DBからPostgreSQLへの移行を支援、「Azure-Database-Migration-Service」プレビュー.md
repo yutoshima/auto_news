@@ -17,7 +17,7 @@ url: https://www.publickey1.jp/blog/26/aioracle_dbpostgresqlazure_database_migra
 
 ## 概要
 
-マイクロソフトは日本時間11月18日未明に開幕した年次イベント「Microsoft Ignite 2026」で、Azure Database Migration Service（Azure DMS）におけるOracle DBからPostgreSQLへの移行を加速する新機能を発表しました。
+マイクロソフトは日本時間11月18日未明に開幕した年次イベント「Microsoft Ignite 2026」で、Azure Database Migration Service（Azure DMS）におけるOracle DBからPostgreSQLへの移行を含む新機能と改善を発表しました。
 
 ---
 

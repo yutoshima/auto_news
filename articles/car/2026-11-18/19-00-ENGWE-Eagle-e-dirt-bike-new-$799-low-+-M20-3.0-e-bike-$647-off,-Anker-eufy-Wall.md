@@ -1,5 +1,5 @@
 ---
-title: "ENGWE Eagle e-dirt bike new $799 low + M20 3.0 e-bike $647 off, Anker eufy Wall Light Cam S4 new lows from $150, more\n\nENGWE Eagle e-dirt bike 新品 $799 ダウン + M20 3.0 電動自転車 $647 オフ、Anker eufy Wall Light Cam S4 新安値は $150 から、ほかにも"
+title: "ENGWE Eagle e-dirt bike new $799 low + M20 3.0 e-bike $647 off, Anker eufy Wall Light Cam S4 new lows from $150, more\n\nENGWE Eagleのe-ダートバイク新規が799ドル、M20 3.0のeバイクは647ドルオフ、Anker eufy Wall Light Cam S4は新安値が150ドルから、ほかに多くあり"
 source: "Electrek"
 category: "car"
 published: 2026-11-18T19:00:00
@@ -8,7 +8,7 @@ url: https://electrek.co/2026/11/18/engwe-eagle-electric-dirt-bike-m20-3-0-e-bik
 
 # ENGWE Eagle e-dirt bike new $799 low + M20 3.0 e-bike $647 off, Anker eufy Wall Light Cam S4 new lows from $150, more
 
-ENGWE Eagle e-dirt bike 新品 $799 ダウン + M20 3.0 電動自転車 $647 オフ、Anker eufy Wall Light Cam S4 新安値は $150 から、ほかにも
+ENGWE Eagleのe-ダートバイク新規が799ドル、M20 3.0のeバイクは647ドルオフ、Anker eufy Wall Light Cam S4は新安値が150ドルから、ほかに多くあり
 
 ## メタデータ
 
@@ -19,7 +19,7 @@ ENGWE Eagle e-dirt bike 新品 $799 ダウン + M20 3.0 電動自転車 $647 オ
 
 ## 概要
 
-本日のグリーンディールの先頭を飾るのは、ENGWEのブラックフライデー/サイバーマondayセール。<a href="https://9to5toys.com/2026/11/18/engwe-black-friday-savings-m20-3-0-moped-style-e-bike-more/">Eagle Electric Dirt Bike</a>が、$276のバンドル価格で登場します。さらに<a href="https://9to5toys.com/2026/11/18/engwe-">詳細ページ</a>へ。
+本日最先端のグリーンディールの中で先頭を走るのは、ENGWEのブラックフライデー/サイバーマンデーセールで、<a href="https://9to5toys.com/2026/11/18/engwe-black-friday-savings-m20-3-0-moped-style-e-bike-more/">イーグル・エレクトリック・ダートバイク</a>が<$276>のバンドル価格で登場するニュースです。
 
 ---
 

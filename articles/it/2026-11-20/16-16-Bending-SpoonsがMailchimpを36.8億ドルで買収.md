@@ -17,7 +17,7 @@ url: https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-bi
 
 ## 概要
 
-Intuitは2021年に約120億ドルでその会社を買収したため、Bending Spoonsはかなりお買い得な取引をしているようだ。
+Intuitは2021年にその企業を約120億ドルで買収した。なのでBending Spoonsはかなりお得な買い物をしたようだ。
 
 ---
 

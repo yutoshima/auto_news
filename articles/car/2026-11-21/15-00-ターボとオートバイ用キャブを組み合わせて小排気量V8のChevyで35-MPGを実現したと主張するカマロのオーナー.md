@@ -1,0 +1,26 @@
+---
+title: "ターボとオートバイ用キャブを組み合わせて小排気量V8のChevyで35 MPGを実現したと主張するカマロのオーナー"
+source: "The Drive"
+category: "car"
+published: 2026-11-21T15:00:00
+url: https://www.thedrive.com/news/camaro-owner-claims-35-mpg-out-of-small-block-chevy-v8-by-combining-turbo-with-motorcycle-carb
+---
+
+# ターボとオートバイ用キャブを組み合わせて小排気量V8のChevyで35 MPGを実現したと主張するカマロのオーナー
+
+## メタデータ
+
+- **情報源**: The Drive
+- **カテゴリ**: car
+- **公開日時**: 2026年11月21日 15:00
+- **URL**: [https://www.thedrive.com/news/camaro-owner-claims-35-mpg-out-of-small-block-chevy-v8-by-combining-turbo-with-motorcycle-carb](https://www.thedrive.com/news/camaro-owner-claims-35-mpg-out-of-small-block-chevy-v8-by-combining-turbo-with-motorcycle-carb)
+
+## 概要
+
+プリウスには及ばないかもしれないが、これは古いアメリカンV8としてはかなり良い数字だ。
+
+投稿「Camaro Owner Claims 35 MPG Out of Small-Block Chevy V8 By Combining Turbo With Motorcycle Carb」は、モータースポーツ系サイト The Drive に最初に掲載された。
+
+---
+
+*この記事は自動収集システムによって保存されました。*

@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-private-endpoin
 
 ## 概要
 
-Amazon Route 53 は現在、プライベートエンドポイントを提供しています
+Amazon Route 53は現在、プライベートエンドポイントを提供しています
 
 ---
 

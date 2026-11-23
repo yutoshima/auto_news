@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/453/4453917/?rss
 
 ## 概要
 
-<p><img align="left" height="60" src="https://ascii.jp/img/2019/05/13/1510511/s/5e76a3dd2752b473.jpg" width="60" />「ものづくり革命で人々を幸せに」Japan Robotics代表、Wantedlyの東急線中吊り広告に登場</p><br clear="left" />
+「ものづくり革命で人々を幸せに」Japan Robotics代表、Wantedlyの東急線中吊り広告に登場
 
 ---
 

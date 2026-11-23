@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/continuum-pentest-cost-e
 
 ## 概要
 
-<p>AWS Continuum for Penetration Testing（旧称 AWS Security Agent）は、ペネトレーションテストを実行する前に作業時間を見積もる機能を提供します。これにより、開発者とセキュリティチームはテストに要する課金対象の作業時間を把握し、最大作業時間の制限を自信を持って設定できるようになります。Penetration Testing向け Continuum は、ウェブアプリケーションと API に対するオンデマンドの AI 主導型ペネトレーションテストを実行します。従来、テストに要する時間を知る唯一の方法は実際にテストを実行することだったため、時間の見積もりは困難でした。
+AWS Continuum for Penetration Testing（旧称 AWS Security Agent）は、ペネトレーションテストを実行する前に作業時間を見積もれるようになりました。これにより、開発者とセキュリティチームはテストに必要な請求可能な作業時間の目安を把握し、最大作業時間の上限を自信を持って設定できます。Penetration Testing用 Continuum は、ウェブアプリケーションと API に対してオンデマンドかつ AI 主導で実施されるペネトレーションテストです。従来、テストにどれくらい時間がかかるかを知る唯一の方法は実際にテストを実行することでしたが、それには難しさがありました。
 
 ---
 

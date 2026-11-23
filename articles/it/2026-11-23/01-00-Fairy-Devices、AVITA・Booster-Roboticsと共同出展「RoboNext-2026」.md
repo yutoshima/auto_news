@@ -17,7 +17,7 @@ url: https://ascii.jp/elem/000/004/453/4453927/?rss
 
 ## 概要
 
-Fairy Devices、AVITA・Booster Roboticsと共同出展「RoboNext 2026」
+Fairy Devices、「RoboNext 2026」にAVITA・Booster Roboticsと共同出展
 
 ---
 

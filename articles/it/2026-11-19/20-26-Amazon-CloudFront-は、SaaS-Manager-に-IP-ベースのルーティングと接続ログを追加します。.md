@@ -17,7 +17,7 @@ url: https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-ip-based-rout
 
 ## 概要
 
-<p>Amazon CloudFrontは現在、ウェブ開発とSaaSプラットフォームが同じワイルドカードドメイン上で異なる顧客層を提供できるよう、IPアドレスを使って適切な設定へルーティングします。たとえば、これらのプラットフォームは専用のAnycast静的IPアドレスリストからそれぞれ独自の設定を持つプレミアムおよびプロ顧客を配信し、共有CloudFront IPアドレス上の無料枠顧客を提供することができ、すべて <a href="http://example.com">example.com</a> の下に存在します。さらに、これらの顧客は</p>
+<p>Amazon CloudFrontは現在、ワイルドカードドメインを同一に保ちながら、IPアドレスを用いて顧客を適切な設定へルーティングすることで、ウェブ開発・SaaSプラットフォームが異なる階層の顧客を同じドメインで提供できるようになりました。たとえば、これらのプラットフォームは、専用のAnycast静的IPアドレスリストごとに、それぞれ独自の設定を持つプレミアムおよびプロ顧客を提供し、共有 CloudFront IP アドレスで無料層の顧客を提供することができ、すべて *.<a href="http://example.com">example.com</a> の下で運用します。さらに、これらの顧客</p>
 
 ---
 

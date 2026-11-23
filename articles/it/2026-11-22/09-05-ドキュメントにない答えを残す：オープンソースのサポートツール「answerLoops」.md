@@ -22,8 +22,6 @@ url: https://qiita.com/pitaspot/items/ee92f922136762ca1985?utm_campaign=popular_
 
 dev.toに載った、CopilotKit社でDevRel...
 
-日本語訳:
-
 ---
 
 *この記事は自動収集システムによって保存されました。*

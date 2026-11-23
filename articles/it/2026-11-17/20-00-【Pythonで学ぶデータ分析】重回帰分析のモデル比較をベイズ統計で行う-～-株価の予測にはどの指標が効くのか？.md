@@ -1,6 +1,6 @@
 ---
 title: "【Pythonで学ぶデータ分析】重回帰分析のモデル比較をベイズ統計で行う ～ 株価の予測にはどの指標が効くのか？"
-source: "ITmedia AI+"
+source: "@IT"
 category: "it"
 published: 2026-11-17T20:00:00
 url: https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news010.html
@@ -10,7 +10,7 @@ url: https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news010.html
 
 ## メタデータ
 
-- **情報源**: ITmedia AI+
+- **情報源**: @IT
 - **カテゴリ**: it
 - **公開日時**: 2026年11月17日 20:00
 - **URL**: [https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news010.html](https://atmarkit.itmedia.co.jp/ait/articles/2611/18/news010.html)

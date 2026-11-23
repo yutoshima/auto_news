@@ -1,0 +1,31 @@
+---
+title: "CSS では書きにくいアニメーションを Web Animations API で書く"
+source: "Zenn"
+category: "it"
+published: 2026-11-16T06:35:01
+url: https://zenn.dev/omu_tryangle/articles/b5817393592229
+---
+
+# CSS では書きにくいアニメーションを Web Animations API で書く
+
+## メタデータ
+
+- **情報源**: Zenn
+- **カテゴリ**: it
+- **公開日時**: 2026年11月16日 06:35
+- **URL**: [https://zenn.dev/omu_tryangle/articles/b5817393592229](https://zenn.dev/omu_tryangle/articles/b5817393592229)
+
+## 概要
+
+Web サイトに動きを付けたいとき、まず使うのは CSS の Transitions や Animations だと思います。ホバーしたら色が変わる、モーダルがふわっと出てくる、といった動きは CSS だけで書けますし、そのほうが簡単です。
+しかし、次のような場面では CSS アニメーションで書こうとすると少し面倒になります（できないわけではないですが）。
+
+ボタンを押すたびに、同じアニメーションを最初から再生したい
+JavaScript で計算した値を使ってアニメーションさせたい
+前のアニメーションが終わる前に次のアニメーションを始めて、2 つの動きを足し合わせたい
+
+こういうときに使...
+
+---
+
+*この記事は自動収集システムによって保存されました。*

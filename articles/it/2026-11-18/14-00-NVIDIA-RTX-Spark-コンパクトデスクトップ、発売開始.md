@@ -17,7 +17,7 @@ url: https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/
 
 ## 概要
 
-本日登場した ASUS、Dell、MSI の新しい NVIDIA RTX Spark コンパクトデスクトップは、ローカルAIエージェント、画像・動画生成、モデルファインチューニングを専用のWindows PCで利用可能にします。最大128GBの統一メモリとNVIDIAのAIソフトウェアスタックを搭載し、これらのシステムはRTX加速を用いたクリエイティブおよび開発作業と並行して、より大きなローカルモデルの余地を提供します。
+ASUS、 Dell、 MSI の新しい NVIDIA RTX Spark コンパクトデスクトップが本日発売され、ローカルAIエージェント、画像・動画生成、モデルのファインチューニングを専用のWindows PCで利用可能にします。最大128GBの統合メモリとNVIDIAのAIソフトウェアスタックを備えたこれらのシステムは、RTX加速のクリエイティブおよび開発作業とともに、より大きなローカルモデルの搭載余地を提供します。
 
 ---
 
